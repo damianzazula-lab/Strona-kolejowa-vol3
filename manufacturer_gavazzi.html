@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carlo Gavazzi - Profil Producenta</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f9f9f9;
+        }
+
+        .navbar {
+            background: linear-gradient(135deg, #003366 0%, #004d99 100%);
+            color: white;
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .navbar h1 {
+            font-size: 1.5rem;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: #FF8C00;
+        }
+
+        .hero {
+            background: linear-gradient(135deg, #003366 0%, #004d99 100%);
+            color: white;
+            padding: 3rem 2rem;
+            text-align: center;
+            border-bottom: 4px solid #FF8C00;
+        }
+
+        .hero .logo {
+            font-size: 4rem;
+            font-weight: bold;
+            margin-bottom: 1rem;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .hero .tagline {
+            font-size: 1.2rem;
+            opacity: 0.9;
+            margin-bottom: 1rem;
+        }
+
+        .hero .description {
+            max-width: 700px;
+            margin: 0 auto;
+            font-size: 1rem;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 2rem;
+        }
+
+        .breadcrumb {
+            background: #f0f0f0;
+            padding: 1rem;
+            border-radius: 4px;
+            margin-bottom: 2rem;
+            font-size: 0.9rem;
+        }
+
+        .breadcrumb a {
+            color: #003366;
+            text-decoration: none;
+            margin: 0 0.3rem;
+        }
+
+        .breadcrumb a:hover {
+            text-decoration: underline;
+        }
+
+        .section {
+            background: white;
+            padding: 2rem;
+            border-radius: 8px;
+            margin-bottom: 2rem;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .section h2 {
+            color: #003366;
+            font-size: 1.8rem;
+            margin-bottom: 1.5rem;
+            border-bottom: 3px solid #FF8C00;
+            padding-bottom: 0.5rem;
+        }
+
+        .section h3 {
+            color: #FF8C00;
+            font-size: 1.2rem;
+            margin-top: 1.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .portfolio-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 1rem;
+            margin: 1.5rem 0;
+        }
+
+        .portfolio-item {
+            background: #f5f5f5;
+            padding: 1rem;
+            border-left: 4px solid #FF8C00;
+            border-radius: 4px;
+            text-align: center;
+        }
+
+        .portfolio-item strong {
+            display: block;
+            color: #003366;
+            margin-bottom: 0.3rem;
+        }
+
+        .portfolio-item span {
+            font-size: 0.9rem;
+            color: #666;
+        }
+
+        .products-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 1.5rem;
+            margin: 1.5rem 0;
+        }
+
+        .product-card {
+            background: #f9f9f9;
+            border: 1px solid #ddd;
+            border-left: 4px solid #FF8C00;
+            padding: 1.5rem;
+            border-radius: 4px;
+            transition: all 0.3s ease;
+        }
+
+        .product-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+        }
+
+        .product-card h4 {
+            color: #003366;
+            margin-bottom: 0.5rem;
+        }
+
+        .product-card p {
+            font-size: 0.9rem;
+            color: #666;
+            line-height: 1.5;
+        }
+
+        .specs {
+            background: white;
+            padding: 1rem;
+            margin-top: 1rem;
+            border-radius: 4px;
+            font-size: 0.85rem;
+        }
+
+        .specs strong {
+            color: #003366;
+            display: block;
+            margin-top: 0.5rem;
+        }
+
+        .highlight-box {
+            background: linear-gradient(135deg, #FF8C00 0%, #ffb84d 100%);
+            color: white;
+            padding: 2rem;
+            border-radius: 8px;
+            margin: 2rem 0;
+            text-align: center;
+        }
+
+        .highlight-box h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            color: white;
+        }
+
+        .highlight-box p {
+            font-size: 1.1rem;
+            line-height: 1.6;
+        }
+
+        .certifications {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin: 1.5rem 0;
+        }
+
+        .cert-badge {
+            background: #003366;
+            color: #FF8C00;
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+            font-size: 0.85rem;
+            font-weight: bold;
+        }
+
+        .cta-buttons {
+            display: flex;
+            gap: 1rem;
+            margin-top: 2rem;
+            flex-wrap: wrap;
+        }
+
+        .cta-button {
+            display: inline-block;
+            padding: 1rem 2rem;
+            background: #003366;
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+            transition: background 0.3s;
+            font-weight: bold;
+        }
+
+        .cta-button:hover {
+            background: #FF8C00;
+        }
+
+        .cta-button.secondary {
+            background: #FF8C00;
+            color: white;
+        }
+
+        .cta-button.secondary:hover {
+            background: #003366;
+        }
+
+        .footer {
+            background: #003366;
+            color: white;
+            text-align: center;
+            padding: 2rem;
+            margin-top: 3rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <h1>🚂 Infrastruktura Kolejowa</h1>
+        <ul class="nav-links">
+            <li><a href="index.html">Strona główna</a></li>
+            <li><a href="knowledge-base.html">Baza Wiedzy</a></li>
+            <li><a href="contact.html">Kontakt</a></li>
+        </ul>
+    </div>
+
+    <div class="hero">
+        <div class="logo">CG</div>
+        <h1>CARLO GAVAZZI</h1>
+        <p class="tagline">Innowacyjne Rozwiązania Pomiarowe i Kontrolne</p>
+        <p class="description">
+            Światowy lider w zakresie liczników energii, analizatorów sieci i przekaźników przemysłowych. 
+            Specjalizujemy się w dostarczaniu niezawodnych systemów pomiarowych dla infrastruktury kolejowej 
+            i centrów sterowania ruchem.
+        </p>
+    </div>
+
+    <div class="container">
+        <div class="breadcrumb">
+            <a href="index.html">Strona główna</a> >
+            <a href="index.html#manufacturers">Partnerzy Produkcyjni</a> >
+            <strong>Carlo Gavazzi</strong>
+        </div>
+
+        <div class="section">
+            <h2>💡 Nasza Specjalizacja</h2>
+            <p>
+                Carlo Gavazzi jest renomowanym producentem urządzeń pomiarowych, liczników energii i przekaźników 
+                dla sektora kolejowego. Nasze produkty znajdują zastosowanie w:
+            </p>
+            <ul style="margin-left: 2rem; margin-top: 1rem;">
+                <li><strong>Podstacjach trakcyjnych</strong> - monitorowanie energii i parametrów sieci</li>
+                <li><strong>Centrach kontroli ruchu</strong> - rachunek i pomiar energii elektrycznej</li>
+                <li><strong>Rozjazdach</strong> - ochrona przepięciowa systemów ogrzewania</li>
+                <li><strong>Systemach zarządzania energią</strong> - inteligentne liczniki MID</li>
+                <li><strong>Transformatorowniach</strong> - monitorowanie warunków pracy</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>📋 Portfolio Produktów</h2>
+
+            <h3>🔌 Liczniki Energii</h3>
+            <div class="products-grid">
+                <div class="product-card">
+                    <h4>EM530 / EM540</h4>
+                    <p>Szybkie, kompaktowe liczniki energii na szyn DIN. Idealne do monitorowania zużycia w szafach serwerowych.</p>
+                    <div class="specs">
+                        <strong>Typ:</strong> 3-fazy<br>
+                        <strong>Prąd max:</strong> do 65A<br>
+                        <strong>Odświeżanie:</strong> 100ms<br>
+                        <strong>Norma:</strong> EN 50470-1, MID
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <h4>WM15</h4>
+                    <p>Ekonomiczny analizator mocy do podliczania energii w rozdzielniach budynków infrastruktury.</p>
+                    <div class="specs">
+                        <strong>Typ:</strong> 3-fazy<br>
+                        <strong>Dokładność:</strong> Klasa 0.5S kWh<br>
+                        <strong>Komunikacja:</strong> Modbus, M-Bus<br>
+                        <strong>Norma:</strong> EN 62053-21, MID
+                    </div>
+                </div>
+            </div>
+
+            <h3>📊 Analizatory Sieci</h3>
+            <div class="products-grid">
+                <div class="product-card">
+                    <h4>WM20 / WM30 / WM40</h4>
+                    <p>Moduowe analizatory do monitorowania jakości energii w podstacjach trakcyjnych 3kV DC.</p>
+                    <div class="specs">
+                        <strong>Dokładność:</strong> Klasa 0.5S / 0.2<br>
+                        <strong>Komunikacja:</strong> Modbus, Ethernet, BACnet, Profibus<br>
+                        <strong>Przeznaczenie:</strong> Podstacje trakcyjne<br>
+                        <strong>Norma:</strong> EN 62053-22
+                    </div>
+                </div>
+            </div>
+
+            <h3>🔗 Przekaźniki i Przekadniki</h3>
+            <div class="products-grid">
+                <div class="product-card">
+                    <h4>CTD / CTA</h4>
+                    <p>Przekadniki prądowe do współpracy z licznikami energii w rozdzielniach podstacji. Wersje z dzielonym rdzeniem.</p>
+                    <div class="specs">
+                        <strong>Zakresy:</strong> 40A - 4000A<br>
+                        <strong>Wtórnie:</strong> 1A / 5A<br>
+                        <strong>Rdzenie:</strong> stały / dzielony (CTA)<br>
+                        <strong>Norma:</strong> IEC 61869-2
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <h4>RGH</h4>
+                    <p>Przekaźniki półprzewodnikowe o bardzo wysokim napięciu blokowania 1600 Vp. Dla systemów EOR.</p>
+                    <div class="specs">
+                        <strong>Pojemność:</strong> do 60A<br>
+                        <strong>Napięcie:</strong> 1600 Vp<br>
+                        <strong>Zdolność gaszenia:</strong> 6600 As<br>
+                        <strong>Norma:</strong> EN 60947-4-3
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="highlight-box">
+            <h3>✨ Nasza Siła</h3>
+            <p>
+                <strong>MID Certified Meters:</strong> Nasze liczniki posiadają certyfikat MID (Measuring Instruments Directive), 
+                gwarantujący dokładność pomiaru dla celów rozliczeniowych. Certyfikat ważny w całej Unii Europejskiej.
+            </p>
+        </div>
+
+        <div class="section">
+            <h2>🎯 Aplikacje w Kolei</h2>
+
+            <h3>Rozjazdy (Switches)</h3>
+            <ul style="margin-left: 2rem;">
+                <li>✓ Przekaźniki RGH do ochrony systemów ogrzewania EOR</li>
+                <li>✓ Zabezpieczenie przed przepięciami sieciowymi</li>
+                <li>✓ Niezawodność w ekstremalnych warunkach zimowych</li>
+            </ul>
+
+            <h3>Podstacje Trakcyjne (Traction Substations)</h3>
+            <ul style="margin-left: 2rem;">
+                <li>✓ Analizatory sieci WM20/30/40 do monitorowania 3kV DC</li>
+                <li>✓ Liczniki energii dla rozliczania pojazdów transportu publicznego</li>
+                <li>✓ Przekadniki prądowe CTD/CTA dla precyzyjnego pomiaru</li>
+            </ul>
+
+            <h3>Centra Kontroli Ruchu (Traffic Control Centers)</h3>
+            <ul style="margin-left: 2rem;">
+                <li>✓ Liczniki EM530/540 do monitorowania zużycia energii w szafach</li>
+                <li>✓ Analizatory WM15 dla systemów zarządzania energią</li>
+                <li>✓ Komunikacja Modbus/M-Bus dla integracji z systemami BMS</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>🏆 Certyfikaty i Normy</h2>
+            <div class="certifications">
+                <div class="cert-badge">EN 62053-22</div>
+                <div class="cert-badge">EN 62053-21</div>
+                <div class="cert-badge">IEC 61869-2</div>
+                <div class="cert-badge">EN 50470-1</div>
+                <div class="cert-badge">MID</div>
+                <div class="cert-badge">EN 60947-4-3</div>
+                <div class="cert-badge">CE</div>
+                <div class="cert-badge">RoHS</div>
+            </div>
+            <p style="margin-top: 1rem;">
+                Wszystkie produkty Carlo Gavazzi spełniają najwyższe normy europejskie dla branży kolejowej 
+                i są testowane w warunkach symulujących eksploatację na nowoczesnych polskich liniach kolejowych.
+            </p>
+        </div>
+
+        <div class="cta-buttons">
+            <a href="contact.html" class="cta-button">📞 Kontakt z Ekspertem</a>
+            <a href="index.html" class="cta-button secondary">← Wróć do Strony Głównej</a>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>&copy; 2026 Carlo Gavazzi. Wszystkie prawa zastrzeżone.</p>
+        <p style="margin-top: 1rem; font-size: 0.9rem;">
+            Profil producenta | Infrastruktura Kolejowa | Rozwiązania dla Transportu
+        </p>
+    </div>
+</body>
+</html>

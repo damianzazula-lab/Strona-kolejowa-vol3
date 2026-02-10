@@ -3,321 +3,432 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Podstacje Trakcyjne i Zasilanie | ELTRON</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Podstacje Trakcyjne - Infrastruktura Kolejowa</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f9f9f9;
+        }
+
+        .navbar {
+            background: linear-gradient(135deg, #003366 0%, #004d99 100%);
+            color: white;
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .navbar h1 {
+            font-size: 1.5rem;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: #FF8C00;
+        }
+
+        .breadcrumb {
+            background: #f0f0f0;
+            padding: 1rem 2rem;
+            font-size: 0.9rem;
+        }
+
+        .breadcrumb a {
+            color: #003366;
+            text-decoration: none;
+            margin: 0 0.5rem;
+        }
+
+        .breadcrumb a:hover {
+            text-decoration: underline;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 2rem;
+        }
+
+        .page-header {
+            background: linear-gradient(135deg, #003366 0%, #004d99 100%);
+            color: white;
+            padding: 3rem 2rem;
+            border-radius: 8px;
+            margin-bottom: 3rem;
+            text-align: center;
+        }
+
+        .page-header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .page-header p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+
+        .intro-section {
+            background: white;
+            padding: 2rem;
+            border-radius: 8px;
+            margin-bottom: 2rem;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .intro-section h2 {
+            color: #003366;
+            margin-bottom: 1rem;
+            border-bottom: 3px solid #FF8C00;
+            padding-bottom: 0.5rem;
+        }
+
+        .products-section {
+            margin-bottom: 3rem;
+        }
+
+        .products-section h3 {
+            font-size: 1.8rem;
+            color: #003366;
+            margin-bottom: 2rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid #FF8C00;
+        }
+
+        .products-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .product-card {
+            background: white;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 1.5rem;
+            transition: all 0.3s ease;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .product-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+            border-color: #FF8C00;
+        }
+
+        .product-manufacturer {
+            color: #FF8C00;
+            font-weight: bold;
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            margin-bottom: 0.5rem;
+            letter-spacing: 1px;
+        }
+
+        .product-card h3 {
+            color: #003366;
+            font-size: 1.3rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .product-description {
+            color: #666;
+            font-size: 0.95rem;
+            margin-bottom: 1rem;
+            line-height: 1.5;
+        }
+
+        .product-family {
+            background: #f5f5f5;
+            padding: 1rem;
+            border-left: 4px solid #FF8C00;
+            margin-bottom: 1rem;
+            border-radius: 4px;
+        }
+
+        .product-family h4 {
+            color: #003366;
+            margin-bottom: 0.5rem;
+            font-size: 0.95rem;
+        }
+
+        .product-family p {
+            font-size: 0.85rem;
+            color: #555;
+            line-height: 1.6;
+        }
+
+        .document-buttons {
+            display: flex;
+            gap: 0.5rem;
+            flex-wrap: wrap;
+        }
+
+        .doc-btn {
+            display: inline-block;
+            padding: 0.5rem 1rem;
+            background: #003366;
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+            font-size: 0.85rem;
+            transition: background 0.3s;
+        }
+
+        .doc-btn:hover {
+            background: #FF8C00;
+        }
+
+        .footer {
+            background: #003366;
+            color: white;
+            text-align: center;
+            padding: 2rem;
+            margin-top: 3rem;
+        }
+
+        .back-button {
+            display: inline-block;
+            margin-bottom: 2rem;
+            padding: 0.75rem 1.5rem;
+            background: #FF8C00;
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+            transition: background 0.3s;
+        }
+
+        .back-button:hover {
+            background: #003366;
+        }
+    </style>
 </head>
 <body>
-    <!-- Header -->
-    <header class="main-header">
-        <div class="container">
-            <div class="header-content">
-                <div class="logo-section">
-                    <img src="sensata-vertical-full-color-medium-resolution-logo.jpg" alt="ELTRON" class="main-logo">
-                </div>
-                <nav class="main-nav">
-                    <ul>
-                        <li><a href="index.html">Start</a></li>
-                        <li><a href="index.html#tabor">Tabor kolejowy</a></li>
-                        <li><a href="index.html#infrastruktura">Infrastruktura</a></li>
-                        <li><a href="knowledge-base.html">Baza wiedzy</a></li>
-                        <li><a href="contact.html">Kontakt</a></li>
-                    </ul>
-                </nav>
-            </div>
-        </div>
-    </header>
+    <div class="navbar">
+        <h1>🚂 Infrastruktura Kolejowa</h1>
+        <ul class="nav-links">
+            <li><a href="index.html">Strona główna</a></li>
+            <li><a href="knowledge-base.html">Baza Wiedzy</a></li>
+            <li><a href="contact.html">Kontakt</a></li>
+        </ul>
+    </div>
 
-    <!-- Breadcrumb -->
     <div class="breadcrumb">
-        <div class="container">
-            <nav class="breadcrumb-nav">
-                <a href="index.html">Start</a> / 
-                <a href="index.html#infrastruktura">Infrastruktura kolejowa</a> / 
-                <strong>Podstacje Trakcyjne i Zasilanie</strong>
-            </nav>
+        <a href="index.html">Strona główna</a> >
+        <a href="infrastructure.html">Infrastruktura</a> >
+        <strong>Podstacje Trakcyjne i Zasilanie</strong>
+    </div>
+
+    <div class="container">
+        <div class="page-header">
+            <h1>Podstacje Trakcyjne i Zasilanie</h1>
+            <p>Serca Infrastruktury Kolejowej - Konwersja i Dystrybucja Energii</p>
+        </div>
+
+        <a href="infrastructure.html" class="back-button">← Wróć do Infrastruktury</a>
+
+        <div class="intro-section">
+            <h2>O Podstacjach Trakcyjnych</h2>
+            <p>
+                Podstacje trakcyjne są kluczowymi elementami infrastruktury kolejowej, odpowiadającymi za konwersję i dystrybucję 
+                energii elektrycznej do sieci trakcyjnej. Pracują z wysokimi napięciami (750V, 1500V, 3000V DC lub 15-25kV AC) 
+                i wymuszają zastosowanie specjalistycznych urządzeń ochrony, pomiaru i monitorowania.
+            </p>
+        </div>
+
+        <div class="products-section">
+            <h3>Rozwiązania dla Podstacji Trakcyjnych</h3>
+            <div class="products-grid">
+                <div class="product-card">
+                    <div class="product-manufacturer">KNICK</div>
+                    <h3>Przetworniki Wysokiego Napięcia</h3>
+                    <p class="product-description">
+                        Uniwersalne przetworniki do pomiaru prądu przez bocznik w podstacjach DC. 
+                        Izolacja 3600V ACDC, test 15kV AC. Seria P41000.
+                    </p>
+                    <div class="product-family">
+                        <h4>Seria P41000 - P42000</h4>
+                        <p>
+                            Wejście: 60mV do 3600V<br>
+                            Izolacja: 3600V ACDC<br>
+                            Test: 15kV AC<br>
+                            Norma: EN 61140, UL 347
+                        </p>
+                    </div>
+                    <div class="document-buttons">
+                        <a href="#" class="doc-btn">📄 Karta</a>
+                        <a href="#" class="doc-btn">📋 Normy</a>
+                        <a href="#" class="doc-btn">📊 Wymiary</a>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-manufacturer">MERSEN</div>
+                    <h3>Odłączniki Mocy DC</h3>
+                    <p class="product-description">
+                        Izolacja sekcji sieci trakcyjnej lub prostowników w podstacjach. Wysoka pojemność zwarciowa 
+                        200kA peak. Napęd silnikowy lub ręczny.
+                    </p>
+                    <div class="product-family">
+                        <h4>High Power Switches Disconnect</h4>
+                        <p>
+                            Napięcie: DC do 3000V<br>
+                            Moc: 200kA peak<br>
+                            Norma: IEC 60077-2, EN 50123<br>
+                            Przerwa izolacyjna: widoczna
+                        </p>
+                    </div>
+                    <div class="document-buttons">
+                        <a href="#" class="doc-btn">📄 Karta</a>
+                        <a href="#" class="doc-btn">📋 Normy</a>
+                        <a href="#" class="doc-btn">📊 Wymiary</a>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-manufacturer">MERSEN</div>
+                    <h3>Ograniczniki Przepięcia Trakcyjne</h3>
+                    <p class="product-description">
+                        Ochrona podstacji i linii zasilających przed wyładowaniami atmosferycznymi i przepięciami sieciowymi. 
+                        Klasa wyadowania IEC 60099-4.
+                    </p>
+                    <div class="product-family">
+                        <h4>Surge Arresters Enclosed Station</h4>
+                        <p>
+                            Prąd: 10kA - 20kA<br>
+                            Klasa wyadowania: IEC 60099-4<br>
+                            Zastosowanie: Linie zasilające, podstacje<br>
+                            Certyfikat: Railway Grade
+                        </p>
+                    </div>
+                    <div class="document-buttons">
+                        <a href="#" class="doc-btn">📄 Karta</a>
+                        <a href="#" class="doc-btn">📋 Normy</a>
+                        <a href="#" class="doc-btn">📊 Wymiary</a>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-manufacturer">SENSATA / AIRPAX</div>
+                    <h3>Wyłączniki Przemysłowe E-Frame</h3>
+                    <p class="product-description">
+                        Wytrzymały wyłącznik do obwodów pomocniczych w podstacjach. Obsługuje wyższe napięcia przemysłowe 
+                        i duże prądy zwarciowe.
+                    </p>
+                    <div class="product-family">
+                        <h4>Serie 209, 219, 229</h4>
+                        <p>
+                            Prąd: 0.1A - 100A<br>
+                            Napięcie: 600VAC / 125VDC<br>
+                            Norma: UL 489, UL 1077, CSA<br>
+                            Monta: szyna DIN
+                        </p>
+                    </div>
+                    <div class="document-buttons">
+                        <a href="#" class="doc-btn">📄 Karta</a>
+                        <a href="#" class="doc-btn">📋 Normy</a>
+                        <a href="#" class="doc-btn">📊 Wymiary</a>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-manufacturer">CARLO GAVAZZI</div>
+                    <h3>Analizatory Sieci</h3>
+                    <p class="product-description">
+                        Moduowe analizatory do monitorowania jakości energii i parametrów sieci w podstacjach trakcyjnych 3kV DC. 
+                        Możliwość rozbudowy o moduły komunikacyjne.
+                    </p>
+                    <div class="product-family">
+                        <h4>Serie WM20, WM30, WM40</h4>
+                        <p>
+                            Dokładność: Klasa 0.5S / 0.2<br>
+                            Komunikacja: Modbus, Ethernet, BACnet, Profibus<br>
+                            Przeznaczenie: Monitorowanie energii w podstacjach<br>
+                            Norma: EN 62053-22
+                        </p>
+                    </div>
+                    <div class="document-buttons">
+                        <a href="#" class="doc-btn">📄 Karta</a>
+                        <a href="#" class="doc-btn">📋 Normy</a>
+                        <a href="#" class="doc-btn">📊 Wymiary</a>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-manufacturer">CARLO GAVAZZI</div>
+                    <h3>Przekadniki Prądowe</h3>
+                    <p class="product-description">
+                        Przekadniki prądowe do współpracy z licznikami energii w rozdzielniach podstacji. Dostępne wersje 
+                        z dzielonym rdzeniem dla instalacji bez odłączania torów.
+                    </p>
+                    <div class="product-family">
+                        <h4>Serie CTD, CTA</h4>
+                        <p>
+                            Zakresy: 40A - 4000A<br>
+                            Wtórnie: 1A / 5A<br>
+                            Rdzenie: stały / dzielony (CTA)<br>
+                            Norma: IEC 61869-2
+                        </p>
+                    </div>
+                    <div class="document-buttons">
+                        <a href="#" class="doc-btn">📄 Karta</a>
+                        <a href="#" class="doc-btn">📋 Normy</a>
+                        <a href="#" class="doc-btn">📊 Wymiary</a>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-manufacturer">PHOENIX CONTACT</div>
+                    <h3>Złączki Szynowe CLIPLINE</h3>
+                    <p class="product-description">
+                        System złączek szynowych odpornych na ekstremalne wibracje do dystrybucji potencjałów w szafach 
+                        sterowniczych. Push-in, Side-entry.
+                    </p>
+                    <div class="product-family">
+                        <h4>CLIPLINE complete PTP/TV/ST</h4>
+                        <p>
+                            Zakresy: 0.14 - 300 mm²<br>
+                            Norma: EN 45545-2 R22/R23, EN 50155, IEC 61373<br>
+                            Technologia: Push-in / Side-entry<br>
+                            Temperatura: -40°C do +70°C
+                        </p>
+                    </div>
+                    <div class="document-buttons">
+                        <a href="#" class="doc-btn">📄 Karta</a>
+                        <a href="#" class="doc-btn">📋 Normy</a>
+                        <a href="#" class="doc-btn">📊 Wymiary</a>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 
-    <!-- Page Content -->
-    <section class="product-page">
-        <div class="container">
-            <a href="index.html#infrastruktura" class="back-button">← Powrót do mapy</a>
-
-            <div class="page-header">
-                <h1>Podstacje Trakcyjne i Zasilanie</h1>
-                <p>Przetworniki wysokiego napięcia, monitoring, zabezpieczenia dla podstacji trakcyjnych 3kV DC</p>
-            </div>
-
-            <div class="products-grid">
-
-                <div class="product-card">
-                    <div class="product-manufacturer">Knick</div>
-                    <h3>Przetworniki wysokiego napięcia</h3>
-                    <p class="product-description">
-                        Wejście ±60mV do ±100V, Izolacja 3600V AC/DC, Test 15kV AC <br> EN 61140, UL 347
-                    </p>
-                    <div class="product-family">
-                        <h4>Seria P41000</h4>
-                        <p>
-                            Uniwersalny przetwornik do pomiaru prądu (przez bocznik) w podstacjach DC.
-                        </p>
-                    </div>
-                    <div class="document-buttons">
-                        <a href="#" class="doc-btn">📄 Karta katalogowa</a>
-                        <a href="#" class="doc-btn">📋 Nota aplikacyjna</a>
-                        <a href="#" class="doc-btn">📊 Prezentacja</a>
-                    </div>
-                </div>
-
-                <div class="product-card">
-                    <div class="product-manufacturer">Knick</div>
-                    <h3>Przetworniki wysokiego napięcia</h3>
-                    <p class="product-description">
-                        Wejście ±100V do ±3600V, Izolacja 3600V AC/DC, Test 15kV AC <br> EN 61140
-                    </p>
-                    <div class="product-family">
-                        <h4>Seria P42000</h4>
-                        <p>
-                            Przetwornik do pomiaru wysokich napięć stałych w podstacjach trakcyjnych 750V, 1500V i 3000V DC.
-                        </p>
-                    </div>
-                    <div class="document-buttons">
-                        <a href="#" class="doc-btn">📄 Karta katalogowa</a>
-                        <a href="#" class="doc-btn">📋 Nota aplikacyjna</a>
-                        <a href="#" class="doc-btn">📊 Prezentacja</a>
-                    </div>
-                </div>
-
-                <div class="product-card">
-                    <div class="product-manufacturer">Knick</div>
-                    <h3>Przetworniki wysokiego napięcia</h3>
-                    <p class="product-description">
-                        Wejście do ±1000V, Izolacja podstawowa 1000V AC/DC <br> EN 50124
-                    </p>
-                    <div class="product-family">
-                        <h4>Seria P29000</h4>
-                        <p>
-                            Przetwornik napięcia i prądu do zastosowań o umiarkowanych wymaganiach izolacyjnych.
-                        </p>
-                    </div>
-                    <div class="document-buttons">
-                        <a href="#" class="doc-btn">📄 Karta katalogowa</a>
-                        <a href="#" class="doc-btn">📋 Nota aplikacyjna</a>
-                        <a href="#" class="doc-btn">📊 Prezentacja</a>
-                    </div>
-                </div>
-
-                <div class="product-card">
-                    <div class="product-manufacturer">Knick</div>
-                    <h3>Detekcja napięcia</h3>
-                    <p class="product-description">
-                        Progi 50-4200V, Izolacja 4800V <br> EN 50123-1, EN 50155
-                    </p>
-                    <div class="product-family">
-                        <h4>Seria P52000VPD</h4>
-                        <p>
-                            Detektor obecności napięcia (VPD) do monitorowania szyn prądowych i sterowania odłącznikami.
-                        </p>
-                    </div>
-                    <div class="document-buttons">
-                        <a href="#" class="doc-btn">📄 Karta katalogowa</a>
-                        <a href="#" class="doc-btn">📋 Nota aplikacyjna</a>
-                        <a href="#" class="doc-btn">📊 Prezentacja</a>
-                    </div>
-                </div>
-
-                <div class="product-card">
-                    <div class="product-manufacturer">Knick</div>
-                    <h3>Pomiar temperatury</h3>
-                    <p class="product-description">
-                        Wejście Pt100, Izolacja 6600V AC/DC, Test 15kV AC <br> EN 50124-1
-                    </p>
-                    <div class="product-family">
-                        <h4>Seria P44000</h4>
-                        <p>
-                            Przetwornik temperatury do monitorowania szyn zbiorczych i prostowników przy wysokim potencjale (High Pot).
-                        </p>
-                    </div>
-                    <div class="document-buttons">
-                        <a href="#" class="doc-btn">📄 Karta katalogowa</a>
-                        <a href="#" class="doc-btn">📋 Nota aplikacyjna</a>
-                        <a href="#" class="doc-btn">📊 Prezentacja</a>
-                    </div>
-                </div>
-
-                <div class="product-card">
-                    <div class="product-manufacturer">Mersen</div>
-                    <h3>Odłączniki mocy DC</h3>
-                    <p class="product-description">
-                        do 3000V DC, 200kA peak, napęd silnikowy/ręczny <br> IEC 60077-2, EN 50123
-                    </p>
-                    <div class="product-family">
-                        <h4>High Power Switches (Disconnect)</h4>
-                        <p>
-                            Izolacja sekcji sieci trakcyjnej lub prostowników w podstacjach, widoczna przerwa izolacyjna.
-                        </p>
-                    </div>
-                    <div class="document-buttons">
-                        <a href="#" class="doc-btn">📄 Karta katalogowa</a>
-                        <a href="#" class="doc-btn">📋 Nota aplikacyjna</a>
-                        <a href="#" class="doc-btn">📊 Prezentacja</a>
-                    </div>
-                </div>
-
-                <div class="product-card">
-                    <div class="product-manufacturer">Mersen</div>
-                    <h3>Ograniczniki przepięć trakcyjne</h3>
-                    <p class="product-description">
-                        10kA / 20kA (klasa wyładowania) <br> IEC 60099-4
-                    </p>
-                    <div class="product-family">
-                        <h4>Surge Arresters (Enclosed / Station)</h4>
-                        <p>
-                            Ochrona podstacji i linii zasilających przed wyładowaniami atmosferycznymi i przepięciami sieciowymi.
-                        </p>
-                    </div>
-                    <div class="document-buttons">
-                        <a href="#" class="doc-btn">📄 Karta katalogowa</a>
-                        <a href="#" class="doc-btn">📋 Nota aplikacyjna</a>
-                        <a href="#" class="doc-btn">📊 Prezentacja</a>
-                    </div>
-                </div>
-
-                <div class="product-card">
-                    <div class="product-manufacturer">Phoenix Contact</div>
-                    <h3>Złączki szynowe</h3>
-                    <p class="product-description">
-                        0.14-300 mm², Push-in/Side-entry <br> EN 45545-2 R22/R23, EN 50155, IEC 61373
-                    </p>
-                    <div class="product-family">
-                        <h4>CLIPLINE complete (PT/PTV/ST)</h4>
-                        <p>
-                            System złączek szynowych odpornych na ekstremalne wibracje do dystrybucji potencjałów w szafach sterowniczych.
-                        </p>
-                    </div>
-                    <div class="document-buttons">
-                        <a href="#" class="doc-btn">📄 Karta katalogowa</a>
-                        <a href="#" class="doc-btn">📋 Nota aplikacyjna</a>
-                        <a href="#" class="doc-btn">📊 Prezentacja</a>
-                    </div>
-                </div>
-
-                <div class="product-card">
-                    <div class="product-manufacturer">Sensata</div>
-                    <h3>Monitorowanie izolacji</h3>
-                    <p class="product-description">
-                        Pomiar prądu, napięcia i izolacji <br> Precyzja pomiaru
-                    </p>
-                    <div class="product-family">
-                        <h4>Sensata/Sendyne</h4>
-                        <p>
-                            Moduły do monitorowania stanu izolacji i przepływu energii w systemach magazynowania energii (ESS) przy podstacjach.
-                        </p>
-                    </div>
-                    <div class="document-buttons">
-                        <a href="#" class="doc-btn">📄 Karta katalogowa</a>
-                        <a href="#" class="doc-btn">📋 Nota aplikacyjna</a>
-                        <a href="#" class="doc-btn">📊 Prezentacja</a>
-                    </div>
-                </div>
-
-                <div class="product-card">
-                    <div class="product-manufacturer">Sensata / Airpax</div>
-                    <h3>Wyłącznik przemysłowy E-Frame</h3>
-                    <p class="product-description">
-                        0.1-100A, 600VAC / 125VDC, montaż DIN <br> UL 489, UL 1077, CSA
-                    </p>
-                    <div class="product-family">
-                        <h4>Seria 209 / 219 / 229</h4>
-                        <p>
-                            Wytrzymały wyłącznik do obwodów pomocniczych w podstacjach, obsługujący wyższe napięcia przemysłowe i duże prądy zwarciowe.
-                        </p>
-                    </div>
-                    <div class="document-buttons">
-                        <a href="#" class="doc-btn">📄 Karta katalogowa</a>
-                        <a href="#" class="doc-btn">📋 Nota aplikacyjna</a>
-                        <a href="#" class="doc-btn">📊 Prezentacja</a>
-                    </div>
-                </div>
-
-                <div class="product-card">
-                    <div class="product-manufacturer">Sensata / BEI Sensors</div>
-                    <h3>Enkoder IO-Link</h3>
-                    <p class="product-description">
-                        IO-Link 1.1, Diagnostyka stanu <br> IP65, IEC 61000-4
-                    </p>
-                    <div class="product-family">
-                        <h4>Seria THM5 / THK5</h4>
-                        <p>
-                            Inteligentny enkoder do monitorowania położenia odłączników i uziemników z zdalną diagnostyką.
-                        </p>
-                    </div>
-                    <div class="document-buttons">
-                        <a href="#" class="doc-btn">📄 Karta katalogowa</a>
-                        <a href="#" class="doc-btn">📋 Nota aplikacyjna</a>
-                        <a href="#" class="doc-btn">📊 Prezentacja</a>
-                    </div>
-                </div>
-
-                <div class="product-card">
-                    <div class="product-manufacturer">Sensata / BEI Sensors</div>
-                    <h3>Bariera Iskrobezpieczna</h3>
-                    <p class="product-description">
-                        Zasilanie 12-28V DC, Wyjście TTL/OC <br> ATEX Ex ia, UL
-                    </p>
-                    <div class="product-family">
-                        <h4>Seria 60004</h4>
-                        <p>
-                            Separator galwaniczny do bezpiecznego przesyłu sygnałów enkodera ze stref zagrożonych wybuchem (np. akumulatorownie).
-                        </p>
-                    </div>
-                    <div class="document-buttons">
-                        <a href="#" class="doc-btn">📄 Karta katalogowa</a>
-                        <a href="#" class="doc-btn">📋 Nota aplikacyjna</a>
-                        <a href="#" class="doc-btn">📊 Prezentacja</a>
-                    </div>
-                </div>
-
-            </div>
-
-            <!-- CTA -->
-            <div class="cta-section" style="margin-top: 60px; border-radius: 8px;">
-                <h2>Potrzebujesz pomocy w doborze?</h2>
-                <p>Nasi eksperci pomogą znaleźć optymalne rozwiązanie dla Twojego projektu</p>
-                <div class="cta-buttons">
-                    <a href="contact.html" class="btn btn-primary">Skontaktuj się z ekspertem</a>
-                    <a href="index.html#infrastruktura" class="btn btn-secondary">Wróć do mapy</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="main-footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-col">
-                    <h4>ELTRON Sp. z o.o.</h4>
-                    <p>Profesjonalne rozwiązania dla przemysłu kolejowego</p>
-                </div>
-                <div class="footer-col">
-                    <h4>Linki</h4>
-                    <ul>
-                        <li><a href="index.html#tabor">Tabor kolejowy</a></li>
-                        <li><a href="index.html#infrastruktura">Infrastruktura</a></li>
-                        <li><a href="knowledge-base.html">Baza wiedzy</a></li>
-                        <li><a href="contact.html">Kontakt</a></li>
-                    </ul>
-                </div>
-                <div class="footer-col">
-                    <h4>Kontakt</h4>
-                    <p>Email: info@eltron.pl<br>Tel: +48 71 XXX XX XX</p>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2026 ELTRON Sp. z o.o. Wszelkie prawa zastrzeżone.</p>
-            </div>
-        </div>
-    </footer>
+    <div class="footer">
+        <p>&copy; 2026 Infrastruktura Kolejowa. Wszystkie prawa zastrzeżone.</p>
+    </div>
 </body>
 </html>
