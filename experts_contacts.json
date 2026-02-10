@@ -1,0 +1,66 @@
+{
+  "Mersen": {
+    "email": "Damian.Zazula@eltron.pl",
+    "products": [
+      "Mersen"
+    ],
+    "specialization": "Bezpieczniki, odbieraki prądu, ochrona przepięciowa"
+  },
+  "Sensata (Airpax, Crydom, Gigavac, Kavlico, Cynergy3)": {
+    "email": "Damian.Zazula@eltron.pl",
+    "products": [
+      "Sensata",
+      "Sensata / Airpax",
+      "Sensata / Crydom",
+      "Sensata / Gigavac",
+      "Sensata / Kavlico",
+      "Sensata / Cynergy3",
+      "Sensata / Klixon"
+    ],
+    "specialization": "Wyłączniki, przekaźniki SSR, czujniki, styczniki"
+  },
+  "Schroff & Hengstler": {
+    "email": "Krzysztof.Sobesto@eltron.pl",
+    "products": [
+      "nVent Schroff",
+      "Hengstler"
+    ],
+    "specialization": "Obudowy, szafy, przekaźniki bezpieczeństwa"
+  },
+  "EAO": {
+    "email": "Anna.Podulka@eltron.pl",
+    "products": [
+      "EAO",
+      "ABB (EAO Input)"
+    ],
+    "specialization": "Elementy HMI, przyciski, przełączniki, systemy rezerwacji"
+  },
+  "Carlo Gavazzi": {
+    "email": "Tomasz.Machowski@eltron.pl",
+    "products": [
+      "Carlo Gavazzi"
+    ],
+    "specialization": "Automatyka, czujniki, przekaźniki"
+  },
+  "BEI Sensors (Enkodery)": {
+    "email": "Grzegorz.Wujczyk@eltron.pl",
+    "products": [
+      "Sensata / BEI Sensors"
+    ],
+    "specialization": "Enkodery absolutne i inkrementalne, czujniki pozycji"
+  },
+  "Phoenix Contact": {
+    "email": "Marcin.Zalewski@eltron.pl",
+    "products": [
+      "Phoenix Contact"
+    ],
+    "specialization": "Złączki, zasilacze, komunikacja, cyberbezpieczeństwo"
+  },
+  "Knick": {
+    "email": "Grzegorz.Mikołajczyk@eltron.pl",
+    "products": [
+      "Knick"
+    ],
+    "specialization": "Przetworniki wysokiego napięcia, pomiary, izolacja"
+  }
+}

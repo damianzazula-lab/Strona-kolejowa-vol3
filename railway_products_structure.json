@@ -1,0 +1,1338 @@
+{
+  "Tabor kolejowy (On-Board & Rolling Stock)": {
+    "Systemy pociagu": [
+      {
+        "producent": "ABB (EAO Input)",
+        "kategoria": "Przekształtniki trakcyjne",
+        "opis_kategorii": "3 kV DC (grid), 3.3 kV IGBT technology | Rugged design",
+        "rodzina": "BORDLINE CC750 DC",
+        "opis_rodziny": "Kompaktowy przekształtnik trakcyjny do sterowania silnikami w regionalnych zespołach trakcyjnych (montowany m.in. w pociągach FLIRT)."
+      },
+      {
+        "producent": "ABB (EAO Input)",
+        "kategoria": "Przekształtniki trakcyjne",
+        "opis_kategorii": "15-25 kV AC input | Multilevel converter topology",
+        "rodzina": "BORDLINE CC1500 AC",
+        "opis_rodziny": "Przekształtnik trakcyjny dla elektrycznych zespołów trakcyjnych (EMU), zapewniający redundantny łańcuch trakcyjny."
+      },
+      {
+        "producent": "EAO",
+        "kategoria": "Systemy rezerwacji siedzeń",
+        "opis_kategorii": "System rezerwacji miejsc EAO został opracowany z myślą o rynku kolejowym i spełnia specyficzne normy oraz standardy tej branży. Całościowo system rezerwacji miejsc EAO stanowi kompleksowe rozwiązanie odpowiadające wymaganiom transportu kolejowego. Od prostej instalacji, poprzez elastyczne dopasowanie do różnych układów siedzeń i wymagań projektowych, aż po koncentrację na efektywności — wyznaczamy nowe standardy przyszłych doświadczeń z podróży koleją.",
+        "rodzina": "SRS – seat reservation system",
+        "opis_rodziny": "3 jasne wskaźniki LED\n\nEnergooszczędna, ekonomiczna i wysokokontrastowa technologia wyświetlania\n\nPobór energii wyłącznie podczas zmiany treści\n\nElastyczne możliwości instalacji\n\nCzarne lub białe tło\n\nPłynna integracja dzięki szerokim możliwościom personalizacji"
+      },
+      {
+        "producent": "EAO",
+        "kategoria": "Baterie",
+        "opis_kategorii": "Technologia bateryjna | Standardy kolejowe",
+        "rodzina": "Hawker EvoRail / ZeMaRail",
+        "opis_rodziny": "Specjalistyczne akumulatory do zastosowań kolejowych zapewniające zasilanie systemów pokładowych."
+      },
+      {
+        "producent": "Knick",
+        "kategoria": "Przetworniki wysokiego napięcia",
+        "opis_kategorii": "Wejście ±500V do ±3000V (4500V ACpeak), SIL 2/3 | EN 50155, EN 45545-2, IEC 61508",
+        "rodzina": "Seria P45000",
+        "opis_rodziny": "Kompaktowy przetwornik do pomiaru napięcia w obwodach pośrednich falowników (DC-Link) i silnikach trakcyjnych."
+      },
+      {
+        "producent": "Knick",
+        "kategoria": "Przetworniki wysokiego napięcia",
+        "opis_kategorii": "Pomiar prądu (bocznik), Izolacja 4800V AC/DC, Test 18kV AC | EN 50463, EN 50155",
+        "rodzina": "Seria P51000",
+        "opis_rodziny": "Przetwornik prądu do pomiaru energii (EMS) i trakcji, odporny na trudne warunki środowiskowe."
+      },
+      {
+        "producent": "Knick",
+        "kategoria": "Przetworniki wysokiego napięcia",
+        "opis_kategorii": "Wejście do ±4800V, Izolacja 4800V AC/DC, Test 18kV AC | EN 50463, EN 50155",
+        "rodzina": "Seria P52000",
+        "opis_rodziny": "Przetwornik napięcia do systemów trakcyjnych i liczników energii w taborze (zgodność z EN 50463)."
+      },
+      {
+        "producent": "Knick",
+        "kategoria": "Przetworniki prędkości",
+        "opis_kategorii": "Częstotliwość do 20kHz, SIL 3 | EN 50155, EN 61508, EN 45545-2",
+        "rodzina": "Seria P16000",
+        "opis_rodziny": "Kondycjoner sygnałów impulsowych do bezpiecznego odsprzęgania sygnałów prędkości z obwodów istniejących (izolacja galwaniczna)."
+      },
+      {
+        "producent": "Knick",
+        "kategoria": "Przetworniki prędkości",
+        "opis_kategorii": "SIL 4 (odsprzęganie), SIL 2 (transmisja), Izolacja 1000V | EN 50129, EN 50155",
+        "rodzina": "Seria P16800",
+        "opis_rodziny": "Powielacz sygnału prędkości ułatwiający retrofitting i integrację systemów ETCS/odometrii bez ingerencji w stary system."
+      },
+      {
+        "producent": "Knick",
+        "kategoria": "Przetworniki specjalne",
+        "opis_kategorii": "Wejście bocznika 30-120mV, Adaptive Gain | UL 347",
+        "rodzina": "Seria P41000AG",
+        "opis_rodziny": "Przetwornik z adaptacyjnym wzmocnieniem do precyzyjnego pomiaru prądu roboczego i zwarciowego (szeroki zakres dynamiki)."
+      },
+      {
+        "producent": "Knick",
+        "kategoria": "Akcesoria pomiarowe",
+        "opis_kategorii": "Spadek napięcia 30-60mV, Klasa 0.2/0.5 | EN 50463",
+        "rodzina": "Rezystory bocznikowe",
+        "opis_rodziny": "Precyzyjne boczniki do pomiaru prądu w aplikacjach trakcyjnych i licznikowych (EMS)."
+      },
+      {
+        "producent": "Knick",
+        "kategoria": "Pomiar temperatury",
+        "opis_kategorii": "Wejście Pt100 do 300°C, Izolacja 6600V AC/DC | EN 50155",
+        "rodzina": "Seria P44000",
+        "opis_rodziny": "Monitorowanie temperatury radiatorów, tyrystorów i IGBT w przekształtnikach taboru na wysokim potencjale."
+      },
+      {
+        "producent": "Mersen",
+        "kategoria": "Bezpieczniki szybkie (High-Speed)",
+        "opis_kategorii": "do 4200V DC, 20-1000A+, 100kA wyłączanie, aR | IEC 60269-4, IEC 60077-5",
+        "rodzina": "Mersen Protistor® Square Body (Size 300/600)",
+        "opis_rodziny": "Ultraszybka ochrona półprzewodników mocy (IGBT/SiC) w falownikach trakcyjnych o niskim I2t."
+      },
+      {
+        "producent": "Mersen",
+        "kategoria": "Bezpieczniki bateryjne",
+        "opis_kategorii": "500V-1000V DC, 10-800A, 20kA DC, odporność cykliczna | JASO D622, ISO 8820-8",
+        "rodzina": "Mersen EVpack-fuse® (MEV) / M-fuse®",
+        "opis_rodziny": "Specjalistyczne zabezpieczenie modułów bateryjnych i systemów magazynowania energii (BESS) w taborze."
+      },
+      {
+        "producent": "Mersen",
+        "kategoria": "Urządzenia uszyniające",
+        "opis_kategorii": "200-800A, szczotki 20x40mm, Peak 27kA | EN 50122, IEC 61373",
+        "rodzina": "ERCU (Earth Return Current Units)",
+        "opis_rodziny": "Ochrona łożysk osiowych przez bocznikowanie prądów powrotnych, zintegrowane z czujnikami prędkości."
+      },
+      {
+        "producent": "Mersen",
+        "kategoria": "Odbieraki prądu (3. szyna)",
+        "opis_kategorii": "750V/1500V DC, pneumatyczne/ręczne | IEC 60413",
+        "rodzina": "CCD (Current Collector Devices)",
+        "opis_rodziny": "System odbioru prądu z trzeciej szyny dla metra, wyposażony w bezpieczniki i systemy diagnostyczne."
+      },
+      {
+        "producent": "Mersen",
+        "kategoria": "Nakładki stykowe",
+        "opis_kategorii": "Węglowe/Metalizowane, klejone/lutowane, bezołowiowe | EN 50405, DIN 6701",
+        "rodzina": "Pantograph Carbon Strips",
+        "opis_rodziny": "Wymienne elementy ślizgowe pantografu zapewniające styk z siecią trakcyjną AC/DC przy dużych prędkościach."
+      },
+      {
+        "producent": "Mersen",
+        "kategoria": "Skrzynki bezpiecznikowe",
+        "opis_kategorii": "750V-2000V DC, IP55+, montaż dachowy/podwoziowy | IEC 60077, EN 50124",
+        "rodzina": "On-board Fuse Boxes",
+        "opis_rodziny": "Izolowana obudowa dla bezpieczników głównych chroniąca wejście zasilania z pantografu lub 3. szyny."
+      },
+      {
+        "producent": "nVent Schroff",
+        "kategoria": "Obudowy i Szafy",
+        "opis_kategorii": "Obciążenie statyczne 1600 kg, EMC 60dB@1GHz | EN 50155, IEC 61587-1 DL6, EN 45545-2",
+        "rodzina": "Varistar CP (On-Board)",
+        "opis_rodziny": "Wzmocniona szafa do montażu elektroniki pokładowej, odporna na wibracje i wstrząsy, dedykowana do systemów sterowania i TCMS."
+      },
+      {
+        "producent": "nVent Schroff",
+        "kategoria": "Systemy 19\"",
+        "opis_kategorii": "Spawana stal nierdzewna, 3U-9U | EN 15085 CL2, AWS, NF F 61-005, EN 61373",
+        "rodzina": "On Board Rack (OBR)",
+        "opis_rodziny": "Lekki, otwarty stelaż spawany do bezpiecznego montażu podzespołów 19\" w pojazdach, zgodny ze standardami kolei francuskich (SNCF)."
+      },
+      {
+        "producent": "nVent Schroff",
+        "kategoria": "Systemy 19\"",
+        "opis_kategorii": "Odporność na wstrząsy 25g, EMC | EN 50155, NF F 60-002, IEC 61587 DL3, EN 45545",
+        "rodzina": "EuropacPRO (Subrack)",
+        "opis_rodziny": "Modułowa kaseta 19\" do montażu kart PCB i elektroniki sterującej, zapewniająca ochronę przed wibracjami i zakłóceniami elektromagnetycznymi."
+      },
+      {
+        "producent": "Phoenix Contact",
+        "kategoria": "Złącza przemysłowe",
+        "opis_kategorii": "IP68/IP69K, do 300A/1000V | IEC 61373, EN 45545-2",
+        "rodzina": "HEAVYCON HPR / ADVANCE",
+        "opis_rodziny": "Modułowe, hermetyczne obudowy złączy do przejść międzywagonowych i podwozi, odporne na korozję, udary i EMC."
+      },
+      {
+        "producent": "Phoenix Contact",
+        "kategoria": "Zasilanie",
+        "opis_kategorii": "Wejście 24-110V DC, SFB Technology, lakierowane PCB | EN 50155, EN 50121, EN 45545-2 (HL3)",
+        "rodzina": "QUINT POWER DC/DC",
+        "opis_rodziny": "Przetwornice zasilania elektroniki pokładowej z szerokim zakresem napięć i rezerwą mocy do wyzwalania bezpieczników."
+      },
+      {
+        "producent": "Phoenix Contact",
+        "kategoria": "Zabezpieczenia obwodów",
+        "opis_kategorii": "1-10A reg., szer. 6mm, wejście reset | EN 50155, EN 61373, EN 45545-2",
+        "rodzina": "PTCB / CBMC",
+        "opis_rodziny": "Wielokanałowe, kompaktowe wyłączniki elektroniczne do selektywnego zabezpieczania obwodów 24V DC w taborze."
+      },
+      {
+        "producent": "Phoenix Contact",
+        "kategoria": "Oznaczanie",
+        "opis_kategorii": "Bezhalogenowe, -55°C do +125°C | EN 45545-2 HL1-HL3, NF F 16-101",
+        "rodzina": "MARKING system (UCT/UC/WMS)",
+        "opis_rodziny": "Systemy trwałego oznaczania złączek, przewodów i urządzeń spełniające najwyższe normy palności dla taboru."
+      },
+      {
+        "producent": "Phoenix Contact",
+        "kategoria": "Zasilanie awaryjne",
+        "opis_kategorii": "IQ Technology, start od -40°C | EN 50155, EN 61373",
+        "rodzina": "QUINT UPS / Energy Storage",
+        "opis_rodziny": "Zasilacze bezprzerwowe z bateriami Li-Ion lub kondensatorami do podtrzymania systemów krytycznych (np. hamulce, oświetlenie)."
+      },
+      {
+        "producent": "Sensata / Airpax",
+        "kategoria": "Wyłącznik dużej mocy",
+        "opis_kategorii": "100-1200A, 160VDC / 600VAC, 100kA AIC | UL 489, UL 489A",
+        "rodzina": "JAE / JRE / JLE",
+        "opis_rodziny": "Wyłącznik główny do obwodów trakcyjnych i bateryjnych o wysokiej zdolności zwarciowej, minimalizujący spadki napięcia."
+      },
+      {
+        "producent": "Sensata / Airpax",
+        "kategoria": "Wyłącznik sterowany zdalnie",
+        "opis_kategorii": "10-100A, 80VDC, sygnał sterujący 24-110VDC | IEC/EN 60947-2",
+        "rodzina": "ICLR / ROCB",
+        "opis_rodziny": "Wyłącznik z napędem silnikowym umożliwiający zdalny reset i diagnostykę z poziomu systemu sterowania pociągiem (TMS)."
+      },
+      {
+        "producent": "Sensata / Airpax",
+        "kategoria": "Wyłącznik wysokoprądowy DC",
+        "opis_kategorii": "Do 300A, 80VDC, układ równoległy | UL 489, UL 489A",
+        "rodzina": "LELP",
+        "opis_rodziny": "Specjalizowana wersja do systemów bateryjnych i zasilaczy DC o dużym prądzie, zajmująca mało miejsca na szynie DIN."
+      },
+      {
+        "producent": "Sensata / BEI Sensors",
+        "kategoria": "Enkoder Bezpieczeństwa (Safety)",
+        "opis_kategorii": "SIL3 / PLe Cat. 4, Sin/Cos 1Vpp | IEC 61508, ISO 13849-1",
+        "rodzina": "Seria DSK5H / DSM5H",
+        "opis_rodziny": "Certyfikowany enkoder do bezpiecznego monitorowania prędkości wałów silników trakcyjnych (wał drążony/pełny)."
+      },
+      {
+        "producent": "Sensata / BEI Sensors",
+        "kategoria": "Enkoder Heavy Duty",
+        "opis_kategorii": "Wał drążony do 1 cala, Optyczny | IP65, UL, ATEX (opcja)",
+        "rodzina": "Seria HS35",
+        "opis_rodziny": "Wytrzymały enkoder inkrementalny montowany bezpośrednio na wale silnika, odporny na wstrząsy i wibracje."
+      },
+      {
+        "producent": "Sensata / BEI Sensors",
+        "kategoria": "Enkoder Heavy Duty",
+        "opis_kategorii": "Wał pełny, Obudowa aluminium/stal | IP66, NEMA 4X",
+        "rodzina": "Seria H25",
+        "opis_rodziny": "Standard przemysłowy do monitorowania prędkości kół i osi w wózkach jezdnych."
+      },
+      {
+        "producent": "Sensata / BEI Sensors",
+        "kategoria": "Enkoder Low Profile",
+        "opis_kategorii": "Płaski profil, Wał drążony | IP66, UL, ATEX Zone 2",
+        "rodzina": "Seria LP35",
+        "opis_rodziny": "Kompaktowy enkoder do montażu w ograniczonych przestrzeniach silników pomocniczych i wentylatorów trakcyjnych."
+      },
+      {
+        "producent": "Sensata / BEI Sensors",
+        "kategoria": "Splitter Sygnału Safety",
+        "opis_kategorii": "SIL3 / PLe, Wyjścia HTL/TTL | IEC 61508, IEC 62061",
+        "rodzina": "Seria EAR-001 / EAR-002",
+        "opis_rodziny": "Moduł separujący i powielający sygnał z jednego enkodera do sterownika bezpiecznego i falownika."
+      },
+      {
+        "producent": "Sensata / Crydom",
+        "kategoria": "Odłączniki niskiego napięcia",
+        "opis_kategorii": "3-75V DC, 40-100A, IP00 | IEC 62314",
+        "rodzina": "LVD Series",
+        "opis_rodziny": "Przekaźnik ochrony akumulatorów, automatycznie odłącza obciążenie przy niskim napięciu, zapobiegając głębokiemu rozładowaniu baterii."
+      },
+      {
+        "producent": "Sensata / Crydom",
+        "kategoria": "Przekaźniki panelowe DC",
+        "opis_kategorii": "1-400V DC, 100A, IP00/IP20 | IEC 61000-4, UL 508",
+        "rodzina": "PowerPlus DC Series",
+        "opis_rodziny": "Wysokoprądowy przekaźnik DC do sterowania obwodami pomocniczymi trakcji i systemami bateryjnymi wysokiego napięcia."
+      },
+      {
+        "producent": "Sensata / Crydom",
+        "kategoria": "Styczniki rewersyjne DC",
+        "opis_kategorii": "48V DC, 60A, PWM 200Hz | UL 508, IEC 60947-4-1",
+        "rodzina": "DP Series",
+        "opis_rodziny": "Rewersyjny stycznik DC (mostek H) do sterowania silnikami prądu stałego (np. mechanizmy hamulcowe, drzwi, rampy)."
+      },
+      {
+        "producent": "Sensata / Crydom",
+        "kategoria": "Przekaźniki panelowe DC",
+        "opis_kategorii": "500V DC, 100A, 2500Vrms izolacji | UL E116950",
+        "rodzina": "1-DC Series",
+        "opis_rodziny": "Klasyczny przekaźnik panelowy do przełączania wysokich napięć DC w systemach zasilania taboru."
+      },
+      {
+        "producent": "Sensata / Cynergy3",
+        "kategoria": "Przekaźniki kontaktronowe HV",
+        "opis_kategorii": "Izolacja 10kV - 15kV DC, styki wolframowe/rodowe | UL Approved (DBUL)",
+        "rodzina": "Seria D / DAT / DBUL",
+        "opis_rodziny": "Monitorowanie izolacji w systemach BMS oraz pre-charge w układach falownikowych."
+      },
+      {
+        "producent": "Sensata / Cynergy3",
+        "kategoria": "Przełączniki przepływu łopatkowe",
+        "opis_kategorii": "Max 20 bar, IP65, temperatura do 150°C (wersja H)",
+        "rodzina": "Seria LFS",
+        "opis_rodziny": "Kontrola przepływu chłodziwa w obwodach chłodzenia falowników trakcyjnych i transformatorów."
+      },
+      {
+        "producent": "Sensata / Cynergy3",
+        "kategoria": "Pływakowe czujniki poziomu",
+        "opis_kategorii": "Montaż zewnętrzny 1/2in NPT, stal nierdzewna lub tworzywa techniczne",
+        "rodzina": "Seria RSF80 / SSF23",
+        "opis_rodziny": "Monitorowanie poziomu oleju w przekładniach oraz płynów hydraulicznych w układach hamulcowych."
+      },
+      {
+        "producent": "Sensata / Gigavac",
+        "kategoria": "Styczniki wysokiego napięcia",
+        "opis_kategorii": "1000A, 1500V DC, Przeciążenie 6000A | UL1604, RoHS",
+        "rodzina": "Gigavac HX460",
+        "opis_rodziny": "Stycznik główny trakcyjny z technologią EPIC (ceramiczna komora), umożliwiający rozłączanie pod obciążeniem przy napięciach do 1500V DC."
+      },
+      {
+        "producent": "Sensata / Gigavac",
+        "kategoria": "Styczniki dwukierunkowe",
+        "opis_kategorii": "400A, 1500V DC, Bi-directional | IP69K",
+        "rodzina": "Gigavac GTM400",
+        "opis_rodziny": "Stycznik zaprojektowany do systemów bateryjnych i rekuperacji energii, zapewniający pełną zdolność gaszenia łuku w obu kierunkach przepływu prądu."
+      },
+      {
+        "producent": "Sensata / Gigavac",
+        "kategoria": "Ministyczniki (Pre-charge)",
+        "opis_kategorii": "50A, 1200V DC, waga ~100g | NEC 690.11, UL508",
+        "rodzina": "Gigavac P115 (MiniTACTOR)",
+        "opis_rodziny": "Miniaturowy, lekki stycznik hermetyczny dedykowany do obwodów wstępnego ładowania (pre-charge) kondensatorów w falownikach trakcyjnych."
+      },
+      {
+        "producent": "Sensata / Gigavac",
+        "kategoria": "Bezpieczniki pirotechniczne",
+        "opis_kategorii": "400A ciągły, rozłączenie <3ms, do 1000V | Pasywne/Aktywne wyzwalanie",
+        "rodzina": "Gigavac GigaFuse (GFP)",
+        "opis_rodziny": "Szybki rozłącznik pirotechniczny zapewniający natychmiastowe odcięcie zasilania w warunkach zwarcia, bez efektu starzenia termicznego."
+      },
+      {
+        "producent": "Sensata / Gigavac",
+        "kategoria": "Odłączniki serwisowe (MSD)",
+        "opis_kategorii": "500A, 1000V DC, IP67 | UL, Hermetyczność",
+        "rodzina": "Gigavac BD9521 / HBD",
+        "opis_rodziny": "Manualny odłącznik baterii trakcyjnych umożliwiający bezpieczne serwisowanie pojazdu poprzez fizyczne przerwanie obwodu (Lock-out/Tag-out)."
+      },
+      {
+        "producent": "Sensata / Gigavac",
+        "kategoria": "Styczniki Heavy Duty",
+        "opis_kategorii": "400A, 28-800V DC, Temp. pracy -55°C do +200°C | MIL-STD-810G",
+        "rodzina": "Gigavac MX14",
+        "opis_rodziny": "Stycznik o podwyższonej odporności na wibracje i skrajne temperatury, dedykowany do montażu w podwoziu i trudnych warunkach środowiskowych."
+      },
+      {
+        "producent": "Sensata / Gigavac",
+        "kategoria": "Styczniki wysokiego napięcia DC",
+        "opis_kategorii": "do 1500V DC, do 1000A, hermetyzacja ceramiczna | UL, CE",
+        "rodzina": "Seria Gigavac SGX",
+        "opis_rodziny": "Główny stycznik liniowy lub bateryjny do bezpiecznego rozłączania obwodów trakcyjnych pod obciążeniem."
+      },
+      {
+        "producent": "Sensata / Kavlico",
+        "kategoria": "Styczniki Wysokonapięciowe DC",
+        "opis_kategorii": "Obsługa 400V - 800V DC, Hermetyczność | Brak danych w pliku",
+        "rodzina": "Seria HEC",
+        "opis_rodziny": "Rozłączanie obwodów bateryjnych i trakcyjnych w pojazdach elektrycznych i hybrydowych."
+      },
+      {
+        "producent": "Sensata / Kavlico",
+        "kategoria": "Czujniki Ciśnienia (Hydraulika Wysokociśnieniowa)",
+        "opis_kategorii": "0-5000 PSI, Spawana stal nierdzewna, Odporność na EMI/RFI | CE, RoHS",
+        "rodzina": "Seria P4000",
+        "opis_rodziny": "Wytrzymały czujnik do hydraulicznych układów hamulcowych i poziomowania zawieszenia."
+      },
+      {
+        "producent": "Sensata / Kavlico",
+        "kategoria": "Czujniki Ciśnienia (Cienkowarstwowe)",
+        "opis_kategorii": "0-600 Bar, IP67, Odporność na wstrząsy/wibracje | cULus, CE, RoHS",
+        "rodzina": "Seria PTE5000",
+        "opis_rodziny": "Uniwersalny, hermetyczny czujnik do monitorowania ciśnienia w układach pneumatycznych i hydraulicznych wózków."
+      },
+      {
+        "producent": "Sensata / Kavlico",
+        "kategoria": "Czujniki Ciśnienia Paliwa",
+        "opis_kategorii": "Do 3000 Bar (40k PSI), Technologia TiON, Gwint M18 | Brak danych",
+        "rodzina": "Common Rail Sensor",
+        "opis_rodziny": "Pomiar ciśnienia wtrysku w silnikach Diesla (lokomotywy spalinowe) dla optymalizacji spalania i redukcji emisji."
+      },
+      {
+        "producent": "Sensata / Kavlico",
+        "kategoria": "Różnicowe Czujniki Ciśnienia (Spaliny)",
+        "opis_kategorii": "0-350 mbar, Technologia Wet/Wet (olejowa) | RoHS",
+        "rodzina": "Seria P321",
+        "opis_rodziny": "Odporny na media kwasowe czujnik do układów EGR i filtrów cząstek stałych w trakcji spalinowej."
+      },
+      {
+        "producent": "Sensata / Kavlico",
+        "kategoria": "Liniowe Czujniki Pozycji",
+        "opis_kategorii": "Konstrukcja hermetyczna, Praca w wysokich temp. | RTCA/DO-160",
+        "rodzina": "Seria LVDT",
+        "opis_rodziny": "Monitorowanie wysuwu siłowników hamulcowych, stanu zawieszenia pneumatycznego lub położenia pantografu."
+      }
+    ],
+    "Kabina maszynisty": [
+      {
+        "producent": "EAO",
+        "kategoria": "przyciski, lampki, wyłaczniki awaryjne, przełączniki kluczykowe, pokrętne, hebelkowe, potencjometry, wskaźniki Multi-Legend",
+        "opis_kategorii": "EAO ściśle współpracuje z doświadczonymi producentami oraz operatorami pojazdów szynowych, opracowując elementy sterujące do kabin maszynisty, które spełniają zarówno oczekiwania klientów, jak i międzynarodowe normy oraz specyfikacje.",
+        "rodzina": "Seria 04",
+        "opis_rodziny": "Wszechstronne. Wytrzymałe i niezawodne.\n\nNowoczesny design oraz bezpieczna, ergonomiczna obsługa\n\nWyraźnie wyczuwalne sprzężenie dotykowe\n\nSprawdzone i powszechnie stosowane rozwiązanie w pulpitach maszynisty\n\nZgodność z międzynarodowymi certyfikatami oraz obowiązującymi normami i dyrektywami, spełniająca rygorystyczne wymagania branży kolejowej"
+      },
+      {
+        "producent": "EAO",
+        "kategoria": "Przełączniki i wskaźniki",
+        "opis_kategorii": "50 VAC/DC, 1000A Short-Circuit, IP65/IP67, -40°C do +85°C | UIC 612-0, EN 50155, EN 45545, DIN 5566-1",
+        "rodzina": "Series 04",
+        "opis_rodziny": "Modułowy system przełączników, przycisków i wskaźników do pulpitów sterowniczych, zaprojektowany z myślą o ergonomii i bezpieczeństwie w kabinie maszynisty."
+      },
+      {
+        "producent": "EAO",
+        "kategoria": "Kontrolery kursora",
+        "opis_kategorii": "IP6K9K | IATF 16949, ISO 7000",
+        "rodzina": "Series 09",
+        "opis_rodziny": "Obrotowy kontroler kursora (Rotary Cursor Controller) do nawigacji po cyfrowych interfejsach w nowoczesnych kokpitach typu \"glass cockpit\"."
+      },
+      {
+        "producent": "EAO",
+        "kategoria": "Przełączniki Heavy Duty",
+        "opis_kategorii": "Żywotność 10 mln cykli, IP69K | EN 45545, EN 60947-5-1",
+        "rodzina": "Series 45",
+        "opis_rodziny": "Wytrzymałe elementy sterujące, joysticki i wyłączniki zatrzymania do intensywnego użytkowania w trudnych warunkach."
+      },
+      {
+        "producent": "Mersen",
+        "kategoria": "Podstawy bezpiecznikowe",
+        "opis_kategorii": "690V AC/DC, montaż DIN, odporność na wibracje | EN 45545-2 R22, IEC 60269-2",
+        "rodzina": "Modulostar® / UltraSafe™ US14/US22",
+        "opis_rodziny": "Bezpieczna w dotyku podstawa dla bezpieczników cylindrycznych chroniąca obwody sterownicze i panele maszynisty."
+      },
+      {
+        "producent": "Mersen",
+        "kategoria": "Ograniczniki przepięć data",
+        "opis_kategorii": "Ethernet (PoE), RS485, 24-48V | UL 497B, IEC 61643-21",
+        "rodzina": "Surge-Trap® Signal (STS)",
+        "opis_rodziny": "Precyzyjna ochrona linii sygnałowych i sterowników PLC w pulpicie przed przepięciami indukowanymi."
+      },
+      {
+        "producent": "nVent Schroff",
+        "kategoria": "Systemy Wbudowane",
+        "opis_kategorii": "Moduł Type 6, USB 3.0, PCIe | Standard PICMG, IP55 (w obudowie)",
+        "rodzina": "COM Carrier Board (Type 6)",
+        "opis_rodziny": "Płyta nośna dla modułów COM Express, integrująca interfejsy obliczeniowe dla HMI i komputerów sterujących w kabinie maszynisty."
+      },
+      {
+        "producent": "nVent Schroff",
+        "kategoria": "Szafy Specjalne",
+        "opis_kategorii": "Rama typu Swing, Oszczędność miejsca | EN 50125-3, EN 45545-2",
+        "rodzina": "Varistar CP (Retro-Fit Swing Frame)",
+        "opis_rodziny": "Szafa z ramą uchylną umożliwiająca montaż i serwisowanie elektroniki sterującej w ciasnych przestrzeniach kabiny maszynisty."
+      },
+      {
+        "producent": "Phoenix Contact",
+        "kategoria": "Interfejs HMI",
+        "opis_kategorii": "Dotyk pojemnościowy, Linux/Windows | EN 61373, EN 50155 (wybrane modele)",
+        "rodzina": "TP 6000 / WP 6000",
+        "opis_rodziny": "Panele dotykowe do wizualizacji parametrów jazdy i sterowania systemami pokładowymi lub infrastrukturą."
+      },
+      {
+        "producent": "Sensata",
+        "kategoria": "Joysticki przemysłowe",
+        "opis_kategorii": "Wyjścia analogowe/CAN, IP67 (panel) | ISO 13849",
+        "rodzina": "Sensata/Deltatech AR3/S-Series",
+        "opis_rodziny": "Ergonomiczne manipulatory i joysticki do zabudowy w podłokietnikach fotela maszynisty, umożliwiające sterowanie proporcjonalne systemami pojazdu."
+      },
+      {
+        "producent": "Sensata / Airpax",
+        "kategoria": "Wyłącznik nadprądowy panelowy",
+        "opis_kategorii": "0.1-30A, 65VDC / 250VAC, dźwignia lub rocker | UL 1077, CSA, TUV",
+        "rodzina": "SNAPAK (Seria T/R/PP)",
+        "opis_rodziny": "Kompaktowy wyłącznik łączący funkcję zabezpieczenia i włącznika zasilania na panelu sterowniczym, dostępny z podświetleniem LED i różnymi kolorami dźwigni."
+      },
+      {
+        "producent": "Sensata / Airpax",
+        "kategoria": "Wyłącznik nadprądowy",
+        "opis_kategorii": "0.05-30A, 65VDC / 250VAC | UL 489A (CPA), UL 1077, EN 60934",
+        "rodzina": "IPA / CPA",
+        "opis_rodziny": "Wyłącznik z dźwignią typu toggle, dedykowany do systemów sterowania i telekomunikacji, odporny na przypadkowe przełączenia."
+      },
+      {
+        "producent": "Sensata / Airpax",
+        "kategoria": "Wyłączniki hydrauliczno-magnetyczne",
+        "opis_kategorii": "0.05-60A, 120/240V AC | UL 489, EN 60947-2",
+        "rodzina": "Seria LEL",
+        "opis_rodziny": "Zabezpieczenie nadprądowe obwodów sterowniczych i pomocniczych w kabinie, niewrażliwe na wahania temperatury."
+      },
+      {
+        "producent": "Sensata / BEI Sensors",
+        "kategoria": "Czujnik Pozycji Obrotowej",
+        "opis_kategorii": "Kąt 360°, Technologia Halla, Analog | IP67, SAE J1455",
+        "rodzina": "Seria 9360",
+        "opis_rodziny": "Bezkontaktowy czujnik obrotu do dźwigni nastawnika jazdy i hamulca, zapewniający długą żywotność mechaniczną."
+      },
+      {
+        "producent": "Sensata / BEI Sensors",
+        "kategoria": "Czujnik Efektu Halla",
+        "opis_kategorii": "Programowalny kąt, 5V/PWM/Analog | IP69K, EMC",
+        "rodzina": "Seria 9960",
+        "opis_rodziny": "Hermetyczny czujnik pozycji do pedałów czuwaka i sterowania w trudnych warunkach środowiskowych."
+      },
+      {
+        "producent": "Sensata / BEI Sensors",
+        "kategoria": "Enkodery inkrementalne",
+        "opis_kategorii": "Rozdzielczość do 80 000 imp/obr, IP65 | ATEX, IECEx",
+        "rodzina": "Sensata/BEI DHO5",
+        "opis_rodziny": "Optyczny enkoder wałkowy odporny na wstrząsy i wibracje, służący do precyzyjnego sterowania dźwignią zadajnika jazdy/hamowania (master controller)."
+      },
+      {
+        "producent": "Sensata / Crydom",
+        "kategoria": "Przekaźniki półprzewodnikowe PCB",
+        "opis_kategorii": "240VAC/100VDC, 2-6A, IP67 | IEC 62314",
+        "rodzina": "CN Series",
+        "opis_rodziny": "Wąski przekaźnik wtykowy/PCB o szerokości 5mm, idealny do gęstego montażu na płytkach sterujących w pulpitach i interfejsach HMI."
+      },
+      {
+        "producent": "Sensata / Crydom",
+        "kategoria": "Przekaźniki czasowe DIN",
+        "opis_kategorii": "60VDC/280VAC, 6A, IP20 | UL 508, IEC 62314",
+        "rodzina": "SeriesOne DR Timer",
+        "opis_rodziny": "Kompaktowy przekaźnik czasowy (8 funkcji) na szynę DIN do realizacji logiki opóźnień w sterowaniu kabinowym."
+      },
+      {
+        "producent": "Sensata / Cynergy3",
+        "kategoria": "Przekaźniki kontaktronowe",
+        "opis_kategorii": "Izolacja 4-5kV DC, Prąd przenoszenia 2.5A, 100W | UL Approved",
+        "rodzina": "Seria S8 / S Series",
+        "opis_rodziny": "Kompaktowe przekaźniki o wysokiej izolacji do separacji obwodów sterowniczych w pulpitach HMI."
+      },
+      {
+        "producent": "Sensata / Kavlico",
+        "kategoria": "Czujniki Pozycji Obrotowej",
+        "opis_kategorii": "Zakres ±80°, Wyjście DC/DC lub AC/AC, Konstrukcja bezstykowa | RTCA/DO-160, MIL-STD-810",
+        "rodzina": "Seria RVDT",
+        "opis_rodziny": "Pomiar kąta wychylenia w zadajnikach jazdy i nastawnikach kierunkowych, odporny na wibracje i trudne warunki."
+      },
+      {
+        "producent": "Sensata / Kavlico",
+        "kategoria": "Czujniki Siły",
+        "opis_kategorii": "Zakres ±10 do ±2000 lbs, Temp. -54°C do +204°C, MTBF 1mln h | RTCA/DO-160, MIL-STD-810",
+        "rodzina": "Seria LVDT Force",
+        "opis_rodziny": "Pomiar siły operatora w drążkach sterowych (Active Inceptor) i pedałach czuwaka."
+      },
+      {
+        "producent": "Sensata / Kavlico",
+        "kategoria": "Przełączniki Ciśnienia z Wyświetlaczem",
+        "opis_kategorii": "0-16 bar (PS1A), 0-600 bar (PS1B), Wyjście PNP/NPN + 4-20mA | cULus, CE, RoHS",
+        "rodzina": "Seria PS1A / PS1B",
+        "opis_rodziny": "Lokalna wizualizacja ciśnienia i sygnalizacja progowa dla maszynisty (np. ciśnienie w przewodzie głównym)."
+      }
+    ],
+    "Wagony i przestrzeń pasażerska": [
+      {
+        "producent": "EAO",
+        "kategoria": "Przyciski, przełaczniko, sygnalizaty dźwiękowe, świetlne i świetlno-dźwiękowe",
+        "opis_kategorii": "System dostępu dla pasażerów\n\nW zastosowaniach związanych z dostępem pasażerów interfejs HMI musi być intuicyjny, łatwy do zauważenia i zrozumienia oraz zapewniać czytelne informacje zwrotne dla pasażera.\n\nProduktyfirmy EAO umożliwiają również osobom z niepełnosprawnościami bezpieczne i komfortowe podróżowanie — od wejścia do pojazdu aż do jego opuszczenia.",
+        "rodzina": "Seria 56",
+        "opis_rodziny": "System dostępu dla pasażerów – intuicyjna, certyfikowana seria 56\n\nUnikalne sprzężenie dotykowe\n\nZgodność z TSI PRM\n\nWyjątkowa niezawodność długoterminowa\n\nSzeroka gama produktów\n\nRóżnorodne opcje montażu\n\nMożliwość indywidualnej konfiguracji"
+      },
+      {
+        "producent": "EAO",
+        "kategoria": "Systemy otwierania drzwi",
+        "opis_kategorii": "24 VDC, Ø 74 mm, IP69K | EN 14752, TSI PRM, ADA, EN 50155, EN 45545",
+        "rodzina": "Series 57",
+        "opis_rodziny": "\"Wszystko w jednym\": przycisk otwierania drzwi ze zintegrowanym podświetleniem i dźwiękiem, w pełni dostępny dla osób o ograniczonej mobilności."
+      },
+      {
+        "producent": "EAO",
+        "kategoria": "Sygnalizacja ostrzegawcza",
+        "opis_kategorii": "24 VDC, 90 dB @ 10cm, IP67 | TSI PRM, EN 50155, EN 45545",
+        "rodzina": "Series 57 MTWI (Multi-Tone Warning Indicator)",
+        "opis_rodziny": "Zintegrowany moduł ostrzegawczy łączący sygnał wizualny (LED) i akustyczny (Multi-Tone) do sygnalizacji pracy drzwi."
+      },
+      {
+        "producent": "EAO",
+        "kategoria": "Przyciski pasażerskie",
+        "opis_kategorii": "Żywotność > 5 mln cykli, IP67/IP65 | EN 50155, TSI PRM, EN 14752",
+        "rodzina": "Series 56",
+        "opis_rodziny": "Niezawodne przyciski do systemów dostępu pasażerskiego i obsługi toalet, sprawdzone w milionach aplikacji na całym świecie."
+      },
+      {
+        "producent": "EAO",
+        "kategoria": "System informacji pasażerskiej",
+        "opis_kategorii": "24 VDC, Jasność >1000 cd/m2, IP20 | EN 50155, EN 45545-2",
+        "rodzina": "Seat Reservation System (SRS)",
+        "opis_rodziny": "Elektroniczny system wyświetlania rezerwacji miejsc z jasnymi wskaźnikami LED (zielony/czerwony/pomarańczowy) widocznymi z daleka."
+      },
+      {
+        "producent": "EAO",
+        "kategoria": "Komfort pasażera",
+        "opis_kategorii": "USB-A, USB-C, Ładowanie indukcyjne | Certyfikacja kolejowa",
+        "rodzina": "Passenger Interface (Charging)",
+        "opis_rodziny": "Rozwiązanie do ładowania urządzeń mobilnych (przewodowe i bezprzewodowe) montowane w fotelach lub ścianach bocznych."
+      },
+      {
+        "producent": "Knick",
+        "kategoria": "Przetworniki wysokiego napięcia",
+        "opis_kategorii": "Wejście ±500V do ±3000V, SIL 2/3 | EN 50155, EN 45545-2",
+        "rodzina": "Seria P45000",
+        "opis_rodziny": "Monitorowanie napięcia w pomocniczych przetwornicach mocy (Auxiliary Converter) zasilających instalacje pokładowe i HVAC."
+      },
+      {
+        "producent": "Mersen",
+        "kategoria": "Bezpieczniki pomocnicze DC",
+        "opis_kategorii": "600V-1500V DC, 2-30A, ferrule 10x38mm | IEC 60269, UL Recognized",
+        "rodzina": "Mersen MDC Series",
+        "opis_rodziny": "Ochrona obwodów pomocniczych wysokiego napięcia (HVAC, przetwornice oświetleniowe) o niskich stratach mocy."
+      },
+      {
+        "producent": "Phoenix Contact",
+        "kategoria": "Złącza sygnałowe i danych",
+        "opis_kategorii": "10 Gb/s (Cat. 6A), IP65/67, ekranowanie 360° | EN 45545-2, IEC 61076-2-010, IEC 61373",
+        "rodzina": "M12 RAIL (Push-Pull)",
+        "opis_rodziny": "Odporne na wibracje złącza z szybką blokadą do systemów infotainment, CCTV i Wi-Fi w pojeździe."
+      },
+      {
+        "producent": "Phoenix Contact",
+        "kategoria": "Komunikacja sieciowa",
+        "opis_kategorii": "Porty M12, PoE, IP67, -40°C do +70°C | EN 50155, IEC 61850-3",
+        "rodzina": "FL SWITCH 2000/2600/2700 (IP67)",
+        "opis_rodziny": "Zarządzalne przełączniki Ethernet o wysokiej szczelności do montażu poza szafą, zasilające kamery i Access Pointy."
+      },
+      {
+        "producent": "Sensata",
+        "kategoria": "Czujniki ciśnienia",
+        "opis_kategorii": "0-750 psi, wyjście ratiometryczne | IP67, Certyfikaty wody pitnej",
+        "rodzina": "Sensata 35CP / 2CP5",
+        "opis_rodziny": "Solidny czujnik ciśnienia do monitorowania czynnika chłodniczego w HVAC lub ciśnienia w instalacjach wodnych toalet (wersje z atestem higienicznym)."
+      },
+      {
+        "producent": "Sensata / Airpax",
+        "kategoria": "Wyłącznik hydrauliczno-magnetyczny",
+        "opis_kategorii": "0.05-100A, do 415VAC / 80VDC | UL 489, UL 1077, EN 60947-2",
+        "rodzina": "IAL / IUL / IEL",
+        "opis_rodziny": "Uniwersalne zabezpieczenie obwodów HVAC i drzwi, odporne na uciążliwe wyzwalania (nuisance tripping) przy zmianach temperatury otoczenia."
+      },
+      {
+        "producent": "Sensata / Airpax",
+        "kategoria": "Termostat bimetaliczny",
+        "opis_kategorii": "Temp. 40°C-130°C, 0.5A 48VDC | cRUus, VDE",
+        "rodzina": "Seria 6700",
+        "opis_rodziny": "Subminiaturowy termostat w obudowie TO-220 do monitorowania temperatury na płytkach PCB w sterownikach klimatyzacji i drzwi."
+      },
+      {
+        "producent": "Sensata / BEI Sensors",
+        "kategoria": "Enkoder Absolutny",
+        "opis_kategorii": "Jednoobrotowy 12-bit, Analog/CAN/IO-Link | IP65, IEC 61000",
+        "rodzina": "Seria ACW4",
+        "opis_rodziny": "Kompaktowy czujnik do monitorowania pozycji klap HVAC oraz mechanizmów otwierania drzwi."
+      },
+      {
+        "producent": "Sensata / BEI Sensors",
+        "kategoria": "Enkoder Linkowy (Draw Wire)",
+        "opis_kategorii": "Zakres do 3m, Wyjście cyfrowe/analogowe | IP65",
+        "rodzina": "Seria CD120",
+        "opis_rodziny": "Czujnik linkowy do liniowego pomiaru szerokości otwarcia drzwi wagonowych lub wysuwu stopni."
+      },
+      {
+        "producent": "Sensata / BEI Sensors",
+        "kategoria": "Enkoder Absolutny",
+        "opis_kategorii": "Wieloobrotowy 16-bit, IO-Link/CANopen | IP65, IEC 61000",
+        "rodzina": "Seria TCW4",
+        "opis_rodziny": "Enkoder z pamięcią pozycji (bezbateryjny) do systemów wymagających zachowania pozycji po zaniku zasilania."
+      },
+      {
+        "producent": "Sensata / Crydom",
+        "kategoria": "Styczniki półprzewodnikowe DIN",
+        "opis_kategorii": "600VAC, 35A, IP20 | IEC 61373, IEC 60068-2",
+        "rodzina": "NOVA22 DR22",
+        "opis_rodziny": "Stycznik AC odporny na wibracje i wstrząsy (kolejowa norma IEC 61373), dedykowany do systemów grzewczych i HVAC w taborze."
+      },
+      {
+        "producent": "Sensata / Crydom",
+        "kategoria": "Styczniki półprzewodnikowe DIN",
+        "opis_kategorii": "600VAC, 60A, IP20 | IEC 61373, UL 508",
+        "rodzina": "NOVA22 DR45",
+        "opis_rodziny": "Mocny stycznik AC zintegrowany z radiatorem, zgodny z normą kolejową, do sterowania głównymi obwodami grzewczymi i klimatyzacją."
+      },
+      {
+        "producent": "Sensata / Crydom",
+        "kategoria": "Styczniki rewersyjne silnikowe",
+        "opis_kategorii": "480VAC, 7.6A, IP20 | UL 508, IEC 60947-4-2",
+        "rodzina": "DRC3 Series",
+        "opis_rodziny": "Kompaktowy stycznik rewersyjny do sterowania silnikami 3-fazowymi (np. kompresory HVAC, napędy drzwi) z wbudowaną blokadą."
+      },
+      {
+        "producent": "Sensata / Crydom",
+        "kategoria": "Przekaźniki panelowe",
+        "opis_kategorii": "280VAC/100VDC, 30A, IP00/IP20 | UL 508, IEC 60335-1",
+        "rodzina": "EL Series",
+        "opis_rodziny": "Mały przekaźnik panelowy z opcją złącz Faston, idealny do ekspresów do kawy, oświetlenia i wyposażenia toalet (certyfikat TUV)."
+      },
+      {
+        "producent": "Sensata / Cynergy3",
+        "kategoria": "Przełączniki poziomu cieczy",
+        "opis_kategorii": "Montaż M12/NPT, materiał PPS/Nylon | WRAS, NSF",
+        "rodzina": "Sensata/Cynergy3 RSF50",
+        "opis_rodziny": "Pionowy przełącznik pływakowy do monitorowania poziomu wody w zbiornikach toaletowych lub tacach skroplin w systemach klimatyzacji."
+      },
+      {
+        "producent": "Sensata / Cynergy3",
+        "kategoria": "Pływakowe czujniki poziomu",
+        "opis_kategorii": "Montaż wewnętrzny, materiały: Polipropylen, Nylon, Stal 316L | WRAS, NSF",
+        "rodzina": "Seria RSF50 / SSF22",
+        "opis_rodziny": "Monitorowanie poziomu wody w zbiornikach toaletowych (szara woda) oraz w ekspresach gastronomicznych."
+      },
+      {
+        "producent": "Sensata / Cynergy3",
+        "kategoria": "Przełączniki przepływu",
+        "opis_kategorii": "Start przepływu od 0.6 l/min, przyłącza 15/22mm lub NPT | WRAS, NSF",
+        "rodzina": "Seria FS / FSU",
+        "opis_rodziny": "Wykrywanie przepływu wody w systemach sanitarnych i pętlach chłodzenia elektroniki, zapobieganie pracy pomp na sucho."
+      },
+      {
+        "producent": "Sensata / Gigavac",
+        "kategoria": "Styczniki hermetyczne DC",
+        "opis_kategorii": "400A, 800V DC, cewka z tłumieniem | IP67, UL508",
+        "rodzina": "Gigavac GV24",
+        "opis_rodziny": "Kompaktowy, hermetyczny stycznik gazowy do sterowania zasilaniem układów klimatyzacji (HVAC) oraz głównych obwodów pomocniczych w wagonach."
+      },
+      {
+        "producent": "Sensata / Kavlico",
+        "kategoria": "Czujniki Ciśnienia (Ceramiczne)",
+        "opis_kategorii": "Zakres próżnia do 16 Bar, SS304, Złącza M12/DIN | cULus, CE, RoHS",
+        "rodzina": "Seria P1A",
+        "opis_rodziny": "Kompaktowy czujnik do systemów sanitarnych (woda szara/czysta) oraz pneumatyki drzwi i stopni."
+      },
+      {
+        "producent": "Sensata / Kavlico",
+        "kategoria": "Czujniki Ciśnienia (Chłodnictwo)",
+        "opis_kategorii": "0-70 Bar, Porty SAE z deflatorem Schradera, Temp -40/+125°C | CE, RoHS",
+        "rodzina": "Seria P528",
+        "opis_rodziny": "Dedykowany do czynników chłodniczych w agregatach klimatyzacyjnych, uszczelnienia kompatybilne z olejami HVAC."
+      },
+      {
+        "producent": "Sensata / Kavlico",
+        "kategoria": "Różnicowe Czujniki Niskiego Ciśnienia",
+        "opis_kategorii": "1-10 cali H2O, Montaż PCB, Obudowa PET | cULus, RoHS",
+        "rodzina": "Seria P992 / P993",
+        "opis_rodziny": "Monitorowanie stanu filtrów powietrza i przepływu w kanałach wentylacyjnych w przedziałach pasażerskich."
+      },
+      {
+        "producent": "Sensata / Kavlico",
+        "kategoria": "Cyfrowe Czujniki Różnicowe",
+        "opis_kategorii": "2-10 cali H2O, Wyjście SPI / I2C | RoHS",
+        "rodzina": "Seria P1J",
+        "opis_rodziny": "Cyfrowy pomiar przepływu w systemach zmiennej objętości powietrza (VAV) dla precyzyjnej kontroli klimatu."
+      },
+      {
+        "producent": "Sensata / Kavlico",
+        "kategoria": "Czujniki ciśnienia",
+        "opis_kategorii": "0-600 bar, IP67, wyjścia analogowe | UL, REACH/RoHS",
+        "rodzina": "Seria PTE7100",
+        "opis_rodziny": "Hermetyczne pomiary ciśnienia czynnika chłodniczego w układach klimatyzacji oraz mediów w systemach sanitarnych."
+      },
+      {
+        "producent": "Sensata / Klixon",
+        "kategoria": "Presostaty (Wyłączniki ciśnieniowe)",
+        "opis_kategorii": "Reset automatyczny, uszczelnienie środowiskowe | ATEX (opcja)",
+        "rodzina": "Seria 20PS / PS80",
+        "opis_rodziny": "Zabezpieczenie HPCO (High Pressure Cut-Out) w układach HVAC chroniące sprężarki przed uszkodzeniem."
+      },
+      {
+        "producent": "EAO",
+        "kategoria": "przyciski, lampki, wyłaczniki awaryjne, przełączniki kluczykowe, pokrętne, hebelkowe, potencjometry, wskaźniki Multi-Legend",
+        "opis_kategorii": "EAO ściśle współpracuje z doświadczonymi producentami oraz operatorami pojazdów szynowych, opracowując elementy sterujące do kabin maszynisty, które spełniają zarówno oczekiwania klientów, jak i międzynarodowe normy oraz specyfikacje.",
+        "rodzina": "Seria 84",
+        "opis_rodziny": "Atrakcyjny design i niezawodne działanie\n\nStopień ochrony IP67 od strony czołowej\n\nMocne i równomierne podświetlenie\n\nDostępne z wyprowadzeniami lutowanymi, wtykowymi, PCB oraz z taśmą płaską\n\nMożliwość montażu na uchwytach oraz na ścianach\n\nSymbole dotykowe zgodne z TSI PRM"
+      },
+      {
+        "producent": "EAO",
+        "kategoria": "przyciski, lampki, wyłaczniki awaryjne, przełączniki kluczykowe, pokrętne, hebelkowe, potencjometry, wskaźniki Multi-Legend",
+        "opis_kategorii": "EAO ściśle współpracuje z doświadczonymi producentami oraz operatorami pojazdów szynowych, opracowując elementy sterujące do kabin maszynisty, które spełniają zarówno oczekiwania klientów, jak i międzynarodowe normy oraz specyfikacje.",
+        "rodzina": "Multi-Legend Alarm Indicators",
+        "opis_rodziny": "Elastyczny, jasny i niezawodny wskaźnik ostrzegawczy o głębokości panelu tylnego 8 mm, co czyni go idealnym rozwiązaniem do kabiny maszynisty. Modułowy interfejs HMI upraszcza monitorowanie usterek, przyczyniając się do zwiększenia bezpieczeństwa w zastosowaniach kolejowych.\n\nZalety:\n\nKonfigurowalny rozmiar panelu oraz symbole\n\nSzybkie dostosowanie do wymagań specyficznych dla klienta\n\nMożliwość dodawania dodatkowych funkcji\n\nUltrapłaska konstrukcja (< 8 mm), idealna do kabin maszynisty\n\nJasne, równomierne podświetlenie widoczne w każdych warunkach oświetleniowych"
+      },
+      {
+        "producent": "EAO",
+        "kategoria": "Przyciski, przełaczniko, sygnalizaty dźwiękowe, świetlne i świetlno-dźwiękowe",
+        "opis_kategorii": "System dostępu dla pasażerów\n\nW zastosowaniach związanych z dostępem pasażerów interfejs HMI musi być intuicyjny, łatwy do zauważenia i zrozumienia oraz zapewniać czytelne informacje zwrotne dla pasażera.\n\nProduktyfirmy EAO umożliwiają również osobom z niepełnosprawnościami bezpieczne i komfortowe podróżowanie — od wejścia do pojazdu aż do jego opuszczenia.",
+        "rodzina": "Seria 57",
+        "opis_rodziny": "Ulepszona wersja serii 56 Łączy funkcje\nWielotonowy wskaźnik ostrzegawczy\n\nWysoka elastyczność\n\nMożliwość dowolnych kombinacji\n\nNowa ramka przycisku wezwania pomocy\n\nPrzyjazna dla użytkownika, bardzo duża powierzchnia obsługi o średnicy Ø 74 mm\n\nDwa unikalne, podświetlane pierścienie sygnalizacyjne\n\nZgodność z TSI PRM\n\nZintegrowany sygnał dźwiękowy ułatwiający lokalizację przycisku\n\nOpcjonalna wersja trójkolorowa\n\nStopnie ochrony: IP65, IP67, IP69K, IK07"
+      },
+      {
+        "producent": "EAO",
+        "kategoria": "Przyciski, przełaczniko, sygnalizaty dźwiękowe, świetlne i świetlno-dźwiękowe",
+        "opis_kategorii": "System dostępu dla pasażerów\n\nW zastosowaniach związanych z dostępem pasażerów interfejs HMI musi być intuicyjny, łatwy do zauważenia i zrozumienia oraz zapewniać czytelne informacje zwrotne dla pasażera.\n\nProduktyfirmy EAO umożliwiają również osobom z niepełnosprawnościami bezpieczne i komfortowe podróżowanie — od wejścia do pojazdu aż do jego opuszczenia.",
+        "rodzina": "Multi Legend Display",
+        "opis_rodziny": "Elastyczny, jasny i niezawodny wskaźnik ostrzegawczy o głębokości panelu tylnego 8 mm, co czyni go idealnym rozwiązaniem do kabiny maszynisty. Modułowy interfejs HMI upraszcza monitorowanie usterek, przyczyniając się do zwiększenia bezpieczeństwa w zastosowaniach kolejowych.\n\nZalety:\n\nKonfigurowalny rozmiar panelu oraz symbole\n\nSzybkie dostosowanie do wymagań specyficznych dla klienta\n\nMożliwość dodawania dodatkowych funkcji\n\nUltrapłaska konstrukcja (< 8 mm), idealna do kabin maszynisty\n\nJasne, równomierne podświetlenie widoczne w każdych warunkach oświetleniowych"
+      },
+      {
+        "producent": "EAO",
+        "kategoria": "Przyciski, przełaczniko, sygnalizaty dźwiękowe, świetlne i świetlno-dźwiękowe",
+        "opis_kategorii": "System dostępu dla pasażerów\n\nW zastosowaniach związanych z dostępem pasażerów interfejs HMI musi być intuicyjny, łatwy do zauważenia i zrozumienia oraz zapewniać czytelne informacje zwrotne dla pasażera.\n\nProduktyfirmy EAO umożliwiają również osobom z niepełnosprawnościami bezpieczne i komfortowe podróżowanie — od wejścia do pojazdu aż do jego opuszczenia.",
+        "rodzina": "Ładowarki",
+        "opis_rodziny": "Certyfikowane kolejowo rozwiązania ładowania EAO pomagają operatorom kolejowym podnosić komfort podróży pasażerów, umożliwiając ładowanie telefonów, tabletów i laptopów w trakcie podróży.   Ładowarki EAO mogą być montowane na stolikach, oparciach siedzeń, ścianach, a nawet na poręczach, zapewniając usługę ładowania niemal każdemu pasażerowi. Dzięki nowym wielonapięciowym gniazdom USB-C Power Delivery / PPS firma EAO umożliwia również ładowanie laptopów oraz szybkie ładowanie telefonów za pomocą jednego złącza."
+      },
+      {
+        "producent": "Carlo Gavazzi",
+        "kategoria": "Przekaźniki Półprzewodnikowe",
+        "opis_kategorii": "1-faza, 600 VAC, 85A, Klasa OT3 (-25°C do +70°C) | EN 50155, EN 45545-2 (HL1/HL2), EN 61373",
+        "rodzina": "RGC (1-faza)",
+        "opis_rodziny": "Kompletny SSR z radiatorem do sterowania grzejnikami i bojlerami w wagonach. Odporny na wibracje i wstrząsy wg norm kolejowych"
+      },
+      {
+        "producent": "Carlo Gavazzi",
+        "kategoria": "Przekaźniki Półprzewodnikowe",
+        "opis_kategorii": "3-fazy, do 600 VAC, 65A/pol, Sterowanie DC | EN 50155, EN 45545-2, EN 50121-3-2",
+        "rodzina": "RGC2 / RGC3",
+        "opis_rodziny": "Przekażniki półprzewodnikowe 3-fazowy do sterowania silnikami wentylatorów i sprężarek HVAC. Wersje DC spełniają wymogi EMC dla taboru"
+      },
+      {
+        "producent": "Carlo Gavazzi",
+        "kategoria": "Przekaźniki Półprzewodnikowe",
+        "opis_kategorii": "Do 690 VAC, 90A, I²t 18000 A²s | EN 50155, EN 45545-2, EN 61373",
+        "rodzina": "RGS",
+        "opis_rodziny": "Wąski przekaźnik (slim) bez radiatora. Oszczędność miejsca w szafach sterowniczych, wymaga montażu na powierzchni chłodzącej"
+      }
+    ]
+  },
+  "Infrastruktura kolejowa (Railway Infrastructure)": {
+    "Sterowanie Ruchem Kolejowym - SRK (Sterowanie zwrotnicami, semaforami i sygnalizacją, systemy przejazdowe, obwody kontroli torów i zajętości, układy zależnościowe i bezpieczeństwa)": [
+      {
+        "producent": "Hengstler",
+        "kategoria": "Przekaźniki bezpieczeńsywa",
+        "opis_kategorii": "Przekaźniki bezpieczeństwa Hengstler z wymuszonym prowadzeniem styków zgodnie z normą IEC 61810-3 / EN 50205. Spełniają wymagania zgodnie z normą UIC 736 / EN 50578, jako przekaźniki typu „C”.\nSą zaprojektowane do monitorowania obwodów bezpieczeństwa w różnych systemach automatyki, a wszczególności w systemach sterowania ruchem kolejowym.",
+        "rodzina": "H-462",
+        "opis_rodziny": "Kompaktowy przekaźnik bezpieczeństwa z 4 lub 6 stykami, wysoką obciążalnością do 10 A i potwierdzonym bezpieczeństwem logicznym, odpowiedni do podstawowych funkcji bezpieczeństwa i sygnalizacji w kolejowych układach kontroli. Dostępne wersje neutralne monostabilne i bistabilne, AC oraz sterowane prądem obciążenia"
+      },
+      {
+        "producent": "Hengstler",
+        "kategoria": "Przekaźniki bezpieczeńsywa",
+        "opis_kategorii": "Przekaźniki bezpieczeństwa Hengstler z wymuszonym prowadzeniem styków zgodnie z normą IEC 61810-3 / EN 50205. Spełniają wymagania zgodnie z normą UIC 736 / EN 50578, jako przekaźniki typu „C”.\nSą zaprojektowane do monitorowania obwodów bezpieczeństwa w różnych systemach automatyki, a wszczególności w systemach sterowania ruchem kolejowym.",
+        "rodzina": "H-464 oraz H-466",
+        "opis_rodziny": "Podobne jak H-462 ale z większą liczbą styków (8 lub 10) i większymi możliwościami konfiguracji, co pozwala na zaawansowane monitorowanie wielu obwodów bezpieczeństwa i integrację z bardziej rozbudowanymi systemami sterowania w infrastrukturze kolejowej. H-464 ma konstrukcję pionową (stojącą), H-466 ma konstrukcję poziomą (leżącą)"
+      },
+      {
+        "producent": "Hengstler",
+        "kategoria": "Przekaźniki bezpieczeńsywa",
+        "opis_kategorii": "Przekaźniki bezpieczeństwa Hengstler z wymuszonym prowadzeniem styków zgodnie z normą IEC 61810-3 / EN 50205. Spełniają wymagania zgodnie z normą UIC 736 / EN 50578, jako przekaźniki typu „C”.\nSą zaprojektowane do monitorowania obwodów bezpieczeństwa w różnych systemach automatyki, a wszczególności w systemach sterowania ruchem kolejowym.",
+        "rodzina": "H-472 oraz H-473",
+        "opis_rodziny": "Mniejsze, o konstrukcji poziomej (leżącej), przekaźniki bezpieczeństwa z liczbą styków 5 lub 7, które mogą być używane tam, gdzie potrzebna jest kompaktowa, ale niezawodna logika bezpieczeństwa. W odróżnieniu od pozostałych rodzin, posiadają cewkę DC spolaryzowaną."
+      },
+      {
+        "producent": "Mersen",
+        "kategoria": "Bezpieczniki cylindryczne",
+        "opis_kategorii": "690V AC / 500V DC, wysoka zdolność zwarciowa | IEC 60269-4",
+        "rodzina": "Ferrule Fuses 14x51 / 22x58 gR",
+        "opis_rodziny": "Kompaktowa ochrona napędów zwrotnicowych i obwodów zasilania urządzeń przytorowych."
+      },
+      {
+        "producent": "nVent Schroff",
+        "kategoria": "Szafy Zewnętrzne",
+        "opis_kategorii": "Podwójne ścianki aluminiowe, Montaż na słupie | Klasa zewnętrzna, odporność na korozję",
+        "rodzina": "Unibody",
+        "opis_rodziny": "Jednościenna lub dwuścienna szafa aluminiowa do systemów komunikacji i informacji pasażerskiej na stacjach i peronach."
+      },
+      {
+        "producent": "Phoenix Contact",
+        "kategoria": "Ochrona przepięciowa",
+        "opis_kategorii": "DB RIL 819.0808, IEC 61643-21",
+        "rodzina": "CLIXTRAB",
+        "opis_rodziny": "Wąskie, wtykane ograniczniki przepięć dedykowane do systemów sterowania ruchem z funkcją zdalnej diagnostyki."
+      },
+      {
+        "producent": "Phoenix Contact",
+        "kategoria": "Przekaźniki",
+        "opis_kategorii": "Cewka 24-110V DC, styki złocone | EN 50155, EN 50121, EN 45545-2",
+        "rodzina": "PLC-INTERFACE (PLC-RPT)",
+        "opis_rodziny": "Wąskie przekaźniki sprzęgające odporne na wibracje, służące do separacji i dopasowania sygnałów w systemach SRK."
+      },
+      {
+        "producent": "Sensata / Airpax",
+        "kategoria": "Wyłącznik precyzyjny",
+        "opis_kategorii": "0.05-50A, 80VDC / 240VAC | UL 489, UL 1077, IEC 60947-2",
+        "rodzina": "IAG / IUG / IEG",
+        "opis_rodziny": "Wyłącznik o podwyższonej izolacji (odstępy izolacyjne wg IEC), zapewniający precyzyjne zabezpieczenie czułej elektroniki sygnalizacyjnej."
+      },
+      {
+        "producent": "Sensata / BEI Sensors",
+        "kategoria": "Enkoder Bezpieczeństwa",
+        "opis_kategorii": "SIL3 / PLe, Wał drążony, HTL/TTL | IEC 61508, ISO 13849-1",
+        "rodzina": "Seria DSO5",
+        "opis_rodziny": "Enkoder do krytycznych systemów bezpieczeństwa wymagających redundantnego monitorowania ruchu."
+      },
+      {
+        "producent": "Sensata / BEI Sensors",
+        "kategoria": "Enkoder Absolutny",
+        "opis_kategorii": "Wał 30mm, SSI, Rozdzielczość 13+12 bit | IP65, EN 61000-6-2",
+        "rodzina": "Seria PHU9",
+        "opis_rodziny": "Solidny enkoder absolutny do precyzyjnego pozycjonowania w systemach automatyki kolejowej."
+      },
+      {
+        "producent": "Sensata / Crydom",
+        "kategoria": "Przekaźniki monitorujące",
+        "opis_kategorii": "280VAC, 90A, Alarm Output | IEC 62314",
+        "rodzina": "SMR-6 Series",
+        "opis_rodziny": "Przekaźnik z funkcją monitorowania ciągłości obwodu i wykrywania awarii, kluczowy w systemach bezpieczeństwa i sygnalizacji."
+      },
+      {
+        "producent": "Sensata / Crydom",
+        "kategoria": "Przekaźniki PCB",
+        "opis_kategorii": "660VAC, 5A, PCB Mount | IEC 60335-1",
+        "rodzina": "MCX Series",
+        "opis_rodziny": "Wysokonapięciowy przekaźnik do montażu na płytkach drukowanych w sterownikach przytorowych i systemach automatyki."
+      },
+      {
+        "producent": "Sensata / Cynergy3",
+        "kategoria": "Przekaźniki kontaktronowe RF",
+        "opis_kategorii": "Izolacja 9kV DC, 6A @ 30MHz, pełne ekranowanie cewki",
+        "rodzina": "Seria FRD13000",
+        "opis_rodziny": "Przełączanie sygnałów wcz. w systemach łączności radiowej i systemach antenowych."
+      },
+      {
+        "producent": "Sensata / Cynergy3",
+        "kategoria": "Przekaźniki kontaktronowe RF",
+        "opis_kategorii": "Pasmo do 30 MHz, prąd przenoszenia 5A RF, otwarta ramka",
+        "rodzina": "Seria FRS12000",
+        "opis_rodziny": "Komutacja sygnałów w urządzeniach nadawczo-odbiorczych SRK."
+      }
+    ],
+    "Podstacje Trakcyjne i Zasilanie": [
+      {
+        "producent": "Knick",
+        "kategoria": "Przetworniki wysokiego napięcia",
+        "opis_kategorii": "Wejście ±60mV do ±100V, Izolacja 3600V AC/DC, Test 15kV AC | EN 61140, UL 347",
+        "rodzina": "Seria P41000",
+        "opis_rodziny": "Uniwersalny przetwornik do pomiaru prądu (przez bocznik) w podstacjach DC."
+      },
+      {
+        "producent": "Knick",
+        "kategoria": "Przetworniki wysokiego napięcia",
+        "opis_kategorii": "Wejście ±100V do ±3600V, Izolacja 3600V AC/DC, Test 15kV AC | EN 61140",
+        "rodzina": "Seria P42000",
+        "opis_rodziny": "Przetwornik do pomiaru wysokich napięć stałych w podstacjach trakcyjnych 750V, 1500V i 3000V DC."
+      },
+      {
+        "producent": "Knick",
+        "kategoria": "Przetworniki wysokiego napięcia",
+        "opis_kategorii": "Wejście do ±1000V, Izolacja podstawowa 1000V AC/DC | EN 50124",
+        "rodzina": "Seria P29000",
+        "opis_rodziny": "Przetwornik napięcia i prądu do zastosowań o umiarkowanych wymaganiach izolacyjnych."
+      },
+      {
+        "producent": "Knick",
+        "kategoria": "Detekcja napięcia",
+        "opis_kategorii": "Progi 50-4200V, Izolacja 4800V | EN 50123-1, EN 50155",
+        "rodzina": "Seria P52000VPD",
+        "opis_rodziny": "Detektor obecności napięcia (VPD) do monitorowania szyn prądowych i sterowania odłącznikami."
+      },
+      {
+        "producent": "Knick",
+        "kategoria": "Pomiar temperatury",
+        "opis_kategorii": "Wejście Pt100, Izolacja 6600V AC/DC, Test 15kV AC | EN 50124-1",
+        "rodzina": "Seria P44000",
+        "opis_rodziny": "Przetwornik temperatury do monitorowania szyn zbiorczych i prostowników przy wysokim potencjale (High Pot)."
+      },
+      {
+        "producent": "Mersen",
+        "kategoria": "Odłączniki mocy DC",
+        "opis_kategorii": "do 3000V DC, 200kA peak, napęd silnikowy/ręczny | IEC 60077-2, EN 50123",
+        "rodzina": "High Power Switches (Disconnect)",
+        "opis_rodziny": "Izolacja sekcji sieci trakcyjnej lub prostowników w podstacjach, widoczna przerwa izolacyjna."
+      },
+      {
+        "producent": "Mersen",
+        "kategoria": "Ograniczniki przepięć trakcyjne",
+        "opis_kategorii": "10kA / 20kA (klasa wyładowania) | IEC 60099-4",
+        "rodzina": "Surge Arresters (Enclosed / Station)",
+        "opis_rodziny": "Ochrona podstacji i linii zasilających przed wyładowaniami atmosferycznymi i przepięciami sieciowymi."
+      },
+      {
+        "producent": "Phoenix Contact",
+        "kategoria": "Złączki szynowe",
+        "opis_kategorii": "0.14-300 mm², Push-in/Side-entry | EN 45545-2 R22/R23, EN 50155, IEC 61373",
+        "rodzina": "CLIPLINE complete (PT/PTV/ST)",
+        "opis_rodziny": "System złączek szynowych odpornych na ekstremalne wibracje do dystrybucji potencjałów w szafach sterowniczych."
+      },
+      {
+        "producent": "Sensata",
+        "kategoria": "Monitorowanie izolacji",
+        "opis_kategorii": "Pomiar prądu, napięcia i izolacji | Precyzja pomiaru",
+        "rodzina": "Sensata/Sendyne",
+        "opis_rodziny": "Moduły do monitorowania stanu izolacji i przepływu energii w systemach magazynowania energii (ESS) przy podstacjach."
+      },
+      {
+        "producent": "Sensata / Airpax",
+        "kategoria": "Wyłącznik przemysłowy E-Frame",
+        "opis_kategorii": "0.1-100A, 600VAC / 125VDC, montaż DIN | UL 489, UL 1077, CSA",
+        "rodzina": "Seria 209 / 219 / 229",
+        "opis_rodziny": "Wytrzymały wyłącznik do obwodów pomocniczych w podstacjach, obsługujący wyższe napięcia przemysłowe i duże prądy zwarciowe."
+      },
+      {
+        "producent": "Sensata / BEI Sensors",
+        "kategoria": "Enkoder IO-Link",
+        "opis_kategorii": "IO-Link 1.1, Diagnostyka stanu | IP65, IEC 61000-4",
+        "rodzina": "Seria THM5 / THK5",
+        "opis_rodziny": "Inteligentny enkoder do monitorowania położenia odłączników i uziemników z zdalną diagnostyką."
+      },
+      {
+        "producent": "Sensata / BEI Sensors",
+        "kategoria": "Bariera Iskrobezpieczna",
+        "opis_kategorii": "Zasilanie 12-28V DC, Wyjście TTL/OC | ATEX Ex ia, UL",
+        "rodzina": "Seria 60004",
+        "opis_rodziny": "Separator galwaniczny do bezpiecznego przesyłu sygnałów enkodera ze stref zagrożonych wybuchem (np. akumulatorownie)."
+      },
+      {
+        "producent": "Sensata / Crydom",
+        "kategoria": "Styczniki wysokoprądowe",
+        "opis_kategorii": "660VAC, 150A, 1200Vpk | IEC 61000-4, UL 508",
+        "rodzina": "HAC Series",
+        "opis_rodziny": "Przekaźnik panelowy o bardzo wysokiej obciążalności prądowej do sterowania głównymi liniami zasilania w podstacjach."
+      },
+      {
+        "producent": "Sensata / Crydom",
+        "kategoria": "Przekaźniki panelowe HV",
+        "opis_kategorii": "530VAC, 125A, 1200Vpk | IEC 61000-4, IEC 60068-2",
+        "rodzina": "H1 Series (H12D)",
+        "opis_rodziny": "Przekaźnik o podwyższonej odporności na przepięcia (1200V) do pracy w trudnych warunkach zasilania sieciowego."
+      },
+      {
+        "producent": "Sensata / Crydom",
+        "kategoria": "Przekaźniki panelowe AC",
+        "opis_kategorii": "660VAC, 125A, SCR Output | IEC 61000-4, EN 60950-1",
+        "rodzina": "CW Series",
+        "opis_rodziny": "Wytrzymały przekaźnik z wyjściem tyrystorowym, bez epoksydów, do ciężkich obciążeń indukcyjnych w infrastrukturze."
+      },
+      {
+        "producent": "Sensata / Cynergy3",
+        "kategoria": "Przekaźniki kontaktronowe HV",
+        "opis_kategorii": "Izolacja do 15kV DC, moc 50W, styki wolframowe",
+        "rodzina": "Seria D (Large)",
+        "opis_rodziny": "Separacja obwodów pomiarowych wysokiego napięcia w systemach monitorowania podstacji."
+      },
+      {
+        "producent": "Sensata / Gigavac",
+        "kategoria": "Przekaźniki wysokiego napięcia",
+        "opis_kategorii": "70kV izolacji, 10A ciągły | Wypełnienie SF6",
+        "rodzina": "Gigavac G71",
+        "opis_rodziny": "Kompaktowy przekaźnik wysokiego napięcia do systemów diagnostycznych, testowania izolacji kabli trakcyjnych i rozłączania obwodów HV o małym prądzie."
+      },
+      {
+        "producent": "Sensata / Gigavac",
+        "kategoria": "Styczniki przemysłowe",
+        "opis_kategorii": "350A, 750V DC, cewka dwuzwojowa | IP67, UL",
+        "rodzina": "Gigavac GX14",
+        "opis_rodziny": "Uniwersalny stycznik hermetyczny do sterowania obwodami pomocniczymi w podstacjach, odporny na zapylenie i wilgoć."
+      },
+      {
+        "producent": "Sensata / Gigavac",
+        "kategoria": "Styczniki wysokiego napięcia DC",
+        "opis_kategorii": "Hermetyzacja gazowa, 1000V DC, prąd ciągły do 400A | UL, CE",
+        "rodzina": "Seria Gigavac SGX",
+        "opis_rodziny": "Rozłączanie obwodów DC w podstacjach, odporność na łuk elektryczny i warunki środowiskowe."
+      },
+      {
+        "producent": "Sensata / Kavlico",
+        "kategoria": "Styczniki Wysokonapięciowe DC",
+        "opis_kategorii": "400V - 800V DC | Brak danych w pliku",
+        "rodzina": "Seria HEC",
+        "opis_rodziny": "Bezpieczne rozłączanie obwodów prądu stałego w infrastrukturze zasilania i magazynach energii."
+      },
+      {
+        "producent": "Sensata / Kavlico",
+        "kategoria": "Czujniki Ciśnienia (Przemysłowe)",
+        "opis_kategorii": "0-70 Bar, IP67, Wyjście ratiometryczne 0.5-4.5V | cULus, CE, RoHS",
+        "rodzina": "Seria P500",
+        "opis_rodziny": "Monitorowanie ciśnienia w układach chłodzenia transformatorów energetycznych i pompach."
+      },
+      {
+        "producent": "Carlo Gavazzi",
+        "kategoria": "Analizatory Sieci",
+        "opis_kategorii": "Klasa 0.5S/0.2, Modbus/Ethernet/BACnet/Profibus | EN 62053-22, MID",
+        "rodzina": "WM20 / WM30 / WM40",
+        "opis_rodziny": "Modułowe analizatory do monitorowania jakości energii i parametrów sieci w podstacjach. Możliwość rozbudowy o moduły komunikacyjne i I/O"
+      },
+      {
+        "producent": "Carlo Gavazzi",
+        "kategoria": "Przekładniki Prądowe",
+        "opis_kategorii": "40-4000A, wtórny 1A/5A, rdzeń stały/dzielony | IEC 61869-2",
+        "rodzina": "Seria CTD / CTA",
+        "opis_rodziny": "Przekładniki prądowe do współpracy z licznikami w rozdzielniach. Wersje z dzielonym rdzeniem (CTA) do instalacji bez odłączania torów prądowych"
+      }
+    ],
+    "Centra kontroli i pomieszczenia techniczne": [
+      {
+        "producent": "Mersen",
+        "kategoria": "Ograniczniki przepięć zasilania",
+        "opis_kategorii": "Typ 2, 40kA, wymienne wkładki | IEC 61643-11, UL 1449",
+        "rodzina": "Surge-Trap® Pluggable STPT2",
+        "opis_rodziny": "Ochrona rozdzielnic zasilających serwerownie i systemy sterowania ruchem przed przepięciami łączeniowymi."
+      },
+      {
+        "producent": "nVent Schroff",
+        "kategoria": "Szafy Serwerowe",
+        "opis_kategorii": "Strefa sejsmiczna Bellcore 4, EMC do 18GHz | IEC 61587-2, EN 61000-5-7",
+        "rodzina": "Varistar CP (Seismic/EMC)",
+        "opis_rodziny": "Szafa teletechniczna do centrów sterowania ruchem, zapewniająca ochronę przed trzęsieniami ziemi i zaawansowane ekranowanie HF."
+      },
+      {
+        "producent": "nVent Schroff",
+        "kategoria": "Obudowy Desktop",
+        "opis_kategorii": "Chłodzenie aktywne, EMC | IEC 60297-3, IEEE 1101.x, IEC 61587-3",
+        "rodzina": "RatiopacPRO",
+        "opis_rodziny": "Uniwersalna obudowa 19\" do zastosowań w laboratoriach i pomieszczeniach technicznych, służąca do testowania i pomiarów."
+      },
+      {
+        "producent": "Phoenix Contact",
+        "kategoria": "Sterowanie i PLC",
+        "opis_kategorii": "Linux Yocto, IEC 61131-3, Redundancja | IEC 62443-4-1, EN 50121-4",
+        "rodzina": "PLCnext Control (RFC/AXC)",
+        "opis_rodziny": "Otwarta platforma sterowania do infrastruktury (np. wentylacja tuneli), obsługująca języki wysokiego poziomu i chmurę."
+      },
+      {
+        "producent": "Phoenix Contact",
+        "kategoria": "Cyberbezpieczeństwo",
+        "opis_kategorii": "Firewall, VPN, NAT, Deep Packet Inspection | IEC 62443, EN 50121-4",
+        "rodzina": "FL MGUARD",
+        "opis_rodziny": "Routery bezpieczeństwa realizujące segmentację sieci i ochronę infrastruktury krytycznej przed atakami cyfrowymi."
+      },
+      {
+        "producent": "Phoenix Contact",
+        "kategoria": "Rozdział energii",
+        "opis_kategorii": "IP65+, brak konieczności przecinania kabla | IEC 61439, TSI Safety in Tunnels",
+        "rodzina": "TAP (Tunnel Application Power)",
+        "opis_rodziny": "System bezpiecznego odgałęziania zasilania (np. oświetlenia awaryjnego) w tunelach bez przerywania kabla głównego."
+      },
+      {
+        "producent": "Sensata / Airpax",
+        "kategoria": "Wyłącznik typu Rack",
+        "opis_kategorii": "Do 50A, 80VDC / 250VAC, profil 1U | UL 1077, UL 489A, TUV",
+        "rodzina": "IAR / IUR / IER",
+        "opis_rodziny": "Niskoprofilowe zabezpieczenie do szaf serwerowych i telekomunikacyjnych, optymalizujące przepływ powietrza i miejsce w szafie RACK."
+      },
+      {
+        "producent": "Sensata / Airpax",
+        "kategoria": "Modułowy system dystrybucji",
+        "opis_kategorii": "Obciążalność szyny 100A, konfigurowalne moduły | UL Listed",
+        "rodzina": "MDS2",
+        "opis_rodziny": "System dystrybucji zasilania typu hot-plug, umożliwiający bezpieczną wymianę modułów zabezpieczających bez wyłączania całego systemu."
+      },
+      {
+        "producent": "Sensata / Airpax",
+        "kategoria": "Wyłączniki hydrauliczno-magnetyczne",
+        "opis_kategorii": "do 125A DC (1-pol), do 400A (4-pol) | UL 489, TUV",
+        "rodzina": "Seria CEL",
+        "opis_rodziny": "Zabezpieczenie dystrybucji zasilania DC w serwerowniach i szafach sterowniczych."
+      },
+      {
+        "producent": "Sensata / Crydom",
+        "kategoria": "Przekaźniki proporcjonalne",
+        "opis_kategorii": "600VAC, 90A, wejście 4-20mA/0-10V | IEC 61000-4, UL 508",
+        "rodzina": "PMP Series",
+        "opis_rodziny": "Przekaźnik ze sterowaniem fazowym do precyzyjnej regulacji temperatury lub oświetlenia w budynkach technicznych."
+      },
+      {
+        "producent": "Sensata / Crydom",
+        "kategoria": "Przekaźniki panelowe 3-fazowe",
+        "opis_kategorii": "530VAC, 50A, IP20 | UL 508, IEC 60947",
+        "rodzina": "53TP Series",
+        "opis_rodziny": "Trójfazowy przekaźnik solid state do sterowania zasilaniem szaf serwerowych lub systemów wentylacji budynkowej."
+      },
+      {
+        "producent": "Sensata / Cynergy3",
+        "kategoria": "Przełączniki przepływu",
+        "opis_kategorii": "Przyłącza na wcisk (Push Fit), wykrywanie niskich przepływów | NSF",
+        "rodzina": "Seria FSU",
+        "opis_rodziny": "Monitorowanie obiegu cieczy chłodzącej w szafach serwerowych i systemach UPS."
+      },
+      {
+        "producent": "Sensata / Kavlico",
+        "kategoria": "Analogowe Czujniki Różnicowe",
+        "opis_kategorii": "1-10 cali H2O, Wyjście 0.25-4.0 VDC, PCB Mount | RoHS",
+        "rodzina": "Seria P1K",
+        "opis_rodziny": "Precyzyjna kontrola ciśnienia i przepływu w szafach sterowniczych i klimatyzacji precyzyjnej serwerowni."
+      },
+      {
+        "producent": "Carlo Gavazzi",
+        "kategoria": "Liczniki Energii",
+        "opis_kategorii": "3-fazy, do 65A, odświeżanie 100ms | EN 50470-1, MID",
+        "rodzina": "EM530 / EM540",
+        "opis_rodziny": "Szybkie, kompaktowe liczniki energii na szynę DIN. Idealne do monitorowania zużycia w szafach serwerowych i oświetleniu technicznym"
+      },
+      {
+        "producent": "Carlo Gavazzi",
+        "kategoria": "Analizatory Sieci",
+        "opis_kategorii": "3-fazy, Klasa 0.5S (kWh), Modbus/M-Bus | EN 62053-21, MID",
+        "rodzina": "WM15",
+        "opis_rodziny": "Ekonomiczny analizator mocy do podliczania energii czynnej w rozdzielniach budynkowych infrastruktury kolejowej"
+      }
+    ],
+    "Przytorowe Systemy Bezpieczeństwa": [
+      {
+        "producent": "Mersen",
+        "kategoria": "Bezpieczniki pomocnicze",
+        "opis_kategorii": "1200V AC / 1000V DC, 0.5-30A, 100kA I.R. | UL Recognized",
+        "rodzina": "A120X Amp-Trap® Form 101",
+        "opis_rodziny": "Kompaktowe bezpieczniki do ochrony obwodów pomocniczych wysokiego napięcia w szafach sterowniczych przytorowych."
+      },
+      {
+        "producent": "nVent Schroff",
+        "kategoria": "Szafy Zewnętrzne",
+        "opis_kategorii": "Podwójne ścianki, IP55, RC2/RC3 | EN 50125-3, IEC 61969-3, EN 1630",
+        "rodzina": "Outdoor Modular Cabinet",
+        "opis_rodziny": "Szafa modułowa odporna na akty wandalizmu i warunki atmosferyczne, dedykowana do ochrony czułej elektroniki sygnalizacyjnej przy torach."
+      },
+      {
+        "producent": "nVent Schroff",
+        "kategoria": "Obudowy Małe",
+        "opis_kategorii": "IP65/IP67, IK09 | EN 61373 Cat. 2, AREMA Class I, EN 60529",
+        "rodzina": "IP-Pro Alu EMC",
+        "opis_rodziny": "Wytrzymała, ekranowana obudowa aluminiowa do ochrony rozproszonej elektroniki sygnalizacyjnej przed wodą, pyłem i wibracjami."
+      },
+      {
+        "producent": "Sensata / Airpax",
+        "kategoria": "Wyłącznik hermetyczny",
+        "opis_kategorii": "Do 20A, 50VDC / 240VAC, szczelność IP67 | MIL-PRF-39019, UL 1077",
+        "rodzina": "AP / UP / AP-MIL",
+        "opis_rodziny": "Całkowicie uszczelniony wyłącznik odporny na wilgoć, sól i wibracje 100G, dedykowany do skrzynek przytorowych i trudnych warunków."
+      },
+      {
+        "producent": "Sensata / BEI Sensors",
+        "kategoria": "Enkoder Przeciwwybuchowy (Ex)",
+        "opis_kategorii": "Obudowa Ex db IIC, Stal nierdzewna | ATEX, IECEx",
+        "rodzina": "Seria MAAX / MAUX",
+        "opis_rodziny": "Enkoder absolutny do pracy w strefach zagrożonych wybuchem (np. terminale przeładunkowe paliw)."
+      },
+      {
+        "producent": "Sensata / BEI Sensors",
+        "kategoria": "Enkoder Przeciwwybuchowy",
+        "opis_kategorii": "Obudowa przeciwwybuchowa, Optyczny | UL Class I Group D",
+        "rodzina": "Seria H38",
+        "opis_rodziny": "Enkoder heavy-duty do pracy w ekstremalnych warunkach środowiskowych i strefach niebezpiecznych."
+      },
+      {
+        "producent": "Sensata / BEI Sensors",
+        "kategoria": "Enkoder Optyczny ATEX",
+        "opis_kategorii": "Ex db IIB T4 Gb, Wał pełny | ATEX, IECEx",
+        "rodzina": "Seria GAMX / GMAX",
+        "opis_rodziny": "Precyzyjny enkoder inkrementalny do stref zagrożenia gazowego przy infrastrukturze kolejowej."
+      },
+      {
+        "producent": "Sensata / Crydom",
+        "kategoria": "Przekaźniki ATEX",
+        "opis_kategorii": "600VAC/100VDC, 3-12A | ATEX Zone 2, UL C1D2",
+        "rodzina": "SeriesOne DR ATEX",
+        "opis_rodziny": "Przekaźnik na szynę DIN z certyfikatem przeciwwybuchowym (ATEX) do szaf sterowniczych w strefach zagrożonych."
+      },
+      {
+        "producent": "Sensata / Cynergy3",
+        "kategoria": "Pływakowe czujniki poziomu (Zanurzeniowe)",
+        "opis_kategorii": "IP68 (do 100m głębokości), obudowa HDPE, kabel PVC/PUR",
+        "rodzina": "Seria MS / LM",
+        "opis_rodziny": "Sterowanie pompami odwadniającymi w tunelach i studzienkach przytorowych, odporność na turbulencje."
+      }
+    ],
+    "Rozjazdy": [
+      {
+        "producent": "Mersen",
+        "kategoria": "Bezpieczniki nożowe NH",
+        "opis_kategorii": "400V/500V/690V AC, rozmiary 000-4a | DIN 43620, VDE 0636",
+        "rodzina": "NH Fuse-links gG",
+        "opis_rodziny": "Standardowa ochrona przeciążeniowa i zwarciowa obwodów grzałek elektrycznego ogrzewania rozjazdów (EOR)."
+      },
+      {
+        "producent": "Sensata / Airpax",
+        "kategoria": "Wyłącznik hydrauliczno-magnetyczny",
+        "opis_kategorii": "Do 70A (100A w wersji LEL), odporność na inrush | UL 1077, VDE, CE",
+        "rodzina": "IEL / IELR",
+        "opis_rodziny": "Wyłącznik niewrażliwy na zmiany temperatury zewnętrznej (brak deratingu), idealny do szaf sterowniczych ogrzewania rozjazdów w zimie."
+      },
+      {
+        "producent": "Sensata / Airpax",
+        "kategoria": "Wyłącznik szynowy",
+        "opis_kategorii": "Do 50A, 240VAC, profil low-depth | UL 489, EN 60947-2",
+        "rodzina": "LEG / LEGA",
+        "opis_rodziny": "Kompaktowy wyłącznik na szynę DIN, zapewniający ochronę obwodów napędów zwrotnicowych z wysokimi prądami rozruchowymi."
+      },
+      {
+        "producent": "Sensata / BEI Sensors",
+        "kategoria": "Enkoder Absolutny",
+        "opis_kategorii": "58mm, wał drążony, IP65 | Profibus, CANopen",
+        "rodzina": "Sensata/BEI PHO5",
+        "opis_rodziny": "Enkoder do monitorowania dokładnego położenia napędów zwrotnicowych, zapewniający informację zwrotną o statusie rozjazdu."
+      },
+      {
+        "producent": "Sensata / BEI Sensors",
+        "kategoria": "Enkoder Linkowy (Draw Wire)",
+        "opis_kategorii": "Zakres do 6m, Analog/Cyfrowy | IP65",
+        "rodzina": "Seria CD150",
+        "opis_rodziny": "Czujnik do monitorowania liniowego przesuwu iglic w napędach zwrotnicowych."
+      },
+      {
+        "producent": "Sensata / BEI Sensors",
+        "kategoria": "Enkoder Absolutny",
+        "opis_kategorii": "Analog/SSI, Wał 10mm | IP65",
+        "rodzina": "Seria ACW4",
+        "opis_rodziny": "Kompaktowy enkoder absolutny do kontroli położenia mechanizmów w napędach rozjazdowych."
+      },
+      {
+        "producent": "Sensata / Crydom",
+        "kategoria": "Przekaźniki półprzewodnikowe na szynę DIN",
+        "opis_kategorii": "Prąd do 35A, 600V AC, Wejście uniwersalne | C-UL-US, VDE",
+        "rodzina": "Crydom DR22 / DR48",
+        "opis_rodziny": "SSR w obudowie na szynę DIN do sterowania elektrycznym ogrzewaniem rozjazdów (EOR), odporne na trudne warunki atmosferyczne w szafach torowych."
+      },
+      {
+        "producent": "Sensata / Crydom",
+        "kategoria": "Przekaźniki panelowe",
+        "opis_kategorii": "600VAC, 95A, IP20 | IEC 61373, IEC 60068-2",
+        "rodzina": "NOVA22 PM22",
+        "opis_rodziny": "Wysokowydajny przekaźnik AC odporny na warunki środowiskowe (kolejowe), idealny do sterowania grzałkami rozjazdów (EOR)."
+      },
+      {
+        "producent": "Sensata / Crydom",
+        "kategoria": "Styczniki rewersyjne",
+        "opis_kategorii": "530VAC, 50A, 3-fazy | IEC 60068-2, UL 508",
+        "rodzina": "GN0 Series",
+        "opis_rodziny": "Trójfazowy stycznik rewersyjny do sterowania silnikami napędów zwrotnicowych z wbudowaną blokadą."
+      },
+      {
+        "producent": "Sensata / Kavlico",
+        "kategoria": "Czujniki Ciśnienia (Hydraulika)",
+        "opis_kategorii": "0-600 Bar, Szczelna obudowa SS304 | cULus, CE, RoHS",
+        "rodzina": "Seria PTE5000 / P4000",
+        "opis_rodziny": "Kontrola ciśnienia w hydraulicznych napędach zwrotnicowych pracujących w trudnych warunkach zewnętrznych."
+      },
+      {
+        "producent": "Sensata / Kavlico",
+        "kategoria": "Liniowe Czujniki Pozycji",
+        "opis_kategorii": "Wysoka odporność środowiskowa, Opcja pracy w zanurzeniu | Brak danych",
+        "rodzina": "Seria LVDT",
+        "opis_rodziny": "Precyzyjne potwierdzanie położenia iglicy rozjazdu i zamknięć nastawczych w systemach automatyki kolejowej."
+      },
+      {
+        "producent": "Sensata / Klixon",
+        "kategoria": "Termostaty bimetaliczne",
+        "opis_kategorii": "Konstrukcja dry seal, automatyczny reset, szybka reakcja",
+        "rodzina": "Seria 1NT / 3NT",
+        "opis_rodziny": "Bezpośrednia kontrola temperatury w systemach ogrzewania rozjazdów, ochrona przed przegrzaniem."
+      },
+      {
+        "producent": "Carlo Gavazzi",
+        "kategoria": "Przekaźniki Półprzewodnikowe",
+        "opis_kategorii": "1600 Vp, do 60A, I²t 6600 A²s | EN 60947-4-3",
+        "rodzina": "RGH",
+        "opis_rodziny": "Przekaźnik o bardzo wysokim napięciu blokowania (1600 Vp). Zapewnia ochronę obwodów grzewczych infrastruktury przed przepięciami sieciowymi"
+      }
+    ]
+  }
+}

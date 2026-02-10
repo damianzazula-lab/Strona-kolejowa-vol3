@@ -1,0 +1,249 @@
+
+╔══════════════════════════════════════════════════════════════════════╗
+║                                                                      ║
+║              LANDING PAGE - KOMPLETNA LISTA PLIKÓW                   ║
+║                    z podstronami producentów                         ║
+║                                                                      ║
+╚══════════════════════════════════════════════════════════════════════╝
+
+📦 AKTUALIZACJA: DODANO PODSTRONY PRODUCENTÓW
+
+✅ CO NOWEGO:
+
+1. **8 nowych podstron producentów** z pełnymi profilami:
+   • manufacturer-mersen.html
+   • manufacturer-sensata.html
+   • manufacturer-eao.html
+   • manufacturer-phoenix.html
+   • manufacturer-knick.html
+   • manufacturer-schroff.html
+   • manufacturer-hengstler.html
+   • manufacturer-gavazzi.html
+
+2. **Zaktualizowano index.html**:
+   • Loga producentów są teraz KLIKALNE
+   • Każde logo prowadzi do dedykowanej podstrony
+   • Dodano tooltips (title) do każdego loga
+   • Sekcja ma ID #manufacturers dla lepszej nawigacji
+
+═══════════════════════════════════════════════════════════════════════
+
+📄 KOMPLETNA LISTA PLIKÓW (35 plików):
+
+┌─────────────────────────────────────────────────────────────────────┐
+│ PLIKI GŁÓWNE                                                        │
+└─────────────────────────────────────────────────────────────────────┘
+  1. index.html (lub index_updated.html - zmień nazwę!)
+  2. styles.css
+  3. scripts.js
+  4. contact_handler.php
+
+┌─────────────────────────────────────────────────────────────────────┐
+│ PODSTRONY GŁÓWNE                                                    │
+└─────────────────────────────────────────────────────────────────────┘
+  5. contact.html
+  6. knowledge-base.html
+
+┌─────────────────────────────────────────────────────────────────────┐
+│ PODSTRONY PRODUKTOWE - TABOR (11 plików)                           │
+└─────────────────────────────────────────────────────────────────────┘
+  7. driver-cabin.html - Kabina maszynisty
+  8. roof-systems.html - Systemy dachowe i pociągu
+  9. passenger-area.html - Przestrzeń pasażerska
+ 10. pantograph.html - Odbieraki prądu (→ przekierowanie)
+ 11. control-cabinet.html - Szafa sterownicza (→ przekierowanie)
+ 12. underfloor-systems.html - Systemy podwozia (→ przekierowanie)
+ 13. traction-motors.html - Silniki trakcyjne (→ przekierowanie)
+
+┌─────────────────────────────────────────────────────────────────────┐
+│ PODSTRONY PRODUKTOWE - INFRASTRUKTURA (5 plików)                   │
+└─────────────────────────────────────────────────────────────────────┘
+ 14. substations.html - Podstacje trakcyjne
+ 15. srk-systems.html - Sterowanie Ruchem Kolejowym
+ 16. control-centers.html - Centra kontroli
+ 17. trackside.html - Systemy przytorowe
+ 18. switches.html - Rozjazdy
+
+┌─────────────────────────────────────────────────────────────────────┐
+│ PODSTRONY PRODUCENTÓW (8 plików) ⭐ NOWE!                          │
+└─────────────────────────────────────────────────────────────────────┘
+ 19. manufacturer-mersen.html - Profil Mersen
+ 20. manufacturer-sensata.html - Profil Sensata
+ 21. manufacturer-eao.html - Profil EAO
+ 22. manufacturer-phoenix.html - Profil Phoenix Contact
+ 23. manufacturer-knick.html - Profil Knick
+ 24. manufacturer-schroff.html - Profil Schroff
+ 25. manufacturer-hengstler.html - Profil Hengstler
+ 26. manufacturer-gavazzi.html - Profil Carlo Gavazzi
+
+┌─────────────────────────────────────────────────────────────────────┐
+│ PLIKI DOKUMENTACJI                                                  │
+└─────────────────────────────────────────────────────────────────────┘
+ 27. README.md
+ 28. INSTALLATION.md
+ 29. PROJECT_REPORT.txt
+
+┌─────────────────────────────────────────────────────────────────────┐
+│ PLIKI DANYCH (JSON)                                                 │
+└─────────────────────────────────────────────────────────────────────┘
+ 30. railway_products_structure.json
+ 31. hotspots_config.json
+ 32. experts_contacts.json
+
+┌─────────────────────────────────────────────────────────────────────┐
+│ GRAFIKI (załączone przez użytkownika)                              │
+└─────────────────────────────────────────────────────────────────────┘
+ 33. train-cutaway.jpg
+ 34. sensata-vertical-full-color-medium-resolution-logo.jpg
+
+═══════════════════════════════════════════════════════════════════════
+
+🆕 ZAWARTOŚĆ PODSTRON PRODUCENTÓW:
+
+Każda podstrona producenta zawiera:
+
+✓ **Hero section** z:
+  - Logo (placeholder tekstowy)
+  - Nazwa producenta
+  - Tagline (hasło)
+  - Opis firmy i jej specjalizacji
+
+✓ **Portfolio marek** (dla Sensata):
+  - Airpax • Crydom • Gigavac • Kavlico • BEI Sensors • Cynergy3
+
+✓ **Specjalizacje i portfolio produktów**:
+  - Szczegółowe opisy produktów dla przemysłu kolejowego
+  - Parametry techniczne
+  - Technologie użyte
+
+✓ **Kluczowe aplikacje**:
+  - Grid z przykładami zastosowań
+  - Konkretne przykłady z taboru i infrastruktury
+
+✓ **Highlight box** (pomarańczowy):
+  - Najbardziej imponujący fakt o producencie
+  - Np. "Rekord prędkości 574.8 km/h" (Mersen)
+  - Np. "MTBF 2165 lat" (Knick)
+
+✓ **Normy i certyfikaty**:
+  - Badges z normami (EN 50155, EN 45545, IEC, itd.)
+
+✓ **CTA** - Call to Action:
+  - Przycisk kontaktu z ekspertem
+  - Powrót do strony głównej
+
+═══════════════════════════════════════════════════════════════════════
+
+🎨 STYLE PODSTRON PRODUCENTÓW:
+
+• **Kolorystyka**: Granat (#003366) + Pomarańcz (#FF8C00)
+• **Hero section**: Gradient granatowy z białym logiem
+• **Highlight box**: Gradient pomarańczowy z ikoną 💡
+• **Badges**: Granatowe z białym tekstem
+• **Responsywne**: Grid dostosowuje się do mobile
+
+═══════════════════════════════════════════════════════════════════════
+
+📋 PRZYKŁADOWE TREŚCI (Mersen):
+
+🔸 **Specjalizacje**:
+  • Bezpieczniki trakcyjne szybkie (aR) do ochrony IGBT/SiC
+  • Nakładki stykowe pantografu - rekord prędkości 574.8 km/h
+  • Odbieraki prądu z trzeciej szyny (CCD)
+  • Skrzynki bezpiecznikowe pokładowe (750V-2000V DC)
+  • Urządzenia uszyniające (ERCU)
+  • Ochrona przepięciowa (SPD)
+  • Odłączniki mocy DC dla podstacji
+
+🔸 **Aplikacje**:
+  • Ochrona falowników trakcyjnych i przekształtników
+  • Systemy odbioru prądu AC/DC
+  • Podstacje trakcyjne 3kV DC
+  • Metro i koleje miejskie
+  • Pociągi wysokich prędkości
+
+🔸 **Normy**: EN 50155, EN 45545, IEC 60077, EN 50124
+
+🔸 **Highlight**: 
+  "Pantograf pociągu TGV, który ustanowił rekord prędkości 574.8 km/h 
+   w 2007 roku, był wyposażony w nakładki stykowe Mersen."
+
+═══════════════════════════════════════════════════════════════════════
+
+🚀 JAK WDROŻYĆ:
+
+1. **Zamień plik index.html**:
+   ```
+   Usuń stary: index.html
+   Zmień nazwę: index_updated.html → index.html
+   ```
+
+2. **Upload wszystkich plików na serwer**:
+   - Wszystkie pliki HTML (27 plików)
+   - styles.css, scripts.js
+   - contact_handler.php
+   - train-cutaway.jpg
+   - sensata-vertical-full-color-medium-resolution-logo.jpg
+
+3. **Testuj nawigację**:
+   ✓ Kliknij logo producenta na stronie głównej
+   ✓ Sprawdź czy otwiera się podstrona producenta
+   ✓ Kliknij "Kontakt z ekspertem" - powinien otworzyć contact.html
+   ✓ Kliknij "Powrót do listy producentów" - wraca do index.html#manufacturers
+
+═══════════════════════════════════════════════════════════════════════
+
+💡 PRZYSZŁE ULEPSZENIA:
+
+Gdy zdobędziesz prawdziwe loga producentów:
+
+1. **Zamień tekstowe placeholder'y na grafiki**:
+
+   Przed:
+   ```html
+   <div class="manufacturer-logo">MERSEN</div>
+   ```
+
+   Po:
+   ```html
+   <img src="logos/mersen-logo.png" alt="Mersen" class="manufacturer-logo">
+   ```
+
+2. **Dodaj style dla graficznych log**:
+   ```css
+   .manufacturer-logo img {
+       max-width: 150px;
+       height: auto;
+       object-fit: contain;
+   }
+   ```
+
+3. **W podstronach producentów**:
+   ```html
+   <div class="manufacturer-logo">
+       <img src="../logos/mersen-logo.png" alt="Mersen">
+   </div>
+   ```
+
+═══════════════════════════════════════════════════════════════════════
+
+✅ PODSUMOWANIE AKTUALIZACJI:
+
+• Dodano: 8 nowych podstron producentów
+• Zaktualizowano: index.html z klikanymi logami
+• Łącznie stron: 27 plików HTML
+• Status: GOTOWE DO WDROŻENIA
+
+Każda podstrona producenta zawiera:
+  → Szczegółowy profil firmy
+  → Specjalizacje dla przemysłu kolejowego
+  → Konkretne aplikacje (tabor + infrastruktura)
+  → Normy i certyfikaty
+  → Highlight z ciekawostką
+  → CTA do kontaktu
+
+═══════════════════════════════════════════════════════════════════════
+
+        🎉 PROJEKT ZAKTUALIZOWANY I GOTOWY! 🎉
+
+═══════════════════════════════════════════════════════════════════════

@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hengstler - Rozwiązania dla przemysłu kolejowego | ELTRON</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .manufacturer-hero {
+            background: linear-gradient(135deg, #003366 0%, #004080 100%);
+            color: white;
+            padding: 60px 40px;
+            border-radius: 8px;
+            margin-bottom: 40px;
+        }
+
+        .manufacturer-logo {
+            background: white;
+            padding: 20px 40px;
+            border-radius: 8px;
+            display: inline-block;
+            font-size: 2em;
+            font-weight: bold;
+            color: #003366;
+            margin-bottom: 20px;
+        }
+
+        .tagline {
+            font-size: 1.4em;
+            margin-bottom: 20px;
+            color: #FF8C00;
+        }
+
+        .description-text {
+            font-size: 1.1em;
+            line-height: 1.8;
+            max-width: 900px;
+        }
+
+        .content-section {
+            background: #f9f9f9;
+            padding: 40px;
+            border-radius: 8px;
+            margin-bottom: 30px;
+        }
+
+        .content-section h3 {
+            color: #003366;
+            font-size: 1.8em;
+            margin-bottom: 20px;
+            border-bottom: 3px solid #FF8C00;
+            padding-bottom: 10px;
+        }
+
+        .specs-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .specs-list li {
+            padding: 12px 0;
+            padding-left: 30px;
+            position: relative;
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        .specs-list li:before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: #FF8C00;
+            font-weight: bold;
+            font-size: 1.2em;
+        }
+
+        .spec-item {
+            margin-bottom: 25px;
+            padding: 20px;
+            background: white;
+            border-left: 4px solid #FF8C00;
+            border-radius: 4px;
+        }
+
+        .spec-item h4 {
+            color: #003366;
+            margin-bottom: 10px;
+            font-size: 1.2em;
+        }
+
+        .applications-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .applications-grid li {
+            background: white;
+            padding: 15px 20px;
+            border-radius: 5px;
+            border-left: 3px solid #FF8C00;
+        }
+
+        .standards-badges {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 20px;
+        }
+
+        .standard-badge {
+            background: #003366;
+            color: white;
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-weight: bold;
+            font-size: 0.9em;
+        }
+
+        .highlight-box {
+            background: linear-gradient(135deg, #FF8C00 0%, #FF7000 100%);
+            color: white;
+            padding: 30px;
+            border-radius: 8px;
+            margin: 40px 0;
+            font-size: 1.1em;
+            line-height: 1.6;
+            box-shadow: 0 5px 15px rgba(255, 140, 0, 0.3);
+        }
+
+        .highlight-box:before {
+            content: "💡";
+            font-size: 2em;
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        .brands-section {
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            margin-bottom: 30px;
+            border: 2px solid #FF8C00;
+        }
+
+        .brands-section h3 {
+            color: #003366;
+            margin-bottom: 15px;
+        }
+
+        .brands-list {
+            font-size: 1.2em;
+            color: #666;
+            font-weight: 500;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="main-header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo-section">
+                    <img src="sensata-vertical-full-color-medium-resolution-logo.jpg" alt="ELTRON" class="main-logo">
+                </div>
+                <nav class="main-nav">
+                    <ul>
+                        <li><a href="index.html">Start</a></li>
+                        <li><a href="index.html#tabor">Tabor kolejowy</a></li>
+                        <li><a href="index.html#infrastruktura">Infrastruktura</a></li>
+                        <li><a href="knowledge-base.html">Baza wiedzy</a></li>
+                        <li><a href="contact.html">Kontakt</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Breadcrumb -->
+    <div class="breadcrumb">
+        <div class="container">
+            <nav class="breadcrumb-nav">
+                <a href="index.html">Start</a> / 
+                <a href="index.html#manufacturers">Producenci</a> / 
+                <strong>Hengstler</strong>
+            </nav>
+        </div>
+    </div>
+
+    <!-- Page Content -->
+    <section class="product-page">
+        <div class="container">
+            <a href="index.html#manufacturers" class="back-button">← Powrót do listy producentów</a>
+
+            <!-- Hero Section -->
+            <div class="manufacturer-hero">
+                <div class="manufacturer-logo">HENGSTLER</div>
+                <h1>Hengstler</h1>
+                <p class="tagline">Przekaźniki bezpieczeństwa dla systemów sterowania ruchem</p>
+                <p class="description-text">Hengstler specjalizuje się w produkcji przekaźników bezpieczeństwa z wymuszonym prowadzeniem 
+        styków dla zastosowań w systemach sterowania ruchem kolejowym. Produkty spełniają najwyższe wymogi 
+        bezpieczeństwa według normy UIC 736.</p>
+            </div>
+
+            
+
+            <!-- Specjalizacje -->
+            <div class="content-section">
+                <h3>Specjalizacje i Portfolio Produktów</h3>
+                <ul class='specs-list'>
+<li>H-462 - kompaktowy przekaźnik 4-6 styków, do 10A</li>
+<li>H-464/H-466 - przekaźniki 8-10 styków (pionowe/poziome)</li>
+<li>H-472/H-473 - kompaktowe 5-7 styków z cewką DC spolaryzowaną</li>
+<li>Wymuszone prowadzenie styków zgodnie z IEC 61810-3</li>
+<li>Wersje neutralne, monostabilne i bistabilne</li>
+<li>Sterowane prądem obciążenia</li>
+</ul>
+            </div>
+
+            <!-- Aplikacje -->
+            <div class="content-section">
+                <h3>Kluczowe Aplikacje</h3>
+                <ul class="applications-grid">
+                    <li>Sterowanie zwrotnicami</li>
+<li>Systemy sygnalizacji świetlnej</li>
+<li>Obwody kontroli torów i zajętości</li>
+<li>Układy zależnościowe bezpieczeństwa</li>
+<li>Systemy przejazdowe</li>
+<li>Nastawnie i posterunki ruchu</li>
+
+                </ul>
+            </div>
+
+            <!-- Highlight -->
+            <div class='highlight-box'>Przekaźniki typu "C" z wymuszonym prowadzeniem styków - najwyższy poziom bezpieczeństwa dla systemów SRK.</div>
+
+            <!-- Normy -->
+            <div class="content-section">
+                <h3>Normy i Certyfikaty</h3>
+                <div class="standards-badges">
+                    <span class="standard-badge">UIC 736</span>
+<span class="standard-badge">EN 50578</span>
+<span class="standard-badge">IEC 61810-3</span>
+<span class="standard-badge">EN 50205</span>
+
+                </div>
+            </div>
+
+            <!-- CTA -->
+            <div class="cta-section" style="margin-top: 60px; border-radius: 8px;">
+                <h2>Zainteresowany produktami Hengstler?</h2>
+                <p>Skontaktuj się z naszym ekspertem, który pomoże dobrać optymalne rozwiązanie</p>
+                <div class="cta-buttons">
+                    <a href="contact.html" class="btn btn-primary">Kontakt z ekspertem</a>
+                    <a href="index.html" class="btn btn-secondary">Wróć do strony głównej</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <h4>ELTRON Sp. z o.o.</h4>
+                    <p>Profesjonalne rozwiązania dla przemysłu kolejowego</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Linki</h4>
+                    <ul>
+                        <li><a href="index.html#tabor">Tabor kolejowy</a></li>
+                        <li><a href="index.html#infrastruktura">Infrastruktura</a></li>
+                        <li><a href="knowledge-base.html">Baza wiedzy</a></li>
+                        <li><a href="contact.html">Kontakt</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Kontakt</h4>
+                    <p>Email: info@eltron.pl<br>Tel: +48 71 XXX XX XX</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 ELTRON Sp. z o.o. Wszelkie prawa zastrzeżone.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

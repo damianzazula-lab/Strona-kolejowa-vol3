@@ -1,0 +1,132 @@
+{
+  "train_sections": [
+    {
+      "id": "pantograph",
+      "name": "Odbieraki prądu (Pantograf)",
+      "description": "Nakładki stykowe, systemy odbioru prądu",
+      "level1": "Tabor kolejowy (On-Board & Rolling Stock)",
+      "level2": "Systemy pociagu",
+      "position": {
+        "top": "5%",
+        "left": "35%",
+        "width": "15%",
+        "height": "8%"
+      }
+    },
+    {
+      "id": "roof_systems",
+      "name": "Systemy dachowe",
+      "description": "Skrzynki bezpiecznikowe, urządzenia uszyniające",
+      "level1": "Tabor kolejowy (On-Board & Rolling Stock)",
+      "level2": "Systemy pociagu",
+      "position": {
+        "top": "13%",
+        "left": "25%",
+        "width": "45%",
+        "height": "10%"
+      }
+    },
+    {
+      "id": "driver_cabin",
+      "name": "Kabina maszynisty",
+      "description": "Pulpity sterownicze, przyciski, joysticki, enkodery",
+      "level1": "Tabor kolejowy (On-Board & Rolling Stock)",
+      "level2": "Kabina maszynisty",
+      "position": {
+        "top": "23%",
+        "left": "5%",
+        "width": "18%",
+        "height": "35%"
+      }
+    },
+    {
+      "id": "control_cabinet",
+      "name": "Szafa sterownicza",
+      "description": "Obudowy, systemy 19\", złączki, przekaźniki",
+      "level1": "Tabor kolejowy (On-Board & Rolling Stock)",
+      "level2": "Systemy pociagu",
+      "position": {
+        "top": "23%",
+        "left": "75%",
+        "width": "20%",
+        "height": "40%"
+      }
+    },
+    {
+      "id": "passenger_area",
+      "name": "Przestrzeń pasażerska",
+      "description": "Systemy drzwi, HVAC, oświetlenie, rezerwacje",
+      "level1": "Tabor kolejowy (On-Board & Rolling Stock)",
+      "level2": "Wagony i przestrzeń pasażerska",
+      "position": {
+        "top": "25%",
+        "left": "25%",
+        "width": "48%",
+        "height": "25%"
+      }
+    },
+    {
+      "id": "underfloor_systems",
+      "name": "Systemy podwozia",
+      "description": "Przekształtniki, falowniki, baterie, bezpieczniki",
+      "level1": "Tabor kolejowy (On-Board & Rolling Stock)",
+      "level2": "Systemy pociagu",
+      "position": {
+        "top": "58%",
+        "left": "25%",
+        "width": "45%",
+        "height": "20%"
+      }
+    },
+    {
+      "id": "traction_motors",
+      "name": "Silniki trakcyjne i wózki",
+      "description": "Enkodery prędkości, czujniki, monitoring",
+      "level1": "Tabor kolejowy (On-Board & Rolling Stock)",
+      "level2": "Systemy pociagu",
+      "position": {
+        "top": "78%",
+        "left": "20%",
+        "width": "60%",
+        "height": "18%"
+      }
+    }
+  ],
+  "infrastructure_sections": [
+    {
+      "id": "substations",
+      "name": "Podstacje trakcyjne",
+      "description": "Przetworniki HV, prostowniki, monitoring",
+      "level1": "Infrastruktura kolejowa (Railway Infrastructure)",
+      "level2": "Podstacje Trakcyjne i Zasilanie"
+    },
+    {
+      "id": "srk_systems",
+      "name": "Sterowanie Ruchem Kolejowym (SRK)",
+      "description": "Przekaźniki, enkodery, wyłączniki, systemy bezpieczeństwa",
+      "level1": "Infrastruktura kolejowa (Railway Infrastructure)",
+      "level2": "Sterowanie Ruchem Kolejowym - SRK (Sterowanie zwrotnicami, semaforami i sygnalizacją, systemy przejazdowe, obwody kontroli torów i zajętości, układy zależnościowe i bezpieczeństwa)"
+    },
+    {
+      "id": "control_centers",
+      "name": "Centra kontroli",
+      "description": "Szafy serwerowe, cyberbezpieczeństwo, PLC",
+      "level1": "Infrastruktura kolejowa (Railway Infrastructure)",
+      "level2": "Centra kontroli i pomieszczenia techniczne"
+    },
+    {
+      "id": "trackside",
+      "name": "Systemy przytorowe",
+      "description": "Obudowy outdoor, enkodery, czujniki",
+      "level1": "Infrastruktura kolejowa (Railway Infrastructure)",
+      "level2": "Przytorowe Systemy Bezpieczeństwa"
+    },
+    {
+      "id": "switches",
+      "name": "Rozjazdy",
+      "description": "Napędy, enkodery, ogrzewanie, zabezpieczenia",
+      "level1": "Infrastruktura kolejowa (Railway Infrastructure)",
+      "level2": "Rozjazdy"
+    }
+  ]
+}
