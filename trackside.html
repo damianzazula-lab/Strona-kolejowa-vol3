@@ -3,65 +3,267 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Przytorowe Systemy Bezpieczeństwa - Infrastruktura Kolejowa</title>
+    <title>Przytorowe Systemy Bezpieczeństwa - Railway Solutions</title>
     <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; color: #333; background-color: #f9f9f9; }
-        .navbar { background: linear-gradient(135deg, #003366 0%, #004d99 100%); color: white; padding: 1rem 2rem; display: flex; justify-content: space-between; align-items: center; position: sticky; top: 0; z-index: 100; }
-        .navbar h1 { font-size: 1.5rem; }
-        .nav-links { display: flex; gap: 2rem; list-style: none; }
-        .nav-links a { color: white; text-decoration: none; transition: color 0.3s; }
-        .nav-links a:hover { color: #FF8C00; }
-        .breadcrumb { background: #f0f0f0; padding: 1rem 2rem; font-size: 0.9rem; }
-        .breadcrumb a { color: #003366; text-decoration: none; margin: 0 0.5rem; }
-        .breadcrumb a:hover { text-decoration: underline; }
-        .container { max-width: 1200px; margin: 2rem auto; padding: 0 2rem; }
-        .page-header { background: linear-gradient(135deg, #003366 0%, #004d99 100%); color: white; padding: 3rem 2rem; border-radius: 8px; margin-bottom: 3rem; text-align: center; }
-        .page-header h1 { font-size: 2.5rem; margin-bottom: 0.5rem; }
-        .page-header p { font-size: 1.1rem; opacity: 0.9; }
-        .intro-section { background: white; padding: 2rem; border-radius: 8px; margin-bottom: 3rem; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
-        .intro-section h2 { color: #003366; margin-bottom: 1rem; border-bottom: 3px solid #FF8C00; padding-bottom: 0.5rem; }
-        .products-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(350px, 1fr)); gap: 2rem; margin-bottom: 3rem; }
-        .product-card { background: white; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.1); transition: all 0.3s ease; border-left: 4px solid #FF8C00; }
-        .product-card:hover { transform: translateY(-5px); box-shadow: 0 6px 16px rgba(0,0,0,0.15); }
-        .card-header { background: linear-gradient(135deg, #003366 0%, #004d99 100%); color: white; padding: 1.5rem; }
-        .card-header h3 { font-size: 1.3rem; margin-bottom: 0.5rem; }
-        .card-header .manufacturer { font-size: 0.9rem; opacity: 0.9; color: #FF8C00; font-weight: bold; }
-        .card-content { padding: 1.5rem; }
-        .card-content p { color: #666; font-size: 0.95rem; line-height: 1.6; margin-bottom: 1rem; }
-        .specs { background: #f5f5f5; padding: 1rem; border-radius: 4px; font-size: 0.85rem; margin-top: 1rem; }
-        .specs strong { color: #003366; display: block; margin-top: 0.5rem; }
-        .doc-links { display: flex; gap: 0.5rem; margin-top: 1rem; flex-wrap: wrap; }
-        .doc-link { display: inline-flex; align-items: center; gap: 0.3rem; padding: 0.5rem 0.75rem; background: #f0f0f0; color: #003366; text-decoration: none; border-radius: 4px; font-size: 0.85rem; transition: all 0.3s; }
-        .doc-link:hover { background: #003366; color: white; }
-        .back-buttons { display: flex; gap: 1rem; margin-bottom: 2rem; flex-wrap: wrap; }
-        .back-button { display: inline-block; padding: 0.75rem 1.5rem; background: #FF8C00; color: white; text-decoration: none; border-radius: 4px; transition: background 0.3s; }
-        .back-button:hover { background: #003366; }
-        .back-button.secondary { background: #003366; }
-        .back-button.secondary:hover { background: #FF8C00; }
-        .footer { background: #003366; color: white; text-align: center; padding: 2rem; margin-top: 3rem; }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            overflow: hidden;
+        }
+
+        header {
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            color: white;
+            padding: 40px;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .subtitle {
+            font-size: 1.2em;
+            opacity: 0.9;
+        }
+
+        nav {
+            background: #2c3e50;
+            padding: 15px;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+
+        nav a:hover {
+            background: #34495e;
+        }
+
+        .breadcrumb {
+            padding: 20px 40px;
+            background: #ecf0f1;
+            font-size: 0.9em;
+            color: #7f8c8d;
+        }
+
+        .breadcrumb a {
+            color: #3498db;
+            text-decoration: none;
+        }
+
+        .breadcrumb a:hover {
+            text-decoration: underline;
+        }
+
+        .back-buttons {
+            display: flex;
+            gap: 15px;
+            padding: 20px 40px;
+            background: #f8f9fa;
+            flex-wrap: wrap;
+        }
+
+        .back-button {
+            display: inline-block;
+            padding: 12px 24px;
+            background: #ff6b35;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+            transition: all 0.3s;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        .back-button:hover {
+            background: #ff8555;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+        }
+
+        .back-button.secondary {
+            background: #3498db;
+        }
+
+        .back-button.secondary:hover {
+            background: #5dade2;
+        }
+
+        main {
+            padding: 40px;
+        }
+
+        .intro {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 30px;
+            border-radius: 15px;
+            margin-bottom: 40px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        }
+
+        .intro h2 {
+            font-size: 2em;
+            margin-bottom: 15px;
+        }
+
+        .products-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 30px;
+            margin-top: 30px;
+        }
+
+        .product-card {
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            overflow: hidden;
+            transition: transform 0.3s, box-shadow 0.3s;
+            border: 2px solid #ecf0f1;
+        }
+
+        .product-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.2);
+        }
+
+        .card-header {
+            background: linear-gradient(135deg, #ff6b6b 0%, #ee5a6f 100%);
+            color: white;
+            padding: 20px;
+        }
+
+        .manufacturer {
+            font-size: 0.9em;
+            opacity: 0.9;
+            margin-bottom: 5px;
+        }
+
+        .card-header h3 {
+            font-size: 1.5em;
+            margin: 0;
+        }
+
+        .card-content {
+            padding: 20px;
+        }
+
+        .card-content p {
+            margin-bottom: 15px;
+            color: #555;
+        }
+
+        .specs {
+            background: #f8f9fa;
+            padding: 15px;
+            border-radius: 10px;
+            margin: 15px 0;
+            font-size: 0.95em;
+        }
+
+        .specs strong {
+            color: #2c3e50;
+        }
+
+        .doc-links {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+            margin-top: 15px;
+        }
+
+        .doc-link {
+            flex: 1;
+            min-width: 140px;
+            padding: 10px 15px;
+            background: #3498db;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            text-align: center;
+            font-size: 0.9em;
+            transition: all 0.3s;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .doc-link:hover {
+            background: #2980b9;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+
+        footer {
+            background: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 30px;
+            margin-top: 40px;
+        }
+
+        @media (max-width: 768px) {
+            .products-grid {
+                grid-template-columns: 1fr;
+            }
+
+            h1 {
+                font-size: 1.8em;
+            }
+
+            .intro h2 {
+                font-size: 1.5em;
+            }
+        }
     </style>
 </head>
 <body>
-    <div class="navbar">
-        <h1>🚂 Infrastruktura Kolejowa</h1>
-        <ul class="nav-links">
-            <li><a href="index.html">Strona główna</a></li>
-            <li><a href="infrastructure.html">Infrastruktura</a></li>
-            <li><a href="contact.html">Kontakt</a></li>
-        </ul>
-    </div>
-
-    <div class="breadcrumb">
-        <a href="index.html">Strona główna</a> >
-        <a href="infrastructure.html">Infrastruktura</a> >
-        <strong>Przytorowe Systemy Bezpieczeństwa</strong>
-    </div>
-
     <div class="container">
-        <div class="page-header">
-            <h1>🚨 Przytorowe Systemy Bezpieczeństwa</h1>
-            <p>Ochrona Elektroniki Sygnalizacyjnej i Komunikacyjnej przy Torach</p>
+        <header>
+            <h1>🚂 Railway Infrastructure Solutions</h1>
+            <p class="subtitle">Przytorowe Systemy Bezpieczeństwa</p>
+        </header>
+
+        <nav>
+            <a href="index.html">🏠 Strona główna</a>
+            <a href="infrastructure.html">🏗️ Infrastruktura</a>
+            <a href="rolling-stock.html">🚆 Tabor</a>
+            <a href="about.html">ℹ️ O nas</a>
+            <a href="contact.html">📧 Kontakt</a>
+        </nav>
+
+        <div class="breadcrumb">
+            <a href="index.html">Strona główna</a> → 
+            <a href="infrastructure.html">Infrastruktura</a> → 
+            <strong>Przytorowe Systemy Bezpieczeństwa</strong>
         </div>
 
         <div class="back-buttons">
@@ -69,196 +271,182 @@
             <a href="infrastructure.html" class="back-button secondary">← Infrastruktura</a>
         </div>
 
-        <div class="intro-section">
-            <h2>O Przytorowych Systemach Bezpieczeństwa</h2>
-            <p>
-                Systemy bezpieczeństwa instalowane przy torach chroniące czułą elektronikę sygnalizacyjną, 
-                komunikacyjną i sterującą przed ekstremalnymi warunkami atmosferycznymi, przepięciami, 
-                wibracjami i aktami wandalizmu. Wymagają szczególnej odporności mechanicznej, wysokiej 
-                szczelności (IP65-IP67) oraz certyfikatów przeciwwybuchowych w strefach zagrożonych.
-            </p>
-        </div>
+        <main>
+            <div class="intro">
+                <h2>Przytorowe Systemy Bezpieczeństwa</h2>
+                <p>Zaawansowane rozwiązania do zabezpieczania i monitorowania infrastruktury kolejowej bezpośrednio przy torach. Nasze produkty zapewniają niezawodność i bezpieczeństwo w najtrudniejszych warunkach środowiskowych.</p>
+            </div>
 
-        <div class="products-grid">
-            <div class="product-card">
-                <div class="card-header">
-                    <div class="manufacturer">Mersen</div>
-                    <h3>A120X Amp-Trap® Form 101</h3>
-                </div>
-                <div class="card-content">
-                    <p>Kompaktowe bezpieczniki do ochrony obwodów pomocniczych wysokiego napięcia w szafach sterowniczych przytorowych.</p>
-                    <div class="specs">
-                        <strong>Parametry:</strong> Napięcie: 1200V AC / 1000V DC | Prąd: 0.5-30A | Zdolność zwarciowa: 100kA I.R. | Format: 101 (cylindryczny)
-                        <strong>Normy:</strong> UL Recognized
+            <div class="products-grid">
+                <div class="product-card">
+                    <div class="card-header">
+                        <div class="manufacturer">Mersen</div>
+                        <h3>A120X Amp-Trap® Form 101</h3>
                     </div>
-                    <div class="doc-links">
-                        <a href="#" class="doc-link">📄 Karta katalogowa</a>
-                        <a href="#" class="doc-link">📋 Nota aplikacyjna</a>
-                        <a href="#" class="doc-link">📊 Prezentacja</a>
+                    <div class="card-content">
+                        <p>Kompaktowe bezpieczniki do ochrony obwodów pomocniczych wysokiego napięcia w szafach sterowniczych przytorowych.</p>
+                        <div class="specs">
+                            <strong>Parametry techniczne:</strong><br>
+                            1200V AC / 1000V DC, 0.5-30A, 100kA I.R. | UL Recognized
+                        </div>
+                        <div class="doc-links">
+                            <a href="#" class="doc-link">📄 Karta katalogowa</a>
+                            <a href="#" class="doc-link">📋 Nota aplikacyjna</a>
+                            <a href="#" class="doc-link">📊 Prezentacja</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="card-header">
+                        <div class="manufacturer">Sensata / Airpax</div>
+                        <h3>AP / UP / AP-MIL</h3>
+                    </div>
+                    <div class="card-content">
+                        <p>Całkowicie uszczelniony wyłącznik odporny na wilgoć, sól i wibracje 100G, dedykowany do skrzynek przytorowych i trudnych warunków.</p>
+                        <div class="specs">
+                            <strong>Parametry techniczne:</strong><br>
+                            Do 20A, 50VDC / 240VAC, szczelność IP67 | MIL-PRF-39019, UL 1077
+                        </div>
+                        <div class="doc-links">
+                            <a href="#" class="doc-link">📄 Karta katalogowa</a>
+                            <a href="#" class="doc-link">📋 Nota aplikacyjna</a>
+                            <a href="#" class="doc-link">📊 Prezentacja</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="card-header">
+                        <div class="manufacturer">Sensata / BEI Sensors</div>
+                        <h3>Seria MAAX / MAUX</h3>
+                    </div>
+                    <div class="card-content">
+                        <p>Enkoder absolutny do pracy w strefach zagrożonych wybuchem (np. terminale przeładunkowe paliw).</p>
+                        <div class="specs">
+                            <strong>Parametry techniczne:</strong><br>
+                            Obudowa Ex db IIC, Stal nierdzewna | ATEX, IECEx
+                        </div>
+                        <div class="doc-links">
+                            <a href="#" class="doc-link">📄 Karta katalogowa</a>
+                            <a href="#" class="doc-link">📋 Nota aplikacyjna</a>
+                            <a href="#" class="doc-link">📊 Prezentacja</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="card-header">
+                        <div class="manufacturer">Sensata / BEI Sensors</div>
+                        <h3>Seria H38</h3>
+                    </div>
+                    <div class="card-content">
+                        <p>Enkoder heavy-duty do pracy w ekstremalnych warunkach środowiskowych i strefach niebezpiecznych.</p>
+                        <div class="specs">
+                            <strong>Parametry techniczne:</strong><br>
+                            Obudowa przeciwwybuchowa, Optyczny | UL Class I Group D
+                        </div>
+                        <div class="doc-links">
+                            <a href="#" class="doc-link">📄 Karta katalogowa</a>
+                            <a href="#" class="doc-link">📋 Nota aplikacyjna</a>
+                            <a href="#" class="doc-link">📊 Prezentacja</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="card-header">
+                        <div class="manufacturer">Sensata / BEI Sensors</div>
+                        <h3>Seria GAMX / GMAX</h3>
+                    </div>
+                    <div class="card-content">
+                        <p>Precyzyjny enkoder inkrementalny do stref zagrożenia gazowego przy infrastrukturze kolejowej.</p>
+                        <div class="specs">
+                            <strong>Parametry techniczne:</strong><br>
+                            Ex db IIB T4 Gb, Wał pełny | ATEX, IECEx
+                        </div>
+                        <div class="doc-links">
+                            <a href="#" class="doc-link">📄 Karta katalogowa</a>
+                            <a href="#" class="doc-link">📋 Nota aplikacyjna</a>
+                            <a href="#" class="doc-link">📊 Prezentacja</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="card-header">
+                        <div class="manufacturer">Sensata / Crydom</div>
+                        <h3>SeriesOne DR ATEX</h3>
+                    </div>
+                    <div class="card-content">
+                        <p>Przekaźnik na szynę DIN z certyfikatem przeciwwybuchowym (ATEX) do szaf sterowniczych w strefach zagrożonych.</p>
+                        <div class="specs">
+                            <strong>Parametry techniczne:</strong><br>
+                            600VAC/100VDC, 3-12A | ATEX Zone 2, UL C1D2
+                        </div>
+                        <div class="doc-links">
+                            <a href="#" class="doc-link">📄 Karta katalogowa</a>
+                            <a href="#" class="doc-link">📋 Nota aplikacyjna</a>
+                            <a href="#" class="doc-link">📊 Prezentacja</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="card-header">
+                        <div class="manufacturer">Sensata / Cynergy3</div>
+                        <h3>Seria MS / LM</h3>
+                    </div>
+                    <div class="card-content">
+                        <p>Sterowanie pompami odwadniającymi w tunelach i studzienkach przytorowych, odporność na turbulencje.</p>
+                        <div class="specs">
+                            <strong>Parametry techniczne:</strong><br>
+                            IP68 (do 100m głębokości), obudowa HDPE, kabel PVC/PUR
+                        </div>
+                        <div class="doc-links">
+                            <a href="#" class="doc-link">📄 Karta katalogowa</a>
+                            <a href="#" class="doc-link">📋 Nota aplikacyjna</a>
+                            <a href="#" class="doc-link">📊 Prezentacja</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="card-header">
+                        <div class="manufacturer">nVent Schroff</div>
+                        <h3>Outdoor Modular Cabinet</h3>
+                    </div>
+                    <div class="card-content">
+                        <p>Szafa modułowa odporna na akty wandalizmu i warunki atmosferyczne, dedykowana do ochrony czułej elektroniki sygnalizacyjnej przy torach.</p>
+                        <div class="specs">
+                            <strong>Parametry techniczne:</strong><br>
+                            Podwójne ścianki, IP55, RC2/RC3 | EN 50125-3, IEC 61969-3, EN 1630
+                        </div>
+                        <div class="doc-links">
+                            <a href="#" class="doc-link">📄 Karta katalogowa</a>
+                            <a href="#" class="doc-link">📋 Nota aplikacyjna</a>
+                            <a href="#" class="doc-link">📊 Prezentacja</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="card-header">
+                        <div class="manufacturer">nVent Schroff</div>
+                        <h3>IP-Pro Alu EMC</h3>
+                    </div>
+                    <div class="card-content">
+                        <p>Wytrzymała, ekranowana obudowa aluminiowa do ochrony rozproszonej elektroniki sygnalizacyjnej przed wodą, pyłem i wibracjami.</p>
+                        <div class="specs">
+                            <strong>Parametry techniczne:</strong><br>
+                            IP65/IP67, IK09 | EN 61373 Cat. 2, AREMA Class I, EN 60529
+                        </div>
+                        <div class="doc-links">
+                            <a href="#" class="doc-link">📄 Karta katalogowa</a>
+                            <a href="#" class="doc-link">📋 Nota aplikacyjna</a>
+                            <a href="#" class="doc-link">📊 Prezentacja</a>
+                        </div>
                     </div>
                 </div>
             </div>
+        </main>
 
-            <div class="product-card">
-                <div class="card-header">
-                    <div class="manufacturer">nVent Schroff</div>
-                    <h3>Outdoor Modular Cabinet</h3>
-                </div>
-                <div class="card-content">
-                    <p>Szafa modułowa odporna na akty wandalizmu i warunki atmosferyczne, dedykowana do ochrony czułej elektroniki sygnalizacyjnej przy torach.</p>
-                    <div class="specs">
-                        <strong>Parametry:</strong> Konstrukcja: podwójne ścianki | Szczelność: IP55 | Klasa odporności: RC2/RC3 (antywłamaniowa)
-                        <strong>Normy:</strong> EN 50125-3, IEC 61969-3, EN 1630
-                    </div>
-                    <div class="doc-links">
-                        <a href="#" class="doc-link">📄 Karta katalogowa</a>
-                        <a href="#" class="doc-link">📋 Nota aplikacyjna</a>
-                        <a href="#" class="doc-link">📊 Prezentacja</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="product-card">
-                <div class="card-header">
-                    <div class="manufacturer">nVent Schroff</div>
-                    <h3>IP-Pro Alu EMC</h3>
-                </div>
-                <div class="card-content">
-                    <p>Wytrzymała, ekranowana obudowa aluminiowa do ochrony rozproszonej elektroniki sygnalizacyjnej przed wodą, pyłem i wibracjami.</p>
-                    <div class="specs">
-                        <strong>Parametry:</strong> Szczelność: IP65/IP67 | Odporność mechaniczna: IK09 | EMC: ekranowanie pełne
-                        <strong>Normy:</strong> EN 61373 Cat. 2, AREMA Class I, EN 60529
-                    </div>
-                    <div class="doc-links">
-                        <a href="#" class="doc-link">📄 Karta katalogowa</a>
-                        <a href="#" class="doc-link">📋 Nota aplikacyjna</a>
-                        <a href="#" class="doc-link">📊 Prezentacja</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="product-card">
-                <div class="card-header">
-                    <div class="manufacturer">Sensata/Airpax</div>
-                    <h3>AP / UP / AP-MIL - Wyłącznik Hermetyczny</h3>
-                </div>
-                <div class="card-content">
-                    <p>Całkowicie uszczelniony wyłącznik odporny na wilgoć, sól i wibracje 100G, dedykowany do skrzynek przytorowych i trudnych warunków.</p>
-                    <div class="specs">
-                        <strong>Parametry:</strong> Prąd: do 20A | Napięcie: 50VDC / 240VAC | Szczelność: IP67 | Wibracje: 100G
-                        <strong>Normy:</strong> MIL-PRF-39019, UL 1077
-                    </div>
-                    <div class="doc-links">
-                        <a href="#" class="doc-link">📄 Karta katalogowa</a>
-                        <a href="#" class="doc-link">📋 Nota aplikacyjna</a>
-                        <a href="#" class="doc-link">📊 Prezentacja</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="product-card">
-                <div class="card-header">
-                    <div class="manufacturer">Sensata/BEI Sensors</div>
-                    <h3>MAAX / MAUX - Enkoder Przeciwwybuchowy ATEX</h3>
-                </div>
-                <div class="card-content">
-                    <p>Enkoder absolutny w obudowie Ex db IIC do pracy w strefach zagrożonych wybuchem (np. terminale przeładunkowe paliw przy torach).</p>
-                    <div class="specs">
-                        <strong>Parametry:</strong> Obudowa: Ex db IIC | Materiał: stal nierdzewna | Certyfikat: ATEX, IECEx
-                        <strong>Zastosowanie:</strong> Strefa zagrożona wybuchem
-                    </div>
-                    <div class="doc-links">
-                        <a href="#" class="doc-link">📄 Karta katalogowa</a>
-                        <a href="#" class="doc-link">📋 Nota aplikacyjna</a>
-                        <a href="#" class="doc-link">📊 Prezentacja</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="product-card">
-                <div class="card-header">
-                    <div class="manufacturer">Sensata/BEI Sensors</div>
-                    <h3>H38 - Enkoder Przeciwwybuchowy Heavy Duty</h3>
-                </div>
-                <div class="card-content">
-                    <p>Enkoder heavy-duty w obudowie przeciwwybuchowej do pracy w ekstremalnych warunkach środowiskowych i strefach niebezpiecznych.</p>
-                    <div class="specs">
-                        <strong>Parametry:</strong> Obudowa: przeciwwybuchowa | Technologia: optyczna | Certyfikat: UL Class I Group D
-                        <strong>Normy:</strong> UL, ATEX
-                    </div>
-                    <div class="doc-links">
-                        <a href="#" class="doc-link">📄 Karta katalogowa</a>
-                        <a href="#" class="doc-link">📋 Nota aplikacyjna</a>
-                        <a href="#" class="doc-link">📊 Prezentacja</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="product-card">
-                <div class="card-header">
-                    <div class="manufacturer">Sensata/BEI Sensors</div>
-                    <h3>GAMX / GMAX - Enkoder Optyczny ATEX</h3>
-                </div>
-                <div class="card-content">
-                    <p>Precyzyjny enkoder inkrementalny do stref zagrożenia gazowego przy infrastrukturze kolejowej. Ex db IIB T4 Gb.</p>
-                    <div class="specs">
-                        <strong>Parametry:</strong> Obudowa: Ex db IIB T4 Gb | Wał: pełny | Certyfikat: ATEX, IECEx
-                        <strong>Zastosowanie:</strong> Strefa gazowa
-                    </div>
-                    <div class="doc-links">
-                        <a href="#" class="doc-link">📄 Karta katalogowa</a>
-                        <a href="#" class="doc-link">📋 Nota aplikacyjna</a>
-                        <a href="#" class="doc-link">📊 Prezentacja</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="product-card">
-                <div class="card-header">
-                    <div class="manufacturer">Sensata/Crydom</div>
-                    <h3>SeriesOne DR ATEX</h3>
-                </div>
-                <div class="card-content">
-                    <p>Przekaźnik na szynę DIN z certyfikatem przeciwwybuchowym (ATEX Zone 2) do szaf sterowniczych w strefach zagrożonych.</p>
-                    <div class="specs">
-                        <strong>Parametry:</strong> Napięcie: 600VAC/100VDC | Prąd: 3-12A | Certyfikat: ATEX Zone 2 | Montaż: DIN
-                        <strong>Normy:</strong> ATEX Zone 2, UL C1D2
-                    </div>
-                    <div class="doc-links">
-                        <a href="#" class="doc-link">📄 Karta katalogowa</a>
-                        <a href="#" class="doc-link">📋 Nota aplikacyjna</a>
-                        <a href="#" class="doc-link">📊 Prezentacja</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="product-card">
-                <div class="card-header">
-                    <div class="manufacturer">Sensata/Cynergy3</div>
-                    <h3>MS / LM - Przekaźniki Miniaturowe</h3>
-                </div>
-                <div class="card-content">
-                    <p>Kompaktowe przekaźniki kontaktronowe do ochrony i sterowania w rozproszonych systemach sygnalizacyjnych przy torach.</p>
-                    <div class="specs">
-                        <strong>Parametry:</strong> Napięcie: do 3kV przebicia | Prąd: 0.5-2A | Rozmiar: miniaturowy | Żywotność: >10⁹ cykli
-                        <strong>Normy:</strong> UL, VDE
-                    </div>
-                    <div class="doc-links">
-                        <a href="#" class="doc-link">📄 Karta katalogowa</a>
-                        <a href="#" class="doc-link">📋 Nota aplikacyjna</a>
-                        <a href="#" class="doc-link">📊 Prezentacja</a>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-    </div>
-
-    <div class="footer">
-        <p>&copy; 2026 Infrastruktura Kolejowa. Wszystkie prawa zastrzeżone.</p>
-        <p style="margin-top: 1rem; font-size: 0.9rem;">
-            Mersen, nVent Schroff, Sensata (Airpax, BEI Sensors, Crydom, Cynergy3)
-        </p>
+        <footer>
+            <p>&copy; 2026 Railway Solutions. Wszelkie prawa zastrzeżone.</p>
+            <p>Kontakt: info@railway-solutions.pl | Tel: +48 123 456 789</p>
+        </footer>
     </div>
 </body>
 </html>
