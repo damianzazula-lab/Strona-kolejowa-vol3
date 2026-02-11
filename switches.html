@@ -170,9 +170,40 @@
             margin-top: 0.5rem;
         }
 
+        .doc-links {
+            display: flex;
+            gap: 0.5rem;
+            margin-top: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .doc-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.3rem;
+            padding: 0.5rem 0.75rem;
+            background: #f0f0f0;
+            color: #003366;
+            text-decoration: none;
+            border-radius: 4px;
+            font-size: 0.85rem;
+            transition: all 0.3s;
+        }
+
+        .doc-link:hover {
+            background: #003366;
+            color: white;
+        }
+
+        .back-buttons {
+            display: flex;
+            gap: 1rem;
+            margin-bottom: 2rem;
+            flex-wrap: wrap;
+        }
+
         .back-button {
             display: inline-block;
-            margin-bottom: 2rem;
             padding: 0.75rem 1.5rem;
             background: #FF8C00;
             color: white;
@@ -183,6 +214,14 @@
 
         .back-button:hover {
             background: #003366;
+        }
+
+        .back-button.secondary {
+            background: #003366;
+        }
+
+        .back-button.secondary:hover {
+            background: #FF8C00;
         }
 
         .footer {
@@ -216,7 +255,10 @@
             <p>Systemy Ogrzewania i Ochrony Rozjazdów Kolejowych (EOR)</p>
         </div>
 
-        <a href="infrastructure.html" class="back-button">← Wróć do Infrastruktury</a>
+        <div class="back-buttons">
+            <a href="index.html" class="back-button">← Strona główna</a>
+            <a href="infrastructure.html" class="back-button secondary">← Infrastruktura</a>
+        </div>
 
         <div class="intro-section">
             <h2>O Rozjazdach Kolejowych</h2>
@@ -250,6 +292,11 @@
                         Zdolność gaszenia: 6600 As<br>
                         <strong>Normy:</strong> EN 60947-4-3
                     </div>
+                    <div class="doc-links">
+                        <a href="#" class="doc-link">📄 Karta katalogowa</a>
+                        <a href="#" class="doc-link">📋 Nota aplikacyjna</a>
+                        <a href="#" class="doc-link">📊 Prezentacja</a>
+                    </div>
                 </div>
             </div>
 
@@ -270,6 +317,11 @@
                         Rozmiary: 000-4a<br>
                         Charakterystyka: gG (uniwersalna)<br>
                         <strong>Normy:</strong> DIN 43620, VDE 0636
+                    </div>
+                    <div class="doc-links">
+                        <a href="#" class="doc-link">📄 Karta katalogowa</a>
+                        <a href="#" class="doc-link">📋 Nota aplikacyjna</a>
+                        <a href="#" class="doc-link">📊 Prezentacja</a>
                     </div>
                 </div>
             </div>
@@ -292,6 +344,11 @@
                         Brak deratingu termicznego<br>
                         <strong>Normy:</strong> UL 1077, VDE, CE
                     </div>
+                    <div class="doc-links">
+                        <a href="#" class="doc-link">📄 Karta katalogowa</a>
+                        <a href="#" class="doc-link">📋 Nota aplikacyjna</a>
+                        <a href="#" class="doc-link">📊 Prezentacja</a>
+                    </div>
                 </div>
             </div>
 
@@ -312,6 +369,11 @@
                         Napięcie: 240VAC<br>
                         Profil: low-depth<br>
                         <strong>Normy:</strong> UL 489, EN 60947-2
+                    </div>
+                    <div class="doc-links">
+                        <a href="#" class="doc-link">📄 Karta katalogowa</a>
+                        <a href="#" class="doc-link">📋 Nota aplikacyjna</a>
+                        <a href="#" class="doc-link">📊 Prezentacja</a>
                     </div>
                 </div>
             </div>
@@ -334,6 +396,11 @@
                         Komunikacja: Profibus, CANopen<br>
                         <strong>Normy:</strong> IP65
                     </div>
+                    <div class="doc-links">
+                        <a href="#" class="doc-link">📄 Karta katalogowa</a>
+                        <a href="#" class="doc-link">📋 Nota aplikacyjna</a>
+                        <a href="#" class="doc-link">📊 Prezentacja</a>
+                    </div>
                 </div>
             </div>
 
@@ -354,6 +421,11 @@
                         Szczelność: IP65<br>
                         <strong>Zastosowanie:</strong> Pomiar przesuwu iglic
                     </div>
+                    <div class="doc-links">
+                        <a href="#" class="doc-link">📄 Karta katalogowa</a>
+                        <a href="#" class="doc-link">📋 Nota aplikacyjna</a>
+                        <a href="#" class="doc-link">📊 Prezentacja</a>
+                    </div>
                 </div>
             </div>
 
@@ -373,6 +445,11 @@
                         Wał: 10mm<br>
                         Szczelność: IP65<br>
                         <strong>Zastosowanie:</strong> Pozycjonowanie precyzyjne
+                    </div>
+                    <div class="doc-links">
+                        <a href="#" class="doc-link">📄 Karta katalogowa</a>
+                        <a href="#" class="doc-link">📋 Nota aplikacyjna</a>
+                        <a href="#" class="doc-link">📊 Prezentacja</a>
                     </div>
                 </div>
             </div>
@@ -395,6 +472,11 @@
                         Wejście: uniwersalne<br>
                         <strong>Normy:</strong> C-UL-US, VDE
                     </div>
+                    <div class="doc-links">
+                        <a href="#" class="doc-link">📄 Karta katalogowa</a>
+                        <a href="#" class="doc-link">📋 Nota aplikacyjna</a>
+                        <a href="#" class="doc-link">📊 Prezentacja</a>
+                    </div>
                 </div>
             </div>
 
@@ -416,6 +498,11 @@
                         Szczelność: IP20<br>
                         <strong>Normy:</strong> IEC 61373, IEC 60068-2
                     </div>
+                    <div class="doc-links">
+                        <a href="#" class="doc-link">📄 Karta katalogowa</a>
+                        <a href="#" class="doc-link">📋 Nota aplikacyjna</a>
+                        <a href="#" class="doc-link">📊 Prezentacja</a>
+                    </div>
                 </div>
             </div>
 
@@ -436,6 +523,11 @@
                         Obudowa: kompaktowa<br>
                         <strong>Normy:</strong> UL 508, IEC 60947
                     </div>
+                    <div class="doc-links">
+                        <a href="#" class="doc-link">📄 Karta katalogowa</a>
+                        <a href="#" class="doc-link">📋 Nota aplikacyjna</a>
+                        <a href="#" class="doc-link">📊 Prezentacja</a>
+                    </div>
                 </div>
             </div>
 
@@ -455,6 +547,11 @@
                         Wyjście: 4-20mA, 0-10V<br>
                         Szczelność: IP67<br>
                         <strong>Normy:</strong> UL, CE
+                    </div>
+                    <div class="doc-links">
+                        <a href="#" class="doc-link">📄 Karta katalogowa</a>
+                        <a href="#" class="doc-link">📋 Nota aplikacyjna</a>
+                        <a href="#" class="doc-link">📊 Prezentacja</a>
                     </div>
                 </div>
             </div>
@@ -477,6 +574,11 @@
                         Dokładność: ±0.25% FS<br>
                         <strong>Normy:</strong> EN 50155
                     </div>
+                    <div class="doc-links">
+                        <a href="#" class="doc-link">📄 Karta katalogowa</a>
+                        <a href="#" class="doc-link">📋 Nota aplikacyjna</a>
+                        <a href="#" class="doc-link">📊 Prezentacja</a>
+                    </div>
                 </div>
             </div>
 
@@ -496,6 +598,11 @@
                         Prąd: 15A @ 250VAC<br>
                         Resetowanie: automatyczne/ręczne<br>
                         <strong>Normy:</strong> UL, VDE, cRUus
+                    </div>
+                    <div class="doc-links">
+                        <a href="#" class="doc-link">📄 Karta katalogowa</a>
+                        <a href="#" class="doc-link">📋 Nota aplikacyjna</a>
+                        <a href="#" class="doc-link">📊 Prezentacja</a>
                     </div>
                 </div>
             </div>
