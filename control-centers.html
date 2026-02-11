@@ -5,193 +5,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Centra Kontroli - Infrastruktura Kolejowa</title>
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            line-height: 1.6;
-            color: #333;
-            background-color: #f9f9f9;
-        }
-
-        .navbar {
-            background: linear-gradient(135deg, #003366 0%, #004d99 100%);
-            color: white;
-            padding: 1rem 2rem;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            position: sticky;
-            top: 0;
-            z-index: 100;
-        }
-
-        .navbar h1 {
-            font-size: 1.5rem;
-        }
-
-        .nav-links {
-            display: flex;
-            gap: 2rem;
-            list-style: none;
-        }
-
-        .nav-links a {
-            color: white;
-            text-decoration: none;
-            transition: color 0.3s;
-        }
-
-        .nav-links a:hover {
-            color: #FF8C00;
-        }
-
-        .breadcrumb {
-            background: #f0f0f0;
-            padding: 1rem 2rem;
-            font-size: 0.9rem;
-        }
-
-        .breadcrumb a {
-            color: #003366;
-            text-decoration: none;
-            margin: 0 0.5rem;
-        }
-
-        .breadcrumb a:hover {
-            text-decoration: underline;
-        }
-
-        .container {
-            max-width: 1200px;
-            margin: 2rem auto;
-            padding: 0 2rem;
-        }
-
-        .page-header {
-            background: linear-gradient(135deg, #003366 0%, #004d99 100%);
-            color: white;
-            padding: 3rem 2rem;
-            border-radius: 8px;
-            margin-bottom: 3rem;
-            text-align: center;
-        }
-
-        .page-header h1 {
-            font-size: 2.5rem;
-            margin-bottom: 0.5rem;
-        }
-
-        .page-header p {
-            font-size: 1.1rem;
-            opacity: 0.9;
-        }
-
-        .intro-section {
-            background: white;
-            padding: 2rem;
-            border-radius: 8px;
-            margin-bottom: 3rem;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-        }
-
-        .intro-section h2 {
-            color: #003366;
-            margin-bottom: 1rem;
-            border-bottom: 3px solid #FF8C00;
-            padding-bottom: 0.5rem;
-        }
-
-        .products-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
-            gap: 2rem;
-            margin-bottom: 3rem;
-        }
-
-        .product-card {
-            background: white;
-            border-radius: 8px;
-            overflow: hidden;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-            transition: all 0.3s ease;
-            border-left: 4px solid #FF8C00;
-        }
-
-        .product-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 6px 16px rgba(0,0,0,0.15);
-        }
-
-        .card-header {
-            background: linear-gradient(135deg, #003366 0%, #004d99 100%);
-            color: white;
-            padding: 1.5rem;
-        }
-
-        .card-header h3 {
-            font-size: 1.3rem;
-            margin-bottom: 0.5rem;
-        }
-
-        .card-header .manufacturer {
-            font-size: 0.9rem;
-            opacity: 0.9;
-            color: #FF8C00;
-            font-weight: bold;
-        }
-
-        .card-content {
-            padding: 1.5rem;
-        }
-
-        .card-content p {
-            color: #666;
-            font-size: 0.95rem;
-            line-height: 1.6;
-            margin-bottom: 1rem;
-        }
-
-        .specs {
-            background: #f5f5f5;
-            padding: 1rem;
-            border-radius: 4px;
-            font-size: 0.85rem;
-            margin-top: 1rem;
-        }
-
-        .specs strong {
-            color: #003366;
-            display: block;
-            margin-top: 0.5rem;
-        }
-
-        .back-button {
-            display: inline-block;
-            margin-bottom: 2rem;
-            padding: 0.75rem 1.5rem;
-            background: #FF8C00;
-            color: white;
-            text-decoration: none;
-            border-radius: 4px;
-            transition: background 0.3s;
-        }
-
-        .back-button:hover {
-            background: #003366;
-        }
-
-        .footer {
-            background: #003366;
-            color: white;
-            text-align: center;
-            padding: 2rem;
-            margin-top: 3rem;
-        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; color: #333; background-color: #f9f9f9; }
+        .navbar { background: linear-gradient(135deg, #003366 0%, #004d99 100%); color: white; padding: 1rem 2rem; display: flex; justify-content: space-between; align-items: center; position: sticky; top: 0; z-index: 100; }
+        .navbar h1 { font-size: 1.5rem; }
+        .nav-links { display: flex; gap: 2rem; list-style: none; }
+        .nav-links a { color: white; text-decoration: none; transition: color 0.3s; }
+        .nav-links a:hover { color: #FF8C00; }
+        .breadcrumb { background: #f0f0f0; padding: 1rem 2rem; font-size: 0.9rem; }
+        .breadcrumb a { color: #003366; text-decoration: none; margin: 0 0.5rem; }
+        .breadcrumb a:hover { text-decoration: underline; }
+        .container { max-width: 1200px; margin: 2rem auto; padding: 0 2rem; }
+        .page-header { background: linear-gradient(135deg, #003366 0%, #004d99 100%); color: white; padding: 3rem 2rem; border-radius: 8px; margin-bottom: 3rem; text-align: center; }
+        .page-header h1 { font-size: 2.5rem; margin-bottom: 0.5rem; }
+        .page-header p { font-size: 1.1rem; opacity: 0.9; }
+        .intro-section { background: white; padding: 2rem; border-radius: 8px; margin-bottom: 3rem; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+        .intro-section h2 { color: #003366; margin-bottom: 1rem; border-bottom: 3px solid #FF8C00; padding-bottom: 0.5rem; }
+        .products-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(350px, 1fr)); gap: 2rem; margin-bottom: 3rem; }
+        .product-card { background: white; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.1); transition: all 0.3s ease; border-left: 4px solid #FF8C00; }
+        .product-card:hover { transform: translateY(-5px); box-shadow: 0 6px 16px rgba(0,0,0,0.15); }
+        .card-header { background: linear-gradient(135deg, #003366 0%, #004d99 100%); color: white; padding: 1.5rem; }
+        .card-header h3 { font-size: 1.3rem; margin-bottom: 0.5rem; }
+        .card-header .manufacturer { font-size: 0.9rem; opacity: 0.9; color: #FF8C00; font-weight: bold; }
+        .card-content { padding: 1.5rem; }
+        .card-content p { color: #666; font-size: 0.95rem; line-height: 1.6; margin-bottom: 1rem; }
+        .specs { background: #f5f5f5; padding: 1rem; border-radius: 4px; font-size: 0.85rem; margin-top: 1rem; }
+        .specs strong { color: #003366; display: block; margin-top: 0.5rem; }
+        .doc-links { display: flex; gap: 0.5rem; margin-top: 1rem; flex-wrap: wrap; }
+        .doc-link { display: inline-flex; align-items: center; gap: 0.3rem; padding: 0.5rem 0.75rem; background: #f0f0f0; color: #003366; text-decoration: none; border-radius: 4px; font-size: 0.85rem; transition: all 0.3s; }
+        .doc-link:hover { background: #003366; color: white; }
+        .back-buttons { display: flex; gap: 1rem; margin-bottom: 2rem; flex-wrap: wrap; }
+        .back-button { display: inline-block; padding: 0.75rem 1.5rem; background: #FF8C00; color: white; text-decoration: none; border-radius: 4px; transition: background 0.3s; }
+        .back-button:hover { background: #003366; }
+        .back-button.secondary { background: #003366; }
+        .back-button.secondary:hover { background: #FF8C00; }
+        .footer { background: #003366; color: white; text-align: center; padding: 2rem; margin-top: 3rem; }
     </style>
 </head>
 <body>
@@ -203,355 +51,300 @@
             <li><a href="contact.html">Kontakt</a></li>
         </ul>
     </div>
-
     <div class="breadcrumb">
         <a href="index.html">Strona główna</a> >
         <a href="infrastructure.html">Infrastruktura</a> >
         <strong>Centra Kontroli</strong>
     </div>
-
     <div class="container">
         <div class="page-header">
             <h1>🏢 Centra Kontroli i Pomieszczenia Techniczne</h1>
             <p>Zarządzanie Ruchem Kolejowym i Infrastruktura IT</p>
         </div>
-
-        <a href="infrastructure.html" class="back-button">← Wróć do Infrastruktury</a>
-
+        <div class="back-buttons">
+            <a href="index.html" class="back-button">← Strona główna</a>
+            <a href="infrastructure.html" class="back-button secondary">← Infrastruktura</a>
+        </div>
         <div class="intro-section">
             <h2>O Centrach Kontroli Ruchu</h2>
-            <p>
-                Centra kontroli ruchu kolejowym (CTC) zarządzają pociągami, sygnalizacją i bezpieczeństwem całej sieci. 
-                Wymagają najwyższego poziomu niezawodności, redundancji zasilania, ochrony przed przepięciami oraz 
-                zabezpieczenia przed atakami cyfrowymi. Infrastruktura obejmuje szafy serwerowe sejsmiczne, systemy UPS, 
-                liczniki energii i zaawansowane systemy PLC.
-            </p>
+            <p>Centra kontroli ruchu kolejowym (CTC) zarządzają pociągami, sygnalizacją i bezpieczeństwem całej sieci. Wymagają najwyższego poziomu niezawodności, redundancji zasilania, ochrony przed przepięciami oraz zabezpieczenia przed atakami cyfrowymi. Infrastruktura obejmuje szafy serwerowe sejsmiczne, systemy UPS, liczniki energii i zaawansowane systemy PLC.</p>
         </div>
-
         <div class="products-grid">
-            <!-- CARLO GAVAZZI #1 -->
             <div class="product-card">
                 <div class="card-header">
                     <div class="manufacturer">Carlo Gavazzi</div>
                     <h3>EM530 / EM540 - Liczniki Energii</h3>
                 </div>
                 <div class="card-content">
-                    <p>
-                        Szybkie, kompaktowe liczniki energii 3-fazowe na szynę DIN. Idealne do monitorowania zużycia 
-                        w szafach serwerowych. Certyfikat MID.
-                    </p>
+                    <p>Szybkie, kompaktowe liczniki energii 3-fazowe na szynę DIN. Idealne do monitorowania zużycia w szafach serwerowych. Certyfikat MID.</p>
                     <div class="specs">
-                        <strong>Parametry:</strong>
-                        Typ: 3-fazy<br>
-                        Prąd max: do 65A<br>
-                        Odświeżanie: 100ms<br>
+                        <strong>Parametry:</strong> Typ: 3-fazy | Prąd max: do 65A | Odświeżanie: 100ms
                         <strong>Normy:</strong> EN 50470-1, MID
+                    </div>
+                    <div class="doc-links">
+                        <a href="#" class="doc-link">📄 Karta katalogowa</a>
+                        <a href="#" class="doc-link">📋 Nota aplikacyjna</a>
+                        <a href="#" class="doc-link">📊 Prezentacja</a>
                     </div>
                 </div>
             </div>
-
-            <!-- CARLO GAVAZZI #2 -->
             <div class="product-card">
                 <div class="card-header">
                     <div class="manufacturer">Carlo Gavazzi</div>
                     <h3>WM15 - Analizator Mocy</h3>
                 </div>
                 <div class="card-content">
-                    <p>
-                        Ekonomiczny analizator mocy do podliczania energii w rozdzielniach budynków infrastruktury. 
-                        Komunikacja Modbus, M-Bus.
-                    </p>
+                    <p>Ekonomiczny analizator mocy do podliczania energii w rozdzielniach budynków infrastruktury. Komunikacja Modbus, M-Bus.</p>
                     <div class="specs">
-                        <strong>Parametry:</strong>
-                        Dokładność: Klasa 0.5S kWh<br>
-                        Komunikacja: Modbus, M-Bus<br>
-                        Zastosowanie: Rozdzielnie budynkowe<br>
+                        <strong>Parametry:</strong> Dokładność: Klasa 0.5S kWh | Komunikacja: Modbus, M-Bus | Zastosowanie: Rozdzielnie budynkowe
                         <strong>Normy:</strong> EN 62053-21, MID
+                    </div>
+                    <div class="doc-links">
+                        <a href="#" class="doc-link">📄 Karta katalogowa</a>
+                        <a href="#" class="doc-link">📋 Nota aplikacyjna</a>
+                        <a href="#" class="doc-link">📊 Prezentacja</a>
                     </div>
                 </div>
             </div>
-
-            <!-- MERSEN -->
             <div class="product-card">
                 <div class="card-header">
                     <div class="manufacturer">Mersen</div>
                     <h3>Surge-Trap® STPT2 - Ograniczniki Przepięć</h3>
                 </div>
                 <div class="card-content">
-                    <p>
-                        Ochrona typu 2 z wymiennikami wkładkami do rozdzielnic zasilających serwerownie i systemy 
-                        sterowania ruchem.
-                    </p>
+                    <p>Ochrona typu 2 z wymiennikami wkładkami do rozdzielnic zasilających serwerownie i systemy sterowania ruchem.</p>
                     <div class="specs">
-                        <strong>Parametry:</strong>
-                        Typ: 2 (IEC 61643-11)<br>
-                        Prąd wyładowania: 40kA (8/20µs)<br>
-                        Wymienne wkładki<br>
+                        <strong>Parametry:</strong> Typ: 2 (IEC 61643-11) | Prąd wyładowania: 40kA (8/20µs) | Wymienne wkładki
                         <strong>Normy:</strong> IEC 61643-11, UL 1449
+                    </div>
+                    <div class="doc-links">
+                        <a href="#" class="doc-link">📄 Karta katalogowa</a>
+                        <a href="#" class="doc-link">📋 Nota aplikacyjna</a>
+                        <a href="#" class="doc-link">📊 Prezentacja</a>
                     </div>
                 </div>
             </div>
-
-            <!-- NVENT SCHROFF #1 -->
             <div class="product-card">
                 <div class="card-header">
                     <div class="manufacturer">nVent Schroff</div>
                     <h3>Varistar CP (Seismic/EMC)</h3>
                 </div>
                 <div class="card-content">
-                    <p>
-                        Szafa teletechniczna do centrów sterowania ruchem, zapewniająca ochronę przed trzęsieniami ziemi 
-                        (Bellcore 4) i zaawansowane ekranowanie HF do 18GHz.
-                    </p>
+                    <p>Szafa teletechniczna do centrów sterowania ruchem, zapewniająca ochronę przed trzęsieniami ziemi (Bellcore 4) i zaawansowane ekranowanie HF do 18GHz.</p>
                     <div class="specs">
-                        <strong>Parametry:</strong>
-                        Sejsmika: Bellcore Zone 4<br>
-                        EMC: do 18GHz<br>
-                        Obciążenie: do 2000kg<br>
+                        <strong>Parametry:</strong> Sejsmika: Bellcore Zone 4 | EMC: do 18GHz | Obciążenie: do 2000kg
                         <strong>Normy:</strong> IEC 61587-2, EN 61000-5-7
+                    </div>
+                    <div class="doc-links">
+                        <a href="#" class="doc-link">📄 Karta katalogowa</a>
+                        <a href="#" class="doc-link">📋 Nota aplikacyjna</a>
+                        <a href="#" class="doc-link">📊 Prezentacja</a>
                     </div>
                 </div>
             </div>
-
-            <!-- NVENT SCHROFF #2 -->
             <div class="product-card">
                 <div class="card-header">
                     <div class="manufacturer">nVent Schroff</div>
                     <h3>RatiopacPRO - Obudowy Desktop</h3>
                 </div>
                 <div class="card-content">
-                    <p>
-                        Uniwersalna obudowa 19" do zastosowań w laboratoriach i pomieszczeniach technicznych, 
-                        służąca do testowania i pomiarów.
-                    </p>
+                    <p>Uniwersalna obudowa 19" do zastosowań w laboratoriach i pomieszczeniach technicznych, służąca do testowania i pomiarów.</p>
                     <div class="specs">
-                        <strong>Parametry:</strong>
-                        Chłodzenie: aktywne<br>
-                        EMC: ekranowanie<br>
-                        Standard: 19"<br>
+                        <strong>Parametry:</strong> Chłodzenie: aktywne | EMC: ekranowanie | Standard: 19"
                         <strong>Normy:</strong> IEC 60297-3, IEEE 1101.x, IEC 61587-3
+                    </div>
+                    <div class="doc-links">
+                        <a href="#" class="doc-link">📄 Karta katalogowa</a>
+                        <a href="#" class="doc-link">📋 Nota aplikacyjna</a>
+                        <a href="#" class="doc-link">📊 Prezentacja</a>
                     </div>
                 </div>
             </div>
-
-            <!-- PHOENIX CONTACT #1 -->
             <div class="product-card">
                 <div class="card-header">
                     <div class="manufacturer">Phoenix Contact</div>
                     <h3>PLCnext Control (RFC/AXC)</h3>
                 </div>
                 <div class="card-content">
-                    <p>
-                        Otwarta platforma sterowania do infrastruktury (np. wentylacja tuneli), obsługująca języki 
-                        wysokiego poziomu i chmurę.
-                    </p>
+                    <p>Otwarta platforma sterowania do infrastruktury (np. wentylacja tuneli), obsługująca języki wysokiego poziomu i chmurę.</p>
                     <div class="specs">
-                        <strong>Parametry:</strong>
-                        System: Linux Yocto<br>
-                        Programowanie: IEC 61131-3<br>
-                        Redundancja: tak<br>
+                        <strong>Parametry:</strong> System: Linux Yocto | Programowanie: IEC 61131-3 | Redundancja: tak
                         <strong>Normy:</strong> IEC 62443-4-1, EN 50121-4
+                    </div>
+                    <div class="doc-links">
+                        <a href="#" class="doc-link">📄 Karta katalogowa</a>
+                        <a href="#" class="doc-link">📋 Nota aplikacyjna</a>
+                        <a href="#" class="doc-link">📊 Prezentacja</a>
                     </div>
                 </div>
             </div>
-
-            <!-- PHOENIX CONTACT #2 -->
             <div class="product-card">
                 <div class="card-header">
                     <div class="manufacturer">Phoenix Contact</div>
                     <h3>FL MGUARD - Cyberbezpieczeństwo</h3>
                 </div>
                 <div class="card-content">
-                    <p>
-                        Routery bezpieczeństwa realizujące segmentację sieci i ochronę infrastruktury krytycznej 
-                        przed atakami cyfrowymi.
-                    </p>
+                    <p>Routery bezpieczeństwa realizujące segmentację sieci i ochronę infrastruktury krytycznej przed atakami cyfrowymi.</p>
                     <div class="specs">
-                        <strong>Funkcje:</strong>
-                        Firewall, VPN, NAT<br>
-                        Deep Packet Inspection<br>
-                        Segmentacja sieci<br>
+                        <strong>Funkcje:</strong> Firewall, VPN, NAT | Deep Packet Inspection | Segmentacja sieci
                         <strong>Normy:</strong> IEC 62443, EN 50121-4
+                    </div>
+                    <div class="doc-links">
+                        <a href="#" class="doc-link">📄 Karta katalogowa</a>
+                        <a href="#" class="doc-link">📋 Nota aplikacyjna</a>
+                        <a href="#" class="doc-link">📊 Prezentacja</a>
                     </div>
                 </div>
             </div>
-
-            <!-- PHOENIX CONTACT #3 -->
             <div class="product-card">
                 <div class="card-header">
                     <div class="manufacturer">Phoenix Contact</div>
                     <h3>TAP (Tunnel Application Power)</h3>
                 </div>
                 <div class="card-content">
-                    <p>
-                        System bezpiecznego odgałęziania zasilania (np. oświetlenia awaryjnego) w tunelach bez 
-                        przerywania kabla głównego.
-                    </p>
+                    <p>System bezpiecznego odgałęziania zasilania (np. oświetlenia awaryjnego) w tunelach bez przerywania kabla głównego.</p>
                     <div class="specs">
-                        <strong>Parametry:</strong>
-                        Szczelność: IP65+<br>
-                        Montaż: bez przecięcia kabla<br>
-                        Zastosowanie: tunele, galerie<br>
+                        <strong>Parametry:</strong> Szczelność: IP65+ | Montaż: bez przecięcia kabla | Zastosowanie: tunele, galerie
                         <strong>Normy:</strong> IEC 61439, TSI Safety in Tunnels
+                    </div>
+                    <div class="doc-links">
+                        <a href="#" class="doc-link">📄 Karta katalogowa</a>
+                        <a href="#" class="doc-link">📋 Nota aplikacyjna</a>
+                        <a href="#" class="doc-link">📊 Prezentacja</a>
                     </div>
                 </div>
             </div>
-
-            <!-- SENSATA/AIRPAX #1 -->
             <div class="product-card">
                 <div class="card-header">
                     <div class="manufacturer">Sensata/Airpax</div>
                     <h3>IAR / IUR / IER - Wyłączniki Rack</h3>
                 </div>
                 <div class="card-content">
-                    <p>
-                        Niskoprofilowe zabezpieczenie 1U do szaf serwerowych i telekomunikacyjnych, optymalizujące 
-                        przepływ powietrza i miejsce w szafie RACK.
-                    </p>
+                    <p>Niskoprofilowe zabezpieczenie 1U do szaf serwerowych i telekomunikacyjnych, optymalizujące przepływ powietrza i miejsce w szafie RACK.</p>
                     <div class="specs">
-                        <strong>Parametry:</strong>
-                        Prąd: do 50A<br>
-                        Napięcie: 80VDC / 250VAC<br>
-                        Profil: 1U (niskoprofilowy)<br>
+                        <strong>Parametry:</strong> Prąd: do 50A | Napięcie: 80VDC / 250VAC | Profil: 1U (niskoprofilowy)
                         <strong>Normy:</strong> UL 1077, UL 489A, TUV
+                    </div>
+                    <div class="doc-links">
+                        <a href="#" class="doc-link">📄 Karta katalogowa</a>
+                        <a href="#" class="doc-link">📋 Nota aplikacyjna</a>
+                        <a href="#" class="doc-link">📊 Prezentacja</a>
                     </div>
                 </div>
             </div>
-
-            <!-- SENSATA/AIRPAX #2 -->
             <div class="product-card">
                 <div class="card-header">
                     <div class="manufacturer">Sensata/Airpax</div>
                     <h3>MDS2 - Modułowy System Dystrybucji</h3>
                 </div>
                 <div class="card-content">
-                    <p>
-                        System dystrybucji zasilania typu hot-plug, umożliwiający bezpieczną wymianę modułów 
-                        zabezpieczających bez wyłączania całego systemu.
-                    </p>
+                    <p>System dystrybucji zasilania typu hot-plug, umożliwiający bezpieczną wymianę modułów zabezpieczających bez wyłączania całego systemu.</p>
                     <div class="specs">
-                        <strong>Parametry:</strong>
-                        Obciążalność szyny: 100A<br>
-                        Moduły: konfigurowalne<br>
-                        Hot-plug: tak<br>
+                        <strong>Parametry:</strong> Obciążalność szyny: 100A | Moduły: konfigurowalne | Hot-plug: tak
                         <strong>Normy:</strong> UL Listed
+                    </div>
+                    <div class="doc-links">
+                        <a href="#" class="doc-link">📄 Karta katalogowa</a>
+                        <a href="#" class="doc-link">📋 Nota aplikacyjna</a>
+                        <a href="#" class="doc-link">📊 Prezentacja</a>
                     </div>
                 </div>
             </div>
-
-            <!-- SENSATA/AIRPAX #3 -->
             <div class="product-card">
                 <div class="card-header">
                     <div class="manufacturer">Sensata/Airpax</div>
                     <h3>CEL - Wyłączniki Hydrauliczno-Magnetyczne DC</h3>
                 </div>
                 <div class="card-content">
-                    <p>
-                        Zabezpieczenie dystrybucji zasilania DC w serwerowniach i szafach sterowniczych. 
-                        Wersje 1-4 polowe.
-                    </p>
+                    <p>Zabezpieczenie dystrybucji zasilania DC w serwerowniach i szafach sterowniczych. Wersje 1-4 polowe.</p>
                     <div class="specs">
-                        <strong>Parametry:</strong>
-                        Prąd: do 125A DC (1-pol), do 400A (4-pol)<br>
-                        Napięcie: do 80VDC<br>
-                        Montaż: panel/DIN<br>
+                        <strong>Parametry:</strong> Prąd: do 125A DC (1-pol), do 400A (4-pol) | Napięcie: do 80VDC | Montaż: panel/DIN
                         <strong>Normy:</strong> UL 489, TUV
+                    </div>
+                    <div class="doc-links">
+                        <a href="#" class="doc-link">📄 Karta katalogowa</a>
+                        <a href="#" class="doc-link">📋 Nota aplikacyjna</a>
+                        <a href="#" class="doc-link">📊 Prezentacja</a>
                     </div>
                 </div>
             </div>
-
-            <!-- SENSATA/CRYDOM #1 -->
             <div class="product-card">
                 <div class="card-header">
                     <div class="manufacturer">Sensata/Crydom</div>
                     <h3>PMP Series - Przekaźniki Proporcjonalne</h3>
                 </div>
                 <div class="card-content">
-                    <p>
-                        Przekaźnik ze sterowaniem fazowym do precyzyjnej regulacji temperatury lub oświetlenia 
-                        w budynkach technicznych.
-                    </p>
+                    <p>Przekaźnik ze sterowaniem fazowym do precyzyjnej regulacji temperatury lub oświetlenia w budynkach technicznych.</p>
                     <div class="specs">
-                        <strong>Parametry:</strong>
-                        Napięcie: 600VAC<br>
-                        Prąd: 90A<br>
-                        Wejście: 4-20mA/0-10V<br>
+                        <strong>Parametry:</strong> Napięcie: 600VAC | Prąd: 90A | Wejście: 4-20mA/0-10V
                         <strong>Normy:</strong> IEC 61000-4, UL 508
+                    </div>
+                    <div class="doc-links">
+                        <a href="#" class="doc-link">📄 Karta katalogowa</a>
+                        <a href="#" class="doc-link">📋 Nota aplikacyjna</a>
+                        <a href="#" class="doc-link">📊 Prezentacja</a>
                     </div>
                 </div>
             </div>
-
-            <!-- SENSATA/CRYDOM #2 -->
             <div class="product-card">
                 <div class="card-header">
                     <div class="manufacturer">Sensata/Crydom</div>
                     <h3>53TP Series - Przekaźniki Panelowe 3-fazowe</h3>
                 </div>
                 <div class="card-content">
-                    <p>
-                        Trójfazowy przekaźnik solid state do sterowania zasilaniem szaf serwerowych lub systemów 
-                        wentylacji budynkowej.
-                    </p>
+                    <p>Trójfazowy przekaźnik solid state do sterowania zasilaniem szaf serwerowych lub systemów wentylacji budynkowej.</p>
                     <div class="specs">
-                        <strong>Parametry:</strong>
-                        Napięcie: 530VAC<br>
-                        Prąd: 50A<br>
-                        Fazy: 3<br>
-                        Szczelność: IP20<br>
+                        <strong>Parametry:</strong> Napięcie: 530VAC | Prąd: 50A | Fazy: 3 | Szczelność: IP20
                         <strong>Normy:</strong> UL 508, IEC 60947
+                    </div>
+                    <div class="doc-links">
+                        <a href="#" class="doc-link">📄 Karta katalogowa</a>
+                        <a href="#" class="doc-link">📋 Nota aplikacyjna</a>
+                        <a href="#" class="doc-link">📊 Prezentacja</a>
                     </div>
                 </div>
             </div>
-
-            <!-- SENSATA/CYNERGY3 -->
             <div class="product-card">
                 <div class="card-header">
                     <div class="manufacturer">Sensata/Cynergy3</div>
                     <h3>FSU - Przekaźniki Fotowoltaiczne</h3>
                 </div>
                 <div class="card-content">
-                    <p>
-                        Kompaktowe przekaźniki do systemów fotowoltaicznych i magazynowania energii w obiektach 
-                        kolejowych.
-                    </p>
+                    <p>Kompaktowe przekaźniki do systemów fotowoltaicznych i magazynowania energii w obiektach kolejowych.</p>
                     <div class="specs">
-                        <strong>Parametry:</strong>
-                        Napięcie: 1000V DC<br>
-                        Prąd: do 30A<br>
-                        Przełączanie bez łuku<br>
+                        <strong>Parametry:</strong> Napięcie: 1000V DC | Prąd: do 30A | Przełączanie bez łuku
                         <strong>Normy:</strong> UL 508, IEC 62053
+                    </div>
+                    <div class="doc-links">
+                        <a href="#" class="doc-link">📄 Karta katalogowa</a>
+                        <a href="#" class="doc-link">📋 Nota aplikacyjna</a>
+                        <a href="#" class="doc-link">📊 Prezentacja</a>
                     </div>
                 </div>
             </div>
-
-            <!-- SENSATA/KAVLICO -->
             <div class="product-card">
                 <div class="card-header">
                     <div class="manufacturer">Sensata/Kavlico</div>
                     <h3>P1K - Czujnik Ciśnienia Miniaturowy</h3>
                 </div>
                 <div class="card-content">
-                    <p>
-                        Kompaktowy czujnik ciśnienia do systemów HVAC i klimatyzacji pomieszczeń technicznych.
-                    </p>
+                    <p>Kompaktowy czujnik ciśnienia do systemów HVAC i klimatyzacji pomieszczeń technicznych.</p>
                     <div class="specs">
-                        <strong>Parametry:</strong>
-                        Zakres: 0-100 psi<br>
-                        Wyjście: 0.5-4.5V<br>
-                        Rozmiar: miniaturowy<br>
+                        <strong>Parametry:</strong> Zakres: 0-100 psi | Wyjście: 0.5-4.5V | Rozmiar: miniaturowy
                         <strong>Normy:</strong> CE, RoHS
+                    </div>
+                    <div class="doc-links">
+                        <a href="#" class="doc-link">📄 Karta katalogowa</a>
+                        <a href="#" class="doc-link">📋 Nota aplikacyjna</a>
+                        <a href="#" class="doc-link">📊 Prezentacja</a>
                     </div>
                 </div>
             </div>
-
         </div>
     </div>
-
     <div class="footer">
         <p>&copy; 2026 Infrastruktura Kolejowa. Wszystkie prawa zastrzeżone.</p>
-        <p style="margin-top: 1rem; font-size: 0.9rem;">
-            Carlo Gavazzi, Mersen, nVent Schroff, Phoenix Contact, Sensata (Airpax, Crydom, Cynergy3, Kavlico)
-        </p>
+        <p style="margin-top: 1rem; font-size: 0.9rem;">Carlo Gavazzi, Mersen, nVent Schroff, Phoenix Contact, Sensata (Airpax, Crydom, Cynergy3, Kavlico)</p>
     </div>
 </body>
 </html>
