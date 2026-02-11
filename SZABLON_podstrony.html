@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{TITLE}} - ELTRON Railway Solutions</title>
+    <meta name="description" content="{{DESCRIPTION}}">
+
+    <!-- WAŻNE: Linkuj do zewnętrznego CSS zamiast inline styles -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Skip link -->
+    <a href="#main-content" class="skip-link">Przejdź do treści</a>
+
+    <!-- Header -->
+    <header class="main-header" role="banner">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo-section">
+                    <a href="index.html">
+                        <img src="sensata-vertical-full-color-medium-resolution-logo.jpg" 
+                             alt="ELTRON - Rozwiązania kolejowe" 
+                             class="main-logo">
+                    </a>
+                </div>
+                <nav class="main-nav" role="navigation" aria-label="Główna nawigacja">
+                    <ul>
+                        <li><a href="index.html">Strona główna</a></li>
+                        <li><a href="#infrastruktura">Infrastruktura</a></li>
+                        <li><a href="knowledge-base.html">Baza wiedzy</a></li>
+                        <li><a href="contact.html">Kontakt</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main id="main-content">
+        <!-- Breadcrumb -->
+        <div class="breadcrumb">
+            <div class="container">
+                <nav class="breadcrumb-nav" aria-label="Breadcrumb">
+                    <a href="index.html">Strona główna</a> → 
+                    <a href="infrastructure.html">Infrastruktura</a> → 
+                    <strong>{{PAGE_NAME}}</strong>
+                </nav>
+            </div>
+        </div>
+
+        <!-- Back Buttons -->
+        <div class="back-buttons">
+            <div class="container">
+                <a href="index.html" class="back-button">← Strona główna</a>
+                <a href="infrastructure.html" class="back-button secondary">← Infrastruktura</a>
+            </div>
+        </div>
+
+        <!-- Page Header / Intro -->
+        <section class="page-header">
+            <div class="container">
+                <h1>{{HEADING}}</h1>
+                <p>{{INTRO_TEXT}}</p>
+            </div>
+        </section>
+
+        <!-- Products Grid -->
+        <section class="product-page">
+            <div class="container">
+                <div class="products-grid">
+
+                    <!-- PRZYKŁADOWA KARTA PRODUKTU -->
+                    <article class="product-card">
+                        <div class="card-header">
+                            <div class="manufacturer">{{MANUFACTURER}}</div>
+                            <h3>{{PRODUCT_NAME}}</h3>
+                        </div>
+                        <div class="card-content">
+                            <p class="product-description">{{PRODUCT_DESCRIPTION}}</p>
+                            <div class="specs">
+                                <strong>Parametry techniczne:</strong><br>
+                                {{TECHNICAL_SPECS}}
+                            </div>
+                            <div class="doc-links">
+                                <a href="#" class="doc-link">📄 Karta katalogowa</a>
+                                <a href="#" class="doc-link">📋 Nota aplikacyjna</a>
+                                <a href="#" class="doc-link">📊 Prezentacja</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- POWTÓRZ dla kolejnych produktów -->
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="main-footer" role="contentinfo">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <h4>ELTRON Sp. z o.o.</h4>
+                    <p>Profesjonalne rozwiązania dla przemysłu kolejowego</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Linki</h4>
+                    <ul>
+                        <li><a href="index.html">Strona główna</a></li>
+                        <li><a href="#infrastruktura">Infrastruktura</a></li>
+                        <li><a href="knowledge-base.html">Baza wiedzy</a></li>
+                        <li><a href="contact.html">Kontakt</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Kontakt</h4>
+                    <p>Email: info@eltron.pl<br>Tel: +48 71 XXX XX XX</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 ELTRON Sp. z o.o. Wszelkie prawa zastrzeżone.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

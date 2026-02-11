@@ -3,267 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sterowanie Ruchem Kolejowym - Railway Solutions</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            line-height: 1.6;
-            color: #333;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            min-height: 100vh;
-            padding: 20px;
-        }
-
-        .container {
-            max-width: 1400px;
-            margin: 0 auto;
-            background: white;
-            border-radius: 20px;
-            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
-            overflow: hidden;
-        }
-
-        header {
-            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
-            color: white;
-            padding: 40px;
-            text-align: center;
-        }
-
-        h1 {
-            font-size: 2.5em;
-            margin-bottom: 10px;
-            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
-        }
-
-        .subtitle {
-            font-size: 1.2em;
-            opacity: 0.9;
-        }
-
-        nav {
-            background: #2c3e50;
-            padding: 15px;
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-            gap: 10px;
-        }
-
-        nav a {
-            color: white;
-            text-decoration: none;
-            padding: 10px 20px;
-            border-radius: 5px;
-            transition: background 0.3s;
-        }
-
-        nav a:hover {
-            background: #34495e;
-        }
-
-        .breadcrumb {
-            padding: 20px 40px;
-            background: #ecf0f1;
-            font-size: 0.9em;
-            color: #7f8c8d;
-        }
-
-        .breadcrumb a {
-            color: #3498db;
-            text-decoration: none;
-        }
-
-        .breadcrumb a:hover {
-            text-decoration: underline;
-        }
-
-        .back-buttons {
-            display: flex;
-            gap: 15px;
-            padding: 20px 40px;
-            background: #f8f9fa;
-            flex-wrap: wrap;
-        }
-
-        .back-button {
-            display: inline-block;
-            padding: 12px 24px;
-            background: #ff6b35;
-            color: white;
-            text-decoration: none;
-            border-radius: 8px;
-            font-weight: bold;
-            transition: all 0.3s;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-        }
-
-        .back-button:hover {
-            background: #ff8555;
-            transform: translateY(-2px);
-            box-shadow: 0 6px 12px rgba(0,0,0,0.15);
-        }
-
-        .back-button.secondary {
-            background: #3498db;
-        }
-
-        .back-button.secondary:hover {
-            background: #5dade2;
-        }
-
-        main {
-            padding: 40px;
-        }
-
-        .intro {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-            padding: 30px;
-            border-radius: 15px;
-            margin-bottom: 40px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
-        }
-
-        .intro h2 {
-            font-size: 2em;
-            margin-bottom: 15px;
-        }
-
-        .products-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
-            gap: 30px;
-            margin-top: 30px;
-        }
-
-        .product-card {
-            background: white;
-            border-radius: 15px;
-            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
-            overflow: hidden;
-            transition: transform 0.3s, box-shadow 0.3s;
-            border: 2px solid #ecf0f1;
-        }
-
-        .product-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 15px 40px rgba(0,0,0,0.2);
-        }
-
-        .card-header {
-            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
-            color: white;
-            padding: 20px;
-        }
-
-        .manufacturer {
-            font-size: 0.9em;
-            opacity: 0.9;
-            margin-bottom: 5px;
-        }
-
-        .card-header h3 {
-            font-size: 1.5em;
-            margin: 0;
-        }
-
-        .card-content {
-            padding: 20px;
-        }
-
-        .card-content p {
-            margin-bottom: 15px;
-            color: #555;
-        }
-
-        .specs {
-            background: #f8f9fa;
-            padding: 15px;
-            border-radius: 10px;
-            margin: 15px 0;
-            font-size: 0.95em;
-        }
-
-        .specs strong {
-            color: #2c3e50;
-        }
-
-        .doc-links {
-            display: flex;
-            gap: 10px;
-            flex-wrap: wrap;
-            margin-top: 15px;
-        }
-
-        .doc-link {
-            flex: 1;
-            min-width: 140px;
-            padding: 10px 15px;
-            background: #3498db;
-            color: white;
-            text-decoration: none;
-            border-radius: 8px;
-            text-align: center;
-            font-size: 0.9em;
-            transition: all 0.3s;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-        }
-
-        .doc-link:hover {
-            background: #2980b9;
-            transform: translateY(-2px);
-            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-        }
-
-        footer {
-            background: #2c3e50;
-            color: white;
-            text-align: center;
-            padding: 30px;
-            margin-top: 40px;
-        }
-
-        @media (max-width: 768px) {
-            .products-grid {
-                grid-template-columns: 1fr;
-            }
-
-            h1 {
-                font-size: 1.8em;
-            }
-
-            .intro h2 {
-                font-size: 1.5em;
-            }
-        }
-    </style>
+    <title>Sterowanie Ruchem Kolejowym (SRK) - ELTRON Railway Solutions</title>
+    <meta name="description" content="Systemy sterowania zwrotnicami, semaforami i sygnalizacją kolejową">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
-        <header>
-            <h1>🚂 Railway Infrastructure Solutions</h1>
+    <a href="#main-content" class="skip-link">Przejdź do treści</a>
+
+    <header class="main-header" role="banner">
+        <div class="container">
+            <h1>🚂 ELTRON Railway Solutions</h1>
             <p class="subtitle">Sterowanie Ruchem Kolejowym (SRK)</p>
-        </header>
+        </div>
+    </header>
 
-        <nav>
-            <a href="index.html">🏠 Strona główna</a>
-            <a href="infrastructure.html">🏗️ Infrastruktura</a>
-            <a href="rolling-stock.html">🚆 Tabor</a>
-            <a href="about.html">ℹ️ O nas</a>
-            <a href="contact.html">📧 Kontakt</a>
-        </nav>
+    <nav class="main-nav" role="navigation">
+        <a href="index.html">🏠 Strona główna</a>
+        <a href="infrastructure.html">🏗️ Infrastruktura</a>
+        <a href="knowledge-base.html">📚 Baza wiedzy</a>
+        <a href="contact.html">📧 Kontakt</a>
+    </nav>
 
+    <main id="main-content">
         <div class="breadcrumb">
-            <a href="index.html">Strona główna</a> → 
-            <a href="infrastructure.html">Infrastruktura</a> → 
-            <strong>Sterowanie Ruchem Kolejowym (SRK)</strong>
+            <div class="container">
+                <a href="index.html">Strona główna</a> → 
+                <a href="infrastructure.html">Infrastruktura</a> → 
+                <strong>Sterowanie Ruchem Kolejowym (SRK)</strong>
+            </div>
         </div>
 
         <div class="back-buttons">
@@ -271,275 +38,313 @@
             <a href="infrastructure.html" class="back-button secondary">← Infrastruktura</a>
         </div>
 
-        <main>
-            <div class="intro">
-                <h2>Sterowanie Ruchem Kolejowym (SRK)</h2>
+        <section class="page-header">
+            <div class="container">
+                <h1>Sterowanie Ruchem Kolejowym (SRK)</h1>
                 <p>Systemy sterowania zwrotnicami, semaforami i sygnalizacją kolejową. Obwody kontroli torów i zajętości, układy zależnościowe i bezpieczeństwa zapewniające najwyższy poziom niezawodności w ruchu kolejowym.</p>
             </div>
+        </section>
 
-            <div class="products-grid">
-                <div class="product-card">
-                    <div class="card-header">
-                        <div class="manufacturer">Hengstler</div>
-                        <h3>H-462</h3>
-                    </div>
-                    <div class="card-content">
-                        <p>Kompaktowy przekaźnik bezpieczeństwa z 4 lub 6 stykami, wysoką obciążalnością do 10 A i potwierdzonym bezpieczeństwem logicznym, odpowiedni do podstawowych funkcji bezpieczeństwa i sygnalizacji w kolejowych układach kontroli. Dostępne wersje neutralne monostabilne i bistabilne, AC oraz sterowane prądem obciążenia</p>
-                        <div class="specs">
-                            <strong>Parametry techniczne:</strong><br>
-                            Przekaźniki bezpieczeństwa Hengstler z wymuszonym prowadzeniem styków zgodnie z normą IEC 61810-3 / EN 50205. Spełniają wymagania zgodnie z normą UIC 736 / EN 50578, jako przekaźniki typu „C”.
-Są zaprojektowane do monitorowania obwodów bezpieczeństwa w różnych systemach automatyki, a wszczególności w systemach sterowania ruchem kolejowym.
+        <section class="product-page">
+            <div class="container">
+                <div class="products-grid">
+
+                    <article class="product-card">
+                        <div class="card-header">
+                            <div class="manufacturer">Hengstler</div>
+                            <h3>H-462</h3>
                         </div>
-                        <div class="doc-links">
-                            <a href="#" class="doc-link">📄 Karta katalogowa</a>
-                            <a href="#" class="doc-link">📋 Nota aplikacyjna</a>
-                            <a href="#" class="doc-link">📊 Prezentacja</a>
+                        <div class="card-content">
+                            <p>Kompaktowy przekaźnik bezpieczeństwa z 4 lub 6 stykami, wysoką obciążalnością do 10 A i potwierdzonym bezpieczeństwem logicznym, odpowiedni do podstawowych funkcji bezpieczeństwa i sygnalizacji w kolejowych układach kontroli. Dostępne wersje neutralne monostabilne i bistabilne, AC oraz sterowane prądem obciążenia</p>
+                            <div class="specs">
+                                <strong>Parametry techniczne:</strong><br>
+                                Przekaźniki bezpieczeństwa Hengstler z wymuszonym prowadzeniem styków zgodnie z normą IEC 61810-3 / EN 50205. Spełniają wymagania zgodnie z normą UIC 736 / EN 50578, jako przekaźniki typu „C". Są zaprojektowane do monitorowania obwodów bezpieczeństwa w różnych systemach automatyki, a wszczególności w systemach sterowania ruchem kolejowym.
+                            </div>
+                            <div class="doc-links">
+                                <a href="#" class="doc-link">📄 Karta katalogowa</a>
+                                <a href="#" class="doc-link">📋 Nota aplikacyjna</a>
+                                <a href="#" class="doc-link">📊 Prezentacja</a>
+                            </div>
                         </div>
-                    </div>
-                </div>
-                <div class="product-card">
-                    <div class="card-header">
-                        <div class="manufacturer">Hengstler</div>
-                        <h3>H-464 oraz H-466</h3>
-                    </div>
-                    <div class="card-content">
-                        <p>Podobne jak H-462 ale z większą liczbą styków (8 lub 10) i większymi możliwościami konfiguracji, co pozwala na zaawansowane monitorowanie wielu obwodów bezpieczeństwa i integrację z bardziej rozbudowanymi systemami sterowania w infrastrukturze kolejowej. H-464 ma konstrukcję pionową (stojącą), H-466 ma konstrukcję poziomą (leżącą)</p>
-                        <div class="specs">
-                            <strong>Parametry techniczne:</strong><br>
-                            Przekaźniki bezpieczeństwa Hengstler z wymuszonym prowadzeniem styków zgodnie z normą IEC 61810-3 / EN 50205. Spełniają wymagania zgodnie z normą UIC 736 / EN 50578, jako przekaźniki typu „C”.
-Są zaprojektowane do monitorowania obwodów bezpieczeństwa w różnych systemach automatyki, a wszczególności w systemach sterowania ruchem kolejowym.
+                    </article>
+
+                    <article class="product-card">
+                        <div class="card-header">
+                            <div class="manufacturer">Hengstler</div>
+                            <h3>H-464 oraz H-466</h3>
                         </div>
-                        <div class="doc-links">
-                            <a href="#" class="doc-link">📄 Karta katalogowa</a>
-                            <a href="#" class="doc-link">📋 Nota aplikacyjna</a>
-                            <a href="#" class="doc-link">📊 Prezentacja</a>
+                        <div class="card-content">
+                            <p>Podobne jak H-462 ale z większą liczbą styków (8 lub 10) i większymi możliwościami konfiguracji, co pozwala na zaawansowane monitorowanie wielu obwodów bezpieczeństwa i integrację z bardziej rozbudowanymi systemami sterowania w infrastrukturze kolejowej. H-464 ma konstrukcję pionową (stojącą), H-466 ma konstrukcję poziomą (leżącą)</p>
+                            <div class="specs">
+                                <strong>Parametry techniczne:</strong><br>
+                                Przekaźniki bezpieczeństwa Hengstler z wymuszonym prowadzeniem styków zgodnie z normą IEC 61810-3 / EN 50205. Spełniają wymagania zgodnie z normą UIC 736 / EN 50578, jako przekaźniki typu „C". Są zaprojektowane do monitorowania obwodów bezpieczeństwa w różnych systemach automatyki, a wszczególności w systemach sterowania ruchem kolejowym.
+                            </div>
+                            <div class="doc-links">
+                                <a href="#" class="doc-link">📄 Karta katalogowa</a>
+                                <a href="#" class="doc-link">📋 Nota aplikacyjna</a>
+                                <a href="#" class="doc-link">📊 Prezentacja</a>
+                            </div>
                         </div>
-                    </div>
-                </div>
-                <div class="product-card">
-                    <div class="card-header">
-                        <div class="manufacturer">Hengstler</div>
-                        <h3>H-472 oraz H-473</h3>
-                    </div>
-                    <div class="card-content">
-                        <p>Mniejsze, o konstrukcji poziomej (leżącej), przekaźniki bezpieczeństwa z liczbą styków 5 lub 7, które mogą być używane tam, gdzie potrzebna jest kompaktowa, ale niezawodna logika bezpieczeństwa. W odróżnieniu od pozostałych rodzin, posiadają cewkę DC spolaryzowaną.</p>
-                        <div class="specs">
-                            <strong>Parametry techniczne:</strong><br>
-                            Przekaźniki bezpieczeństwa Hengstler z wymuszonym prowadzeniem styków zgodnie z normą IEC 61810-3 / EN 50205. Spełniają wymagania zgodnie z normą UIC 736 / EN 50578, jako przekaźniki typu „C”.
-Są zaprojektowane do monitorowania obwodów bezpieczeństwa w różnych systemach automatyki, a wszczególności w systemach sterowania ruchem kolejowym.
+                    </article>
+
+                    <article class="product-card">
+                        <div class="card-header">
+                            <div class="manufacturer">Hengstler</div>
+                            <h3>H-472 oraz H-473</h3>
                         </div>
-                        <div class="doc-links">
-                            <a href="#" class="doc-link">📄 Karta katalogowa</a>
-                            <a href="#" class="doc-link">📋 Nota aplikacyjna</a>
-                            <a href="#" class="doc-link">📊 Prezentacja</a>
+                        <div class="card-content">
+                            <p>Mniejsze, o konstrukcji poziomej (leżącej), przekaźniki bezpieczeństwa z liczbą styków 5 lub 7, które mogą być używane tam, gdzie potrzebna jest kompaktowa, ale niezawodna logika bezpieczeństwa. W odróżnieniu od pozostałych rodzin, posiadają cewkę DC spolaryzowaną.</p>
+                            <div class="specs">
+                                <strong>Parametry techniczne:</strong><br>
+                                Przekaźniki bezpieczeństwa Hengstler z wymuszonym prowadzeniem styków zgodnie z normą IEC 61810-3 / EN 50205. Spełniają wymagania zgodnie z normą UIC 736 / EN 50578, jako przekaźniki typu „C". Są zaprojektowane do monitorowania obwodów bezpieczeństwa w różnych systemach automatyki, a wszczególności w systemach sterowania ruchem kolejowym.
+                            </div>
+                            <div class="doc-links">
+                                <a href="#" class="doc-link">📄 Karta katalogowa</a>
+                                <a href="#" class="doc-link">📋 Nota aplikacyjna</a>
+                                <a href="#" class="doc-link">📊 Prezentacja</a>
+                            </div>
                         </div>
-                    </div>
-                </div>
-                <div class="product-card">
-                    <div class="card-header">
-                        <div class="manufacturer">Mersen</div>
-                        <h3>Ferrule Fuses 14x51 / 22x58 gR</h3>
-                    </div>
-                    <div class="card-content">
-                        <p>Kompaktowa ochrona napędów zwrotnicowych i obwodów zasilania urządzeń przytorowych.</p>
-                        <div class="specs">
-                            <strong>Parametry techniczne:</strong><br>
-                            690V AC / 500V DC, wysoka zdolność zwarciowa | IEC 60269-4
+                    </article>
+
+                    <article class="product-card">
+                        <div class="card-header">
+                            <div class="manufacturer">Mersen</div>
+                            <h3>Ferrule Fuses 14x51 / 22x58 gR</h3>
                         </div>
-                        <div class="doc-links">
-                            <a href="#" class="doc-link">📄 Karta katalogowa</a>
-                            <a href="#" class="doc-link">📋 Nota aplikacyjna</a>
-                            <a href="#" class="doc-link">📊 Prezentacja</a>
+                        <div class="card-content">
+                            <p>Kompaktowa ochrona napędów zwrotnicowych i obwodów zasilania urządzeń przytorowych.</p>
+                            <div class="specs">
+                                <strong>Parametry techniczne:</strong><br>
+                                690V AC / 500V DC, wysoka zdolność zwarciowa | IEC 60269-4
+                            </div>
+                            <div class="doc-links">
+                                <a href="#" class="doc-link">📄 Karta katalogowa</a>
+                                <a href="#" class="doc-link">📋 Nota aplikacyjna</a>
+                                <a href="#" class="doc-link">📊 Prezentacja</a>
+                            </div>
                         </div>
-                    </div>
-                </div>
-                <div class="product-card">
-                    <div class="card-header">
-                        <div class="manufacturer">Phoenix Contact</div>
-                        <h3>CLIXTRAB</h3>
-                    </div>
-                    <div class="card-content">
-                        <p>Wąskie, wtykane ograniczniki przepięć dedykowane do systemów sterowania ruchem z funkcją zdalnej diagnostyki.</p>
-                        <div class="specs">
-                            <strong>Parametry techniczne:</strong><br>
-                            DB RIL 819.0808, IEC 61643-21
+                    </article>
+
+                    <article class="product-card">
+                        <div class="card-header">
+                            <div class="manufacturer">Phoenix Contact</div>
+                            <h3>CLIXTRAB</h3>
                         </div>
-                        <div class="doc-links">
-                            <a href="#" class="doc-link">📄 Karta katalogowa</a>
-                            <a href="#" class="doc-link">📋 Nota aplikacyjna</a>
-                            <a href="#" class="doc-link">📊 Prezentacja</a>
+                        <div class="card-content">
+                            <p>Wąskie, wtykane ograniczniki przepięć dedykowane do systemów sterowania ruchem z funkcją zdalnej diagnostyki.</p>
+                            <div class="specs">
+                                <strong>Parametry techniczne:</strong><br>
+                                DB RIL 819.0808, IEC 61643-21
+                            </div>
+                            <div class="doc-links">
+                                <a href="#" class="doc-link">📄 Karta katalogowa</a>
+                                <a href="#" class="doc-link">📋 Nota aplikacyjna</a>
+                                <a href="#" class="doc-link">📊 Prezentacja</a>
+                            </div>
                         </div>
-                    </div>
-                </div>
-                <div class="product-card">
-                    <div class="card-header">
-                        <div class="manufacturer">Phoenix Contact</div>
-                        <h3>PLC-INTERFACE (PLC-RPT)</h3>
-                    </div>
-                    <div class="card-content">
-                        <p>Wąskie przekaźniki sprzęgające odporne na wibracje, służące do separacji i dopasowania sygnałów w systemach SRK.</p>
-                        <div class="specs">
-                            <strong>Parametry techniczne:</strong><br>
-                            Cewka 24-110V DC, styki złocone | EN 50155, EN 50121, EN 45545-2
+                    </article>
+
+                    <article class="product-card">
+                        <div class="card-header">
+                            <div class="manufacturer">Phoenix Contact</div>
+                            <h3>PLC-INTERFACE (PLC-RPT)</h3>
                         </div>
-                        <div class="doc-links">
-                            <a href="#" class="doc-link">📄 Karta katalogowa</a>
-                            <a href="#" class="doc-link">📋 Nota aplikacyjna</a>
-                            <a href="#" class="doc-link">📊 Prezentacja</a>
+                        <div class="card-content">
+                            <p>Wąskie przekaźniki sprzęgające odporne na wibracje, służące do separacji i dopasowania sygnałów w systemach SRK.</p>
+                            <div class="specs">
+                                <strong>Parametry techniczne:</strong><br>
+                                Cewka 24-110V DC, styki złocone | EN 50155, EN 50121, EN 45545-2
+                            </div>
+                            <div class="doc-links">
+                                <a href="#" class="doc-link">📄 Karta katalogowa</a>
+                                <a href="#" class="doc-link">📋 Nota aplikacyjna</a>
+                                <a href="#" class="doc-link">📊 Prezentacja</a>
+                            </div>
                         </div>
-                    </div>
-                </div>
-                <div class="product-card">
-                    <div class="card-header">
-                        <div class="manufacturer">Sensata / Airpax</div>
-                        <h3>IAG / IUG / IEG</h3>
-                    </div>
-                    <div class="card-content">
-                        <p>Wyłącznik o podwyższonej izolacji (odstępy izolacyjne wg IEC), zapewniający precyzyjne zabezpieczenie czułej elektroniki sygnalizacyjnej.</p>
-                        <div class="specs">
-                            <strong>Parametry techniczne:</strong><br>
-                            0.05-50A, 80VDC / 240VAC | UL 489, UL 1077, IEC 60947-2
+                    </article>
+
+                    <article class="product-card">
+                        <div class="card-header">
+                            <div class="manufacturer">Sensata / Airpax</div>
+                            <h3>IAG / IUG / IEG</h3>
                         </div>
-                        <div class="doc-links">
-                            <a href="#" class="doc-link">📄 Karta katalogowa</a>
-                            <a href="#" class="doc-link">📋 Nota aplikacyjna</a>
-                            <a href="#" class="doc-link">📊 Prezentacja</a>
+                        <div class="card-content">
+                            <p>Wyłącznik o podwyższonej izolacji (odstępy izolacyjne wg IEC), zapewniający precyzyjne zabezpieczenie czułej elektroniki sygnalizacyjnej.</p>
+                            <div class="specs">
+                                <strong>Parametry techniczne:</strong><br>
+                                0.05-50A, 80VDC / 240VAC | UL 489, UL 1077, IEC 60947-2
+                            </div>
+                            <div class="doc-links">
+                                <a href="#" class="doc-link">📄 Karta katalogowa</a>
+                                <a href="#" class="doc-link">📋 Nota aplikacyjna</a>
+                                <a href="#" class="doc-link">📊 Prezentacja</a>
+                            </div>
                         </div>
-                    </div>
-                </div>
-                <div class="product-card">
-                    <div class="card-header">
-                        <div class="manufacturer">Sensata / BEI Sensors</div>
-                        <h3>Seria DSO5</h3>
-                    </div>
-                    <div class="card-content">
-                        <p>Enkoder do krytycznych systemów bezpieczeństwa wymagających redundantnego monitorowania ruchu.</p>
-                        <div class="specs">
-                            <strong>Parametry techniczne:</strong><br>
-                            SIL3 / PLe, Wał drążony, HTL/TTL | IEC 61508, ISO 13849-1
+                    </article>
+
+                    <article class="product-card">
+                        <div class="card-header">
+                            <div class="manufacturer">Sensata / BEI Sensors</div>
+                            <h3>Seria DSO5</h3>
                         </div>
-                        <div class="doc-links">
-                            <a href="#" class="doc-link">📄 Karta katalogowa</a>
-                            <a href="#" class="doc-link">📋 Nota aplikacyjna</a>
-                            <a href="#" class="doc-link">📊 Prezentacja</a>
+                        <div class="card-content">
+                            <p>Enkoder do krytycznych systemów bezpieczeństwa wymagających redundantnego monitorowania ruchu.</p>
+                            <div class="specs">
+                                <strong>Parametry techniczne:</strong><br>
+                                SIL3 / PLe, Wał drążony, HTL/TTL | IEC 61508, ISO 13849-1
+                            </div>
+                            <div class="doc-links">
+                                <a href="#" class="doc-link">📄 Karta katalogowa</a>
+                                <a href="#" class="doc-link">📋 Nota aplikacyjna</a>
+                                <a href="#" class="doc-link">📊 Prezentacja</a>
+                            </div>
                         </div>
-                    </div>
-                </div>
-                <div class="product-card">
-                    <div class="card-header">
-                        <div class="manufacturer">Sensata / BEI Sensors</div>
-                        <h3>Seria PHU9</h3>
-                    </div>
-                    <div class="card-content">
-                        <p>Solidny enkoder absolutny do precyzyjnego pozycjonowania w systemach automatyki kolejowej.</p>
-                        <div class="specs">
-                            <strong>Parametry techniczne:</strong><br>
-                            Wał 30mm, SSI, Rozdzielczość 13+12 bit | IP65, EN 61000-6-2
+                    </article>
+
+                    <article class="product-card">
+                        <div class="card-header">
+                            <div class="manufacturer">Sensata / BEI Sensors</div>
+                            <h3>Seria PHU9</h3>
                         </div>
-                        <div class="doc-links">
-                            <a href="#" class="doc-link">📄 Karta katalogowa</a>
-                            <a href="#" class="doc-link">📋 Nota aplikacyjna</a>
-                            <a href="#" class="doc-link">📊 Prezentacja</a>
+                        <div class="card-content">
+                            <p>Solidny enkoder absolutny do precyzyjnego pozycjonowania w systemach automatyki kolejowej.</p>
+                            <div class="specs">
+                                <strong>Parametry techniczne:</strong><br>
+                                Wał 30mm, SSI, Rozdzielczość 13+12 bit | IP65, EN 61000-6-2
+                            </div>
+                            <div class="doc-links">
+                                <a href="#" class="doc-link">📄 Karta katalogowa</a>
+                                <a href="#" class="doc-link">📋 Nota aplikacyjna</a>
+                                <a href="#" class="doc-link">📊 Prezentacja</a>
+                            </div>
                         </div>
-                    </div>
-                </div>
-                <div class="product-card">
-                    <div class="card-header">
-                        <div class="manufacturer">Sensata / Crydom</div>
-                        <h3>SMR-6 Series</h3>
-                    </div>
-                    <div class="card-content">
-                        <p>Przekaźnik z funkcją monitorowania ciągłości obwodu i wykrywania awarii, kluczowy w systemach bezpieczeństwa i sygnalizacji.</p>
-                        <div class="specs">
-                            <strong>Parametry techniczne:</strong><br>
-                            280VAC, 90A, Alarm Output | IEC 62314
+                    </article>
+
+                    <article class="product-card">
+                        <div class="card-header">
+                            <div class="manufacturer">Sensata / Crydom</div>
+                            <h3>SMR-6 Series</h3>
                         </div>
-                        <div class="doc-links">
-                            <a href="#" class="doc-link">📄 Karta katalogowa</a>
-                            <a href="#" class="doc-link">📋 Nota aplikacyjna</a>
-                            <a href="#" class="doc-link">📊 Prezentacja</a>
+                        <div class="card-content">
+                            <p>Przekaźnik z funkcją monitorowania ciągłości obwodu i wykrywania awarii, kluczowy w systemach bezpieczeństwa i sygnalizacji.</p>
+                            <div class="specs">
+                                <strong>Parametry techniczne:</strong><br>
+                                280VAC, 90A, Alarm Output | IEC 62314
+                            </div>
+                            <div class="doc-links">
+                                <a href="#" class="doc-link">📄 Karta katalogowa</a>
+                                <a href="#" class="doc-link">📋 Nota aplikacyjna</a>
+                                <a href="#" class="doc-link">📊 Prezentacja</a>
+                            </div>
                         </div>
-                    </div>
-                </div>
-                <div class="product-card">
-                    <div class="card-header">
-                        <div class="manufacturer">Sensata / Crydom</div>
-                        <h3>MCX Series</h3>
-                    </div>
-                    <div class="card-content">
-                        <p>Wysokonapięciowy przekaźnik do montażu na płytkach drukowanych w sterownikach przytorowych i systemach automatyki.</p>
-                        <div class="specs">
-                            <strong>Parametry techniczne:</strong><br>
-                            660VAC, 5A, PCB Mount | IEC 60335-1
+                    </article>
+
+                    <article class="product-card">
+                        <div class="card-header">
+                            <div class="manufacturer">Sensata / Crydom</div>
+                            <h3>MCX Series</h3>
                         </div>
-                        <div class="doc-links">
-                            <a href="#" class="doc-link">📄 Karta katalogowa</a>
-                            <a href="#" class="doc-link">📋 Nota aplikacyjna</a>
-                            <a href="#" class="doc-link">📊 Prezentacja</a>
+                        <div class="card-content">
+                            <p>Wysokonapięciowy przekaźnik do montażu na płytkach drukowanych w sterownikach przytorowych i systemach automatyki.</p>
+                            <div class="specs">
+                                <strong>Parametry techniczne:</strong><br>
+                                660VAC, 5A, PCB Mount | IEC 60335-1
+                            </div>
+                            <div class="doc-links">
+                                <a href="#" class="doc-link">📄 Karta katalogowa</a>
+                                <a href="#" class="doc-link">📋 Nota aplikacyjna</a>
+                                <a href="#" class="doc-link">📊 Prezentacja</a>
+                            </div>
                         </div>
-                    </div>
-                </div>
-                <div class="product-card">
-                    <div class="card-header">
-                        <div class="manufacturer">Sensata / Cynergy3</div>
-                        <h3>Seria FRD13000</h3>
-                    </div>
-                    <div class="card-content">
-                        <p>Przełączanie sygnałów wcz. w systemach łączności radiowej i systemach antenowych.</p>
-                        <div class="specs">
-                            <strong>Parametry techniczne:</strong><br>
-                            Izolacja 9kV DC, 6A @ 30MHz, pełne ekranowanie cewki
+                    </article>
+
+                    <article class="product-card">
+                        <div class="card-header">
+                            <div class="manufacturer">Sensata / Cynergy3</div>
+                            <h3>Seria FRD13000</h3>
                         </div>
-                        <div class="doc-links">
-                            <a href="#" class="doc-link">📄 Karta katalogowa</a>
-                            <a href="#" class="doc-link">📋 Nota aplikacyjna</a>
-                            <a href="#" class="doc-link">📊 Prezentacja</a>
+                        <div class="card-content">
+                            <p>Przełączanie sygnałów wcz. w systemach łączności radiowej i systemach antenowych.</p>
+                            <div class="specs">
+                                <strong>Parametry techniczne:</strong><br>
+                                Izolacja 9kV DC, 6A @ 30MHz, pełne ekranowanie cewki
+                            </div>
+                            <div class="doc-links">
+                                <a href="#" class="doc-link">📄 Karta katalogowa</a>
+                                <a href="#" class="doc-link">📋 Nota aplikacyjna</a>
+                                <a href="#" class="doc-link">📊 Prezentacja</a>
+                            </div>
                         </div>
-                    </div>
-                </div>
-                <div class="product-card">
-                    <div class="card-header">
-                        <div class="manufacturer">Sensata / Cynergy3</div>
-                        <h3>Seria FRS12000</h3>
-                    </div>
-                    <div class="card-content">
-                        <p>Komutacja sygnałów w urządzeniach nadawczo-odbiorczych SRK.</p>
-                        <div class="specs">
-                            <strong>Parametry techniczne:</strong><br>
-                            Pasmo do 30 MHz, prąd przenoszenia 5A RF, otwarta ramka
+                    </article>
+
+                    <article class="product-card">
+                        <div class="card-header">
+                            <div class="manufacturer">Sensata / Cynergy3</div>
+                            <h3>Seria FRS12000</h3>
                         </div>
-                        <div class="doc-links">
-                            <a href="#" class="doc-link">📄 Karta katalogowa</a>
-                            <a href="#" class="doc-link">📋 Nota aplikacyjna</a>
-                            <a href="#" class="doc-link">📊 Prezentacja</a>
+                        <div class="card-content">
+                            <p>Komutacja sygnałów w urządzeniach nadawczo-odbiorczych SRK.</p>
+                            <div class="specs">
+                                <strong>Parametry techniczne:</strong><br>
+                                Pasmo do 30 MHz, prąd przenoszenia 5A RF, otwarta ramka
+                            </div>
+                            <div class="doc-links">
+                                <a href="#" class="doc-link">📄 Karta katalogowa</a>
+                                <a href="#" class="doc-link">📋 Nota aplikacyjna</a>
+                                <a href="#" class="doc-link">📊 Prezentacja</a>
+                            </div>
                         </div>
-                    </div>
-                </div>
-                <div class="product-card">
-                    <div class="card-header">
-                        <div class="manufacturer">nVent Schroff</div>
-                        <h3>Unibody</h3>
-                    </div>
-                    <div class="card-content">
-                        <p>Jednościenna lub dwuścienna szafa aluminiowa do systemów komunikacji i informacji pasażerskiej na stacjach i peronach.</p>
-                        <div class="specs">
-                            <strong>Parametry techniczne:</strong><br>
-                            Podwójne ścianki aluminiowe, Montaż na słupie | Klasa zewnętrzna, odporność na korozję
+                    </article>
+
+                    <article class="product-card">
+                        <div class="card-header">
+                            <div class="manufacturer">nVent Schroff</div>
+                            <h3>Unibody</h3>
                         </div>
-                        <div class="doc-links">
-                            <a href="#" class="doc-link">📄 Karta katalogowa</a>
-                            <a href="#" class="doc-link">📋 Nota aplikacyjna</a>
-                            <a href="#" class="doc-link">📊 Prezentacja</a>
+                        <div class="card-content">
+                            <p>Jednościenna lub dwuścienna szafa aluminiowa do systemów komunikacji i informacji pasażerskiej na stacjach i peronach.</p>
+                            <div class="specs">
+                                <strong>Parametry techniczne:</strong><br>
+                                Podwójne ścianki aluminiowe, Montaż na słupie | Klasa zewnętrzna, odporność na korozję
+                            </div>
+                            <div class="doc-links">
+                                <a href="#" class="doc-link">📄 Karta katalogowa</a>
+                                <a href="#" class="doc-link">📋 Nota aplikacyjna</a>
+                                <a href="#" class="doc-link">📊 Prezentacja</a>
+                            </div>
                         </div>
-                    </div>
+                    </article>
+
                 </div>
             </div>
-        </main>
+        </section>
+    </main>
 
-        <footer>
-            <p>&copy; 2026 Railway Solutions. Wszelkie prawa zastrzeżone.</p>
-            <p>Kontakt: info@railway-solutions.pl | Tel: +48 123 456 789</p>
-        </footer>
-    </div>
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <h4>ELTRON Sp. z o.o.</h4>
+                    <p>Profesjonalne rozwiązania dla przemysłu kolejowego</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Linki</h4>
+                    <ul>
+                        <li><a href="index.html">Strona główna</a></li>
+                        <li><a href="infrastructure.html">Infrastruktura</a></li>
+                        <li><a href="knowledge-base.html">Baza wiedzy</a></li>
+                        <li><a href="contact.html">Kontakt</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Kontakt</h4>
+                    <p>Email: kontakt@eltron.pl<br>Tel: +48 71 XXX XX XX</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 ELTRON Sp. z o.o. Wszelkie prawa zastrzeżone.</p>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
