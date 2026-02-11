@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Infrastruktura Kolejowa</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f9f9f9;
+        }
+
+        .navbar {
+            background: linear-gradient(135deg, #003366 0%, #004d99 100%);
+            color: white;
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .navbar h1 {
+            font-size: 1.5rem;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: #FF8C00;
+        }
+
+        .breadcrumb {
+            background: #f0f0f0;
+            padding: 1rem 2rem;
+            font-size: 0.9rem;
+        }
+
+        .breadcrumb a {
+            color: #003366;
+            text-decoration: none;
+            margin: 0 0.5rem;
+        }
+
+        .breadcrumb a:hover {
+            text-decoration: underline;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 2rem;
+        }
+
+        .page-header {
+            background: linear-gradient(135deg, #003366 0%, #004d99 100%);
+            color: white;
+            padding: 3rem 2rem;
+            border-radius: 8px;
+            margin-bottom: 3rem;
+            text-align: center;
+        }
+
+        .page-header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .page-header p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+
+        .intro-section {
+            background: white;
+            padding: 2rem;
+            border-radius: 8px;
+            margin-bottom: 3rem;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .intro-section h2 {
+            color: #003366;
+            margin-bottom: 1rem;
+            border-bottom: 3px solid #FF8C00;
+            padding-bottom: 0.5rem;
+        }
+
+        .intro-section p {
+            font-size: 1rem;
+            line-height: 1.8;
+            color: #555;
+        }
+
+        .infrastructure-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+
+        .infrastructure-card {
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
+            border-left: 4px solid #FF8C00;
+        }
+
+        .infrastructure-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+        }
+
+        .card-header {
+            background: linear-gradient(135deg, #003366 0%, #004d99 100%);
+            color: white;
+            padding: 2rem 1.5rem;
+            text-align: center;
+        }
+
+        .card-icon {
+            font-size: 3rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .card-header h3 {
+            font-size: 1.3rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .card-header p {
+            font-size: 0.9rem;
+            opacity: 0.9;
+        }
+
+        .card-content {
+            padding: 1.5rem;
+        }
+
+        .card-content p {
+            color: #666;
+            font-size: 0.95rem;
+            line-height: 1.6;
+            margin-bottom: 1rem;
+        }
+
+        .producers-list {
+            background: #f5f5f5;
+            padding: 1rem;
+            border-radius: 4px;
+            margin-bottom: 1rem;
+        }
+
+        .producers-list h4 {
+            color: #003366;
+            font-size: 0.9rem;
+            margin-bottom: 0.5rem;
+            font-weight: bold;
+        }
+
+        .producers-list ul {
+            list-style: none;
+            margin-left: 0;
+        }
+
+        .producers-list li {
+            color: #555;
+            font-size: 0.85rem;
+            padding: 0.3rem 0;
+            padding-left: 1.5rem;
+            position: relative;
+        }
+
+        .producers-list li:before {
+            content: "→";
+            position: absolute;
+            left: 0;
+            color: #FF8C00;
+            font-weight: bold;
+        }
+
+        .card-link {
+            display: inline-block;
+            padding: 0.75rem 1.5rem;
+            background: #003366;
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+            font-weight: bold;
+            transition: background 0.3s;
+            width: 100%;
+            text-align: center;
+            box-sizing: border-box;
+        }
+
+        .card-link:hover {
+            background: #FF8C00;
+        }
+
+        .back-button {
+            display: inline-block;
+            margin-bottom: 2rem;
+            padding: 0.75rem 1.5rem;
+            background: #FF8C00;
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+            transition: background 0.3s;
+        }
+
+        .back-button:hover {
+            background: #003366;
+        }
+
+        .footer {
+            background: #003366;
+            color: white;
+            text-align: center;
+            padding: 2rem;
+            margin-top: 3rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <h1>🚂 Infrastruktura Kolejowa</h1>
+        <ul class="nav-links">
+            <li><a href="index.html">Strona główna</a></li>
+            <li><a href="knowledge-base.html">Baza Wiedzy</a></li>
+            <li><a href="contact.html">Kontakt</a></li>
+        </ul>
+    </div>
+
+    <div class="breadcrumb">
+        <a href="index.html">Strona główna</a> >
+        <strong>Infrastruktura Kolejowa</strong>
+    </div>
+
+    <div class="container">
+        <div class="page-header">
+            <h1>Infrastruktura Kolejowa</h1>
+            <p>Kompleksowe Rozwiązania Techniczne dla Transportu Szynowego</p>
+        </div>
+
+        <a href="index.html" class="back-button">← Wróć do Strony Głównej</a>
+
+        <div class="intro-section">
+            <h2>O Infrastrukturze Kolejowej</h2>
+            <p>
+                Infrastruktura kolejowa stanowi filar nowoczesnego transportu publicznego. Składa się z wielu specjalistycznych 
+                systemów, od zarządzania ruchem pociągów po zasilanie i ochronę linii. Każdy element wymaga niezawodnych, 
+                certyfikowanych urządzeń spełniających surowe normy europejskie EN, IEC i przepisy TSI (Technical Specifications for Interoperability).
+            </p>
+            <p style="margin-top: 1rem;">
+                Poniżej znajduje się lista głównych komponentów infrastruktury kolejowej wraz z producentami specjalistycznych 
+                rozwiązań dla każdej kategorii.
+            </p>
+        </div>
+
+        <div class="infrastructure-grid">
+            <!-- ROZJAZDY -->
+            <div class="infrastructure-card">
+                <div class="card-header">
+                    <div class="card-icon">🔧</div>
+                    <h3>Rozjazdy</h3>
+                    <p>Systemy Ogrzewania i Ochrony</p>
+                </div>
+                <div class="card-content">
+                    <p>
+                        Rozjazdy (switches) to krytyczne elementy infrastruktury umożliwiające zmianę toru jazdy. 
+                        W warunkach zimowych wymagają systemów ogrzewania EOR (Electrical Heating of Rail).
+                    </p>
+                    <div class="producers-list">
+                        <h4>📌 Producenci:</h4>
+                        <ul>
+                            <li>Mersen - Bezpieczniki i odbieraki</li>
+                            <li>Sensata/Airpax - Wyłączniki i zabezpieczenia</li>
+                            <li>Carlo Gavazzi - Przekaźniki półprzewodnikowe</li>
+                        </ul>
+                    </div>
+                    <a href="switches.html" class="card-link">Przejdź do Rozjazdów →</a>
+                </div>
+            </div>
+
+            <!-- PODSTACJE TRAKCYJNE -->
+            <div class="infrastructure-card">
+                <div class="card-header">
+                    <div class="card-icon">⚡</div>
+                    <h3>Podstacje Trakcyjne</h3>
+                    <p>Konwersja i Dystrybucja Energii</p>
+                </div>
+                <div class="card-content">
+                    <p>
+                        Podstacje trakcyjne to serca infrastruktury kolejowej. Konwertują energię z sieci publicznej 
+                        na napięcia trakcyjne (750V, 1500V, 3000V DC lub 15-25kV AC).
+                    </p>
+                    <div class="producers-list">
+                        <h4>📌 Producenci:</h4>
+                        <ul>
+                            <li>Knick - Przetworniki wysokiego napięcia</li>
+                            <li>Mersen - Odłączniki i ograniczniki przepięcia</li>
+                            <li>Sensata/Airpax - Wyłączniki przemysłowe</li>
+                            <li>Phoenix Contact - Złączki szynowe</li>
+                            <li>Carlo Gavazzi - Analizatory i przekadniki</li>
+                        </ul>
+                    </div>
+                    <a href="substations.html" class="card-link">Przejdź do Podstacji →</a>
+                </div>
+            </div>
+
+            <!-- CENTRA KONTROLI -->
+            <div class="infrastructure-card">
+                <div class="card-header">
+                    <div class="card-icon">🏢</div>
+                    <h3>Centra Kontroli</h3>
+                    <p>Zarządzanie Ruchem i Bezpieczeństwo</p>
+                </div>
+                <div class="card-content">
+                    <p>
+                        Centra kontroli ruchu kolejowym (CTC) zarządzają pociągami, sygnalizacją i bezpieczeństwem. 
+                        Wymagają najwyższego poziomu niezawodności i zabezpieczenia przed atakami cyfrowymi.
+                    </p>
+                    <div class="producers-list">
+                        <h4>📌 Producenci:</h4>
+                        <ul>
+                            <li>nVent Schroff - Szafy serwerowe sejsmiczne</li>
+                            <li>Sensata/Airpax - Wyłączniki i dystrybucja zasilania</li>
+                            <li>Phoenix Contact - Sterowanie, PLC, cyberbezpieczeństwo</li>
+                            <li>Sensata/Crydom - Przekaźniki proporcjonalne</li>
+                            <li>Carlo Gavazzi - Liczniki i analizatory energii</li>
+                        </ul>
+                    </div>
+                    <a href="control-centers.html" class="card-link">Przejdź do Centrów Kontroli →</a>
+                </div>
+            </div>
+
+            <!-- PRZYTOROWE SYSTEMY BEZPIECZEŃSTWA -->
+            <div class="infrastructure-card">
+                <div class="card-header">
+                    <div class="card-icon">🚨</div>
+                    <h3>Przytorowe Systemy Bezpieczeństwa</h3>
+                    <p>Ochrona Infrastruktury Krytycznej</p>
+                </div>
+                <div class="card-content">
+                    <p>
+                        Systemy bezpieczeństwa przy torach chroniące czułą elektronikę sygnalizacyjną i komunikacyjną 
+                        przed warunkami atmosferycznymi i aktami wandalizmu.
+                    </p>
+                    <div class="producers-list">
+                        <h4>📌 Producenci:</h4>
+                        <ul>
+                            <li>Mersen - Bezpieczniki pomocnicze</li>
+                            <li>Sensata/Airpax - Wyłączniki hermetyczne</li>
+                            <li>nVent Schroff - Obudowy odporne na wandalizm</li>
+                            <li>Sensata/BEI - Enkodery przeciwwybuchowe</li>
+                        </ul>
+                    </div>
+                    <p style="margin-top: 1rem; font-size: 0.85rem; color: #999;">
+                        Szczegóły dostępne w sekcjach Rozjazdów i Centrów Kontroli
+                    </p>
+                </div>
+            </div>
+
+            <!-- STEROWANIE RUCHEM KOLEJOWYM -->
+            <div class="infrastructure-card">
+                <div class="card-header">
+                    <div class="card-icon">🎛️</div>
+                    <h3>Sterowanie Ruchem Kolejowym (SRK)</h3>
+                    <p>Sygnalizacja i Automatyka</p>
+                </div>
+                <div class="card-content">
+                    <p>
+                        Systemy SRK odpowiadają za sterowanie zwrotnicami, sygnalizacją, sygnałami i bezpieczeństwem 
+                        ruchu. Wymagają przekaźników bezpieczeństwa i zabezpieczeń o najwyższej niezawodności.
+                    </p>
+                    <div class="producers-list">
+                        <h4>📌 Producenci:</h4>
+                        <ul>
+                            <li>Hengstler - Przekaźniki bezpieczeństwa (IEC 61810)</li>
+                            <li>Mersen - Bezpieczniki cylindryczne</li>
+                            <li>Sensata/Airpax - Wyłączniki precyzyjne</li>
+                            <li>Phoenix Contact - Ochrona przepięciowa</li>
+                        </ul>
+                    </div>
+                    <p style="margin-top: 1rem; font-size: 0.85rem; color: #999;">
+                        Szczegóły dostępne w sekcjach Podstacji i Centrów Kontroli
+                    </p>
+                </div>
+            </div>
+
+            <!-- CENTRA TECHNICZNE -->
+            <div class="infrastructure-card">
+                <div class="card-header">
+                    <div class="card-icon">⚙️</div>
+                    <h3>Centra Techniczne</h3>
+                    <p>Zasilanie i Infrastruktura IT</p>
+                </div>
+                <div class="card-content">
+                    <p>
+                        Pomieszczenia techniczne hostujące serwerownie, przetwornice zasilania i urządzenia komunikacyjne. 
+                        Wymagają ochrony przed przepięciami i zaburzeniami EMC.
+                    </p>
+                    <div class="producers-list">
+                        <h4>📌 Producenci:</h4>
+                        <ul>
+                            <li>nVent Schroff - Szafy i obudowy</li>
+                            <li>Phoenix Contact - Zasilanie i PLC</li>
+                            <li>Sensata/Crydom - Przekaźniki proporcjonalne</li>
+                            <li>Mersen - Ograniczniki przepięcia</li>
+                        </ul>
+                    </div>
+                    <p style="margin-top: 1rem; font-size: 0.85rem; color: #999;">
+                        Szczegóły dostępne w sekcji Centrów Kontroli
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="intro-section">
+            <h2>Normy i Certyfikaty</h2>
+            <p>
+                Wszystkie rozwiązania w infrastrukturze kolejowej muszą spełniać najsurowsze normy europejskie:
+            </p>
+            <ul style="margin-left: 2rem; margin-top: 1rem; line-height: 1.8;">
+                <li><strong>EN 50155</strong> - Wymagania dla urządzeń w taborze i infrastrukturze</li>
+                <li><strong>EN 50205</strong> - Przekaźniki bezpieczeństwa</li>
+                <li><strong>EN 60077</strong> - Kompatybilność elektromagnetyczna systemów trakcyjnych</li>
+                <li><strong>EN 61508</strong> - Bezpieczeństwo funkcjonalne systemów elektronicznych</li>
+                <li><strong>IEC 61869</strong> - Przekadniki pomiarowe (prądowe i napięciowe)</li>
+                <li><strong>EN 62053</strong> - Liczniki energii elektrycznej</li>
+                <li><strong>TSI PRM</strong> - Dostępność i użyteczność dla osób niepełnosprawnych</li>
+                <li><strong>MID</strong> - Dyrektywa Przyrządów Pomiarowych</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>&copy; 2026 Infrastruktura Kolejowa. Wszystkie prawa zastrzeżone.</p>
+        <p style="margin-top: 1rem; font-size: 0.9rem;">
+            Rozwiązania techniczne dla Mersen, Sensata, EAO, Phoenix Contact, Knick, Schroff, Hengstler, Carlo Gavazzi
+        </p>
+    </div>
+</body>
+</html>
