@@ -1,7 +1,7 @@
 /* ===================================
    ELTRON - Railway Solutions Landing Page
    Kolory: Pomarańcz (#FF8C00) i Granat (#003366)
-   Aktualizacja: 2026-02-11 - Accessibility, Unified Design
+   WERSJA POPRAWIONA - z accessibility i SEO
    =================================== */
 
 /* Reset i podstawy */
@@ -12,7 +12,7 @@
 }
 
 body {
-    font-family: 'Segoe UI', Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     line-height: 1.6;
     color: #333;
     background-color: #f5f5f5;
@@ -24,24 +24,23 @@ body {
     padding: 0 20px;
 }
 
-/* Skip link dla accessibility */
+/* ===================================
+   ACCESSIBILITY: Skip Link
+   =================================== */
 .skip-link {
     position: absolute;
     top: -40px;
     left: 0;
     background: #FF8C00;
-    color: #000;
+    color: white;
     padding: 8px 16px;
     text-decoration: none;
     z-index: 10000;
     font-weight: bold;
-    border-radius: 0 0 4px 0;
 }
 
 .skip-link:focus {
     top: 0;
-    outline: 3px solid #003366;
-    outline-offset: 2px;
 }
 
 /* Header */
@@ -60,31 +59,11 @@ body {
     align-items: center;
 }
 
-/* Logo tekstowe ELTRON */
 .main-logo {
+    height: 50px;
     background: white;
-    padding: 10px 20px;
+    padding: 5px 10px;
     border-radius: 4px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.logo-text {
-    font-size: 1.8em;
-    font-weight: bold;
-    color: #003366;
-    letter-spacing: 2px;
-    line-height: 1;
-}
-
-.logo-subtitle {
-    font-size: 0.7em;
-    color: #FF8C00;
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    margin-top: 2px;
 }
 
 .main-nav ul {
@@ -97,27 +76,14 @@ body {
     color: white;
     text-decoration: none;
     font-weight: bold;
-    transition: all 0.3s;
-    padding: 8px 12px;
-    border-radius: 4px;
-    position: relative;
+    transition: color 0.3s;
 }
 
 .main-nav a:hover,
 .main-nav a:focus {
     color: #FF8C00;
-    background-color: rgba(255, 255, 255, 0.1);
-    outline: none;
-}
-
-.main-nav a:focus {
     outline: 2px solid #FF8C00;
-    outline-offset: 2px;
-}
-
-.main-nav a.active {
-    color: #FF8C00;
-    background-color: rgba(255, 140, 0, 0.2);
+    outline-offset: 4px;
 }
 
 /* Hero Section */
@@ -132,16 +98,12 @@ body {
     font-size: 2.8em;
     margin-bottom: 20px;
     font-weight: bold;
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
 }
 
 .hero-subtitle {
     font-size: 1.3em;
     margin-bottom: 30px;
     opacity: 0.95;
-    max-width: 800px;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 .hero-badges {
@@ -151,21 +113,14 @@ body {
     flex-wrap: wrap;
 }
 
-/* Poprawiony kontrast dla badge */
+/* POPRAWKA: Lepszy kontrast dla badges */
 .badge {
     background-color: #FF8C00;
-    color: #000; /* Czarny tekst dla WCAG AAA contrast */
-    padding: 12px 28px;
+    color: #000; /* Czarny tekst dla WCAG AAA */
+    padding: 10px 25px;
     border-radius: 25px;
     font-weight: bold;
-    font-size: 1em;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.2);
-    transition: transform 0.3s, box-shadow 0.3s;
-}
-
-.badge:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 6px 12px rgba(0,0,0,0.3);
+    border: 2px solid #FF8C00;
 }
 
 /* Interactive Train Section */
@@ -179,7 +134,6 @@ body {
     color: #003366;
     text-align: center;
     margin-bottom: 15px;
-    font-weight: bold;
 }
 
 .section-intro {
@@ -187,9 +141,6 @@ body {
     font-size: 1.1em;
     color: #666;
     margin-bottom: 40px;
-    max-width: 800px;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 .train-diagram-wrapper {
@@ -199,7 +150,6 @@ body {
     border: 3px solid #003366;
     border-radius: 8px;
     overflow: hidden;
-    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
 }
 
 .train-image {
@@ -207,12 +157,11 @@ body {
     display: block;
 }
 
-/* Lazy loading placeholder */
+/* POPRAWKA: Lazy loading placeholder animation */
 .train-image[loading="lazy"] {
     background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
     background-size: 200% 100%;
     animation: loading 1.5s infinite;
-    min-height: 400px;
 }
 
 @keyframes loading {
@@ -223,8 +172,8 @@ body {
 /* Hotspots - klikalne obszary */
 .hotspot {
     position: absolute;
-    background-color: rgba(255, 140, 0, 0.25);
-    border: 3px solid #FF8C00;
+    background-color: rgba(255, 140, 0, 0.2);
+    border: 2px solid #FF8C00;
     border-radius: 8px;
     cursor: pointer;
     transition: all 0.3s ease;
@@ -234,31 +183,30 @@ body {
     justify-content: center;
 }
 
-.hotspot:hover,
-.hotspot:focus {
-    background-color: rgba(255, 140, 0, 0.45);
-    border-width: 4px;
-    transform: scale(1.03);
-    box-shadow: 0 0 25px rgba(255, 140, 0, 0.7);
-    outline: none;
+.hotspot:hover {
+    background-color: rgba(255, 140, 0, 0.4);
+    border-width: 3px;
+    transform: scale(1.02);
+    box-shadow: 0 0 20px rgba(255, 140, 0, 0.6);
 }
 
+/* POPRAWKA: Focus state dla accessibility */
 .hotspot:focus {
-    outline: 3px solid #003366;
+    outline: 3px solid #FF8C00;
     outline-offset: 2px;
+    background-color: rgba(255, 140, 0, 0.5);
 }
 
 .hotspot-label {
     color: white;
     font-weight: bold;
-    font-size: 0.95em;
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.9);
-    background-color: rgba(0, 51, 102, 0.9);
-    padding: 8px 16px;
+    font-size: 0.9em;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.8);
+    background-color: rgba(0, 51, 102, 0.8);
+    padding: 5px 12px;
     border-radius: 4px;
     opacity: 0;
     transition: opacity 0.3s;
-    pointer-events: none;
 }
 
 .hotspot:hover .hotspot-label,
@@ -269,10 +217,10 @@ body {
 /* Pulsowanie hotspotów */
 @keyframes pulse {
     0%, 100% {
-        box-shadow: 0 0 12px rgba(255, 140, 0, 0.5);
+        box-shadow: 0 0 10px rgba(255, 140, 0, 0.4);
     }
     50% {
-        box-shadow: 0 0 24px rgba(255, 140, 0, 0.9);
+        box-shadow: 0 0 20px rgba(255, 140, 0, 0.8);
     }
 }
 
@@ -297,30 +245,26 @@ body {
     background-color: white;
     padding: 35px 25px;
     border-radius: 8px;
+    text-align: center;
     text-decoration: none;
     color: #333;
-    border: 2px solid #e0e0e0;
+    border: 2px solid transparent;
     transition: all 0.3s;
     box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 }
 
-.infra-card:hover,
-.infra-card:focus-within {
+.infra-card:hover {
     border-color: #FF8C00;
     transform: translateY(-5px);
-    box-shadow: 0 8px 20px rgba(255, 140, 0, 0.3);
+    box-shadow: 0 5px 15px rgba(255, 140, 0, 0.3);
 }
 
-.infra-card a {
-    text-decoration: none;
-    color: inherit;
-    display: block;
-}
-
-.infra-card a:focus {
+/* POPRAWKA: Focus state dla infra-card */
+.infra-card:focus {
+    border-color: #FF8C00;
     outline: 3px solid #FF8C00;
-    outline-offset: 4px;
-    border-radius: 4px;
+    outline-offset: 2px;
+    box-shadow: 0 0 0 3px rgba(255, 140, 0, 0.3);
 }
 
 .infra-icon {
@@ -332,13 +276,11 @@ body {
     color: #003366;
     font-size: 1.4em;
     margin-bottom: 10px;
-    font-weight: bold;
 }
 
 .infra-card p {
     color: #666;
     font-size: 0.95em;
-    line-height: 1.5;
 }
 
 /* Manufacturers Section */
@@ -368,16 +310,15 @@ body {
     display: block;
 }
 
-.manufacturer-logo:hover,
-.manufacturer-logo:focus {
+.manufacturer-logo:hover {
     border-color: #FF8C00;
     background-color: white;
     transform: scale(1.05);
-    box-shadow: 0 4px 12px rgba(255, 140, 0, 0.3);
-    outline: none;
 }
 
+/* POPRAWKA: Focus state dla manufacturer-logo */
 .manufacturer-logo:focus {
+    border-color: #FF8C00;
     outline: 3px solid #FF8C00;
     outline-offset: 2px;
 }
@@ -386,14 +327,13 @@ body {
 .cta-section {
     padding: 80px 0;
     background: linear-gradient(135deg, #FF8C00 0%, #FF7000 100%);
-    color: #000;
+    color: white;
     text-align: center;
 }
 
 .cta-section h2 {
     font-size: 2.2em;
     margin-bottom: 15px;
-    font-weight: bold;
 }
 
 .cta-section p {
@@ -416,38 +356,34 @@ body {
     font-size: 1.1em;
     transition: all 0.3s;
     display: inline-block;
-    border: 2px solid transparent;
-}
-
-.btn:focus {
-    outline: 3px solid #003366;
-    outline-offset: 4px;
 }
 
 .btn-primary {
     background-color: #003366;
     color: white;
-    border-color: #003366;
+    border: 2px solid #003366;
 }
 
 .btn-primary:hover,
 .btn-primary:focus {
     background-color: white;
     color: #003366;
-    border-color: #003366;
+    outline: 3px solid white;
+    outline-offset: 2px;
 }
 
 .btn-secondary {
     background-color: white;
     color: #FF8C00;
-    border-color: white;
+    border: 2px solid white;
 }
 
 .btn-secondary:hover,
 .btn-secondary:focus {
-    background-color: #003366;
+    background-color: transparent;
     color: white;
-    border-color: white;
+    outline: 3px solid white;
+    outline-offset: 2px;
 }
 
 /* Footer */
@@ -467,7 +403,6 @@ body {
 .footer-col h4 {
     color: #FF8C00;
     margin-bottom: 15px;
-    font-weight: bold;
 }
 
 .footer-col ul {
@@ -478,7 +413,6 @@ body {
     color: white;
     text-decoration: none;
     line-height: 2;
-    transition: color 0.3s;
 }
 
 .footer-col a:hover,
@@ -487,41 +421,16 @@ body {
     text-decoration: underline;
 }
 
-.footer-col a:focus {
-    outline: 2px solid #FF8C00;
-    outline-offset: 2px;
-}
-
 .footer-bottom {
     border-top: 1px solid rgba(255,255,255,0.2);
     padding-top: 20px;
     text-align: center;
 }
 
-/* Fade-in animation dla kart */
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-.fade-in {
-    animation: fadeIn 0.6s ease-out forwards;
-}
-
 /* Responsive */
 @media (max-width: 768px) {
     .hero-content h1 {
         font-size: 2em;
-    }
-
-    .hero-subtitle {
-        font-size: 1.1em;
     }
 
     .main-nav ul {
@@ -535,21 +444,12 @@ body {
     }
 
     .hotspot-label {
-        font-size: 0.75em;
-        padding: 5px 10px;
+        font-size: 0.7em;
+        padding: 3px 8px;
     }
 
     .cta-buttons {
         flex-direction: column;
-    }
-
-    .section-title {
-        font-size: 1.8em;
-    }
-
-    .badge {
-        font-size: 0.9em;
-        padding: 10px 20px;
     }
 }
 
@@ -574,13 +474,10 @@ body {
 .breadcrumb-nav a {
     color: #FF8C00;
     text-decoration: none;
-    transition: color 0.3s;
 }
 
-.breadcrumb-nav a:hover,
-.breadcrumb-nav a:focus {
+.breadcrumb-nav a:hover {
     text-decoration: underline;
-    color: #FF7000;
 }
 
 .page-header {
@@ -589,31 +486,29 @@ body {
     padding: 40px;
     border-radius: 8px;
     margin-bottom: 40px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
 
 .page-header h1 {
     font-size: 2.5em;
     margin-bottom: 15px;
-    font-weight: bold;
 }
 
 .back-button {
     display: inline-block;
     padding: 10px 20px;
     background-color: #FF8C00;
-    color: #000;
+    color: white;
     text-decoration: none;
     border-radius: 5px;
     margin-bottom: 30px;
     font-weight: bold;
-    transition: all 0.3s;
 }
 
 .back-button:hover,
 .back-button:focus {
     background-color: #FF7000;
-    transform: translateX(-5px);
+    outline: 2px solid #FF8C00;
+    outline-offset: 2px;
 }
 
 .products-grid {
@@ -631,11 +526,9 @@ body {
     transition: all 0.3s;
 }
 
-.product-card:hover,
-.product-card:focus-within {
+.product-card:hover {
     border-color: #FF8C00;
     box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-    transform: translateY(-3px);
 }
 
 .product-manufacturer {
@@ -650,13 +543,12 @@ body {
     color: #003366;
     margin-bottom: 15px;
     font-size: 1.3em;
-    font-weight: bold;
 }
 
 .product-description {
     color: #666;
     margin-bottom: 15px;
-    line-height: 1.6;
+    line-height: 1.5;
 }
 
 .product-family {
@@ -671,7 +563,6 @@ body {
     color: #003366;
     font-size: 1.1em;
     margin-bottom: 8px;
-    font-weight: bold;
 }
 
 .product-family p {
@@ -693,13 +584,14 @@ body {
     text-decoration: none;
     border-radius: 4px;
     font-size: 0.85em;
-    transition: all 0.3s;
+    transition: background-color 0.3s;
 }
 
 .doc-btn:hover,
 .doc-btn:focus {
     background-color: #FF8C00;
-    transform: translateY(-2px);
+    outline: 2px solid #FF8C00;
+    outline-offset: 2px;
 }
 
 /* Contact Page Styles */
@@ -716,18 +608,11 @@ body {
     border-radius: 8px;
     border: 2px solid #e0e0e0;
     text-align: center;
-    transition: all 0.3s;
-}
-
-.expert-card:hover {
-    border-color: #FF8C00;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
 
 .expert-card h3 {
     color: #003366;
     margin-bottom: 10px;
-    font-weight: bold;
 }
 
 .expert-products {
@@ -740,18 +625,17 @@ body {
     display: inline-block;
     padding: 10px 20px;
     background-color: #FF8C00;
-    color: #000;
+    color: white;
     text-decoration: none;
     border-radius: 5px;
     margin-top: 10px;
-    font-weight: bold;
-    transition: all 0.3s;
 }
 
 .expert-email:hover,
 .expert-email:focus {
     background-color: #FF7000;
-    transform: scale(1.05);
+    outline: 2px solid #FF8C00;
+    outline-offset: 2px;
 }
 
 .contact-form {
@@ -760,7 +644,6 @@ body {
     background-color: #f9f9f9;
     padding: 40px;
     border-radius: 8px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
 
 .form-group {
@@ -782,16 +665,14 @@ body {
     border: 2px solid #ddd;
     border-radius: 5px;
     font-size: 1em;
-    transition: border-color 0.3s;
-    font-family: inherit;
 }
 
 .form-group input:focus,
 .form-group textarea:focus,
 .form-group select:focus {
-    outline: none;
     border-color: #FF8C00;
-    box-shadow: 0 0 0 3px rgba(255, 140, 0, 0.1);
+    outline: 2px solid #FF8C00;
+    outline-offset: 2px;
 }
 
 .form-group textarea {
@@ -803,20 +684,20 @@ body {
     width: 100%;
     padding: 15px;
     background-color: #FF8C00;
-    color: #000;
+    color: white;
     border: none;
     border-radius: 5px;
     font-size: 1.1em;
     font-weight: bold;
     cursor: pointer;
-    transition: all 0.3s;
+    transition: background-color 0.3s;
 }
 
 .submit-btn:hover,
 .submit-btn:focus {
     background-color: #FF7000;
-    transform: translateY(-2px);
-    box-shadow: 0 4px 12px rgba(255, 140, 0, 0.3);
+    outline: 3px solid #FF8C00;
+    outline-offset: 2px;
 }
 
 /* Knowledge Base Styles */
@@ -835,17 +716,14 @@ body {
     transition: all 0.3s;
 }
 
-.knowledge-card:hover,
-.knowledge-card:focus-within {
+.knowledge-card:hover {
     border-color: #FF8C00;
     box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-    transform: translateY(-3px);
 }
 
 .knowledge-card h3 {
     color: #003366;
     margin-bottom: 10px;
-    font-weight: bold;
 }
 
 .knowledge-card p {
@@ -866,11 +744,31 @@ body {
 .knowledge-list a {
     color: #FF8C00;
     text-decoration: none;
-    transition: color 0.3s;
 }
 
 .knowledge-list a:hover,
 .knowledge-list a:focus {
     text-decoration: underline;
-    color: #FF7000;
+    outline: 2px solid #FF8C00;
+    outline-offset: 2px;
+}
+
+/* POPRAWKA: Print styles dla lepszego druku */
+@media print {
+    .skip-link,
+    .main-nav,
+    .cta-section,
+    .footer-bottom {
+        display: none;
+    }
+
+    body {
+        color: #000;
+        background: white;
+    }
+
+    a {
+        text-decoration: underline;
+        color: #000;
+    }
 }
