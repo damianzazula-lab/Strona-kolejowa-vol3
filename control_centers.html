@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rozjazdy - Infrastruktura Kolejowa</title>
+    <title>Centra Kontroli - Infrastruktura Kolejowa</title>
     <style>
         * {
             margin: 0;
@@ -207,48 +207,66 @@
     <div class="breadcrumb">
         <a href="index.html">Strona główna</a> >
         <a href="infrastructure.html">Infrastruktura</a> >
-        <strong>Rozjazdy</strong>
+        <strong>Centra Kontroli</strong>
     </div>
 
     <div class="container">
         <div class="page-header">
-            <h1>🔧 Rozjazdy</h1>
-            <p>Systemy Ogrzewania i Ochrony Rozjazdów Kolejowych (EOR)</p>
+            <h1>🏢 Centra Kontroli i Pomieszczenia Techniczne</h1>
+            <p>Zarządzanie Ruchem Kolejowym i Infrastruktura IT</p>
         </div>
 
         <a href="infrastructure.html" class="back-button">← Wróć do Infrastruktury</a>
 
         <div class="intro-section">
-            <h2>O Rozjazdach Kolejowych</h2>
+            <h2>O Centrach Kontroli Ruchu</h2>
             <p>
-                Rozjazdy (switches/turnouts) to kluczowe elementy infrastruktury kolejowej umożliwiające zmianę toru jazdy. 
-                W okresie zimowym wymagają niezawodnych systemów elektrycznego ogrzewania rozjazdów (EOR - Electrical Heating of Rail), 
-                które zapobiegają zamarzaniu mechanizmów i gwarantują bezpieczną eksploatację.
-            </p>
-            <p style="margin-top: 1rem;">
-                Systemy te wymagają zaawansowanej ochrony przeciążeniowej, zabezpieczeń przeciwzwarciowych oraz sterowania 
-                półprzewodnikowego o wysokiej niezawodności w trudnych warunkach atmosferycznych.
+                Centra kontroli ruchu kolejowym (CTC) zarządzają pociągami, sygnalizacją i bezpieczeństwem całej sieci. 
+                Wymagają najwyższego poziomu niezawodności, redundancji zasilania, ochrony przed przepięciami oraz 
+                zabezpieczenia przed atakami cyfrowymi. Infrastruktura obejmuje szafy serwerowe sejsmiczne, systemy UPS, 
+                liczniki energii i zaawansowane systemy PLC.
             </p>
         </div>
 
         <div class="products-grid">
-            <!-- CARLO GAVAZZI -->
+            <!-- CARLO GAVAZZI #1 -->
             <div class="product-card">
                 <div class="card-header">
                     <div class="manufacturer">Carlo Gavazzi</div>
-                    <h3>RGH - Przekaźniki Półprzewodnikowe</h3>
+                    <h3>EM530 / EM540 - Liczniki Energii</h3>
                 </div>
                 <div class="card-content">
                     <p>
-                        Przekaźniki półprzewodnikowe o bardzo wysokim napięciu blokowania 1600 Vp, dedykowane do ochrony 
-                        systemów ogrzewania EOR przed przepięciami sieciowymi.
+                        Szybkie, kompaktowe liczniki energii 3-fazowe na szynę DIN. Idealne do monitorowania zużycia 
+                        w szafach serwerowych. Certyfikat MID.
                     </p>
                     <div class="specs">
                         <strong>Parametry:</strong>
-                        Pojemność: do 60A<br>
-                        Napięcie blokowania: 1600 Vp<br>
-                        Zdolność gaszenia: 6600 As<br>
-                        <strong>Normy:</strong> EN 60947-4-3
+                        Typ: 3-fazy<br>
+                        Prąd max: do 65A<br>
+                        Odświeżanie: 100ms<br>
+                        <strong>Normy:</strong> EN 50470-1, MID
+                    </div>
+                </div>
+            </div>
+
+            <!-- CARLO GAVAZZI #2 -->
+            <div class="product-card">
+                <div class="card-header">
+                    <div class="manufacturer">Carlo Gavazzi</div>
+                    <h3>WM15 - Analizator Mocy</h3>
+                </div>
+                <div class="card-content">
+                    <p>
+                        Ekonomiczny analizator mocy do podliczania energii w rozdzielniach budynków infrastruktury. 
+                        Komunikacja Modbus, M-Bus.
+                    </p>
+                    <div class="specs">
+                        <strong>Parametry:</strong>
+                        Dokładność: Klasa 0.5S kWh<br>
+                        Komunikacja: Modbus, M-Bus<br>
+                        Zastosowanie: Rozdzielnie budynkowe<br>
+                        <strong>Normy:</strong> EN 62053-21, MID
                     </div>
                 </div>
             </div>
@@ -257,19 +275,124 @@
             <div class="product-card">
                 <div class="card-header">
                     <div class="manufacturer">Mersen</div>
-                    <h3>NH Fuse-links gG</h3>
+                    <h3>Surge-Trap® STPT2 - Ograniczniki Przepięć</h3>
                 </div>
                 <div class="card-content">
                     <p>
-                        Standardowe bezpieczniki nożowe NH do ochrony przeciążeniowej i zwarciowej obwodów grzałek 
-                        elektrycznego ogrzewania rozjazdów.
+                        Ochrona typu 2 z wymiennikami wkładkami do rozdzielnic zasilających serwerownie i systemy 
+                        sterowania ruchem.
                     </p>
                     <div class="specs">
                         <strong>Parametry:</strong>
-                        Napięcie: 400V/500V/690V AC<br>
-                        Rozmiary: 000-4a<br>
-                        Charakterystyka: gG (uniwersalna)<br>
-                        <strong>Normy:</strong> DIN 43620, VDE 0636
+                        Typ: 2 (IEC 61643-11)<br>
+                        Prąd wyładowania: 40kA (8/20µs)<br>
+                        Wymienne wkładki<br>
+                        <strong>Normy:</strong> IEC 61643-11, UL 1449
+                    </div>
+                </div>
+            </div>
+
+            <!-- NVENT SCHROFF #1 -->
+            <div class="product-card">
+                <div class="card-header">
+                    <div class="manufacturer">nVent Schroff</div>
+                    <h3>Varistar CP (Seismic/EMC)</h3>
+                </div>
+                <div class="card-content">
+                    <p>
+                        Szafa teletechniczna do centrów sterowania ruchem, zapewniająca ochronę przed trzęsieniami ziemi 
+                        (Bellcore 4) i zaawansowane ekranowanie HF do 18GHz.
+                    </p>
+                    <div class="specs">
+                        <strong>Parametry:</strong>
+                        Sejsmika: Bellcore Zone 4<br>
+                        EMC: do 18GHz<br>
+                        Obciążenie: do 2000kg<br>
+                        <strong>Normy:</strong> IEC 61587-2, EN 61000-5-7
+                    </div>
+                </div>
+            </div>
+
+            <!-- NVENT SCHROFF #2 -->
+            <div class="product-card">
+                <div class="card-header">
+                    <div class="manufacturer">nVent Schroff</div>
+                    <h3>RatiopacPRO - Obudowy Desktop</h3>
+                </div>
+                <div class="card-content">
+                    <p>
+                        Uniwersalna obudowa 19" do zastosowań w laboratoriach i pomieszczeniach technicznych, 
+                        służąca do testowania i pomiarów.
+                    </p>
+                    <div class="specs">
+                        <strong>Parametry:</strong>
+                        Chłodzenie: aktywne<br>
+                        EMC: ekranowanie<br>
+                        Standard: 19"<br>
+                        <strong>Normy:</strong> IEC 60297-3, IEEE 1101.x, IEC 61587-3
+                    </div>
+                </div>
+            </div>
+
+            <!-- PHOENIX CONTACT #1 -->
+            <div class="product-card">
+                <div class="card-header">
+                    <div class="manufacturer">Phoenix Contact</div>
+                    <h3>PLCnext Control (RFC/AXC)</h3>
+                </div>
+                <div class="card-content">
+                    <p>
+                        Otwarta platforma sterowania do infrastruktury (np. wentylacja tuneli), obsługująca języki 
+                        wysokiego poziomu i chmurę.
+                    </p>
+                    <div class="specs">
+                        <strong>Parametry:</strong>
+                        System: Linux Yocto<br>
+                        Programowanie: IEC 61131-3<br>
+                        Redundancja: tak<br>
+                        <strong>Normy:</strong> IEC 62443-4-1, EN 50121-4
+                    </div>
+                </div>
+            </div>
+
+            <!-- PHOENIX CONTACT #2 -->
+            <div class="product-card">
+                <div class="card-header">
+                    <div class="manufacturer">Phoenix Contact</div>
+                    <h3>FL MGUARD - Cyberbezpieczeństwo</h3>
+                </div>
+                <div class="card-content">
+                    <p>
+                        Routery bezpieczeństwa realizujące segmentację sieci i ochronę infrastruktury krytycznej 
+                        przed atakami cyfrowymi.
+                    </p>
+                    <div class="specs">
+                        <strong>Funkcje:</strong>
+                        Firewall, VPN, NAT<br>
+                        Deep Packet Inspection<br>
+                        Segmentacja sieci<br>
+                        <strong>Normy:</strong> IEC 62443, EN 50121-4
+                    </div>
+                </div>
+            </div>
+
+            <!-- PHOENIX CONTACT #3 -->
+            <div class="product-card">
+                <div class="card-header">
+                    <div class="manufacturer">Phoenix Contact</div>
+                    <h3>TAP (Tunnel Application Power)</h3>
+                </div>
+                <div class="card-content">
+                    <p>
+                        System bezpiecznego odgałęziania zasilania (np. oświetlenia awaryjnego) w tunelach bez 
+                        przerywania kabla głównego.
+                    </p>
+                    <div class="specs">
+                        <strong>Parametry:</strong>
+                        Szczelność: IP65+<br>
+                        Montaż: bez przecięcia kabla<br>
+                        Zastosowanie: tunele, galerie<br>
+                        <strong>Normy:</strong> IEC 61439, TSI Safety in Tunnels
                     </div>
                 </div>
             </div>
@@ -278,19 +401,19 @@
             <div class="product-card">
                 <div class="card-header">
                     <div class="manufacturer">Sensata/Airpax</div>
-                    <h3>IEL / IELR - Wyłączniki Hydrauliczno-Magnetyczne</h3>
+                    <h3>IAR / IUR / IER - Wyłączniki Rack</h3>
                 </div>
                 <div class="card-content">
                     <p>
-                        Wyłącznik niewrażliwy na zmiany temperatury zewnętrznej (brak deratingu), idealny do szaf 
-                        sterowniczych ogrzewania rozjazdów w zimie.
+                        Niskoprofilowe zabezpieczenie 1U do szaf serwerowych i telekomunikacyjnych, optymalizujące 
+                        przepływ powietrza i miejsce w szafie RACK.
                     </p>
                     <div class="specs">
                         <strong>Parametry:</strong>
-                        Prąd: do 70A (100A w wersji LEL)<br>
-                        Odporność na inrush<br>
-                        Brak deratingu termicznego<br>
-                        <strong>Normy:</strong> UL 1077, VDE, CE
+                        Prąd: do 50A<br>
+                        Napięcie: 80VDC / 250VAC<br>
+                        Profil: 1U (niskoprofilowy)<br>
+                        <strong>Normy:</strong> UL 1077, UL 489A, TUV
                     </div>
                 </div>
             </div>
@@ -299,80 +422,40 @@
             <div class="product-card">
                 <div class="card-header">
                     <div class="manufacturer">Sensata/Airpax</div>
-                    <h3>LEG / LEGA - Wyłącznik Szynowy</h3>
+                    <h3>MDS2 - Modułowy System Dystrybucji</h3>
                 </div>
                 <div class="card-content">
                     <p>
-                        Kompaktowy wyłącznik na szynę DIN, zapewniający ochronę obwodów napędów zwrotnicowych 
-                        z wysokimi prądami rozruchowymi.
+                        System dystrybucji zasilania typu hot-plug, umożliwiający bezpieczną wymianę modułów 
+                        zabezpieczających bez wyłączania całego systemu.
                     </p>
                     <div class="specs">
                         <strong>Parametry:</strong>
-                        Prąd: do 50A<br>
-                        Napięcie: 240VAC<br>
-                        Profil: low-depth<br>
-                        <strong>Normy:</strong> UL 489, EN 60947-2
+                        Obciążalność szyny: 100A<br>
+                        Moduły: konfigurowalne<br>
+                        Hot-plug: tak<br>
+                        <strong>Normy:</strong> UL Listed
                     </div>
                 </div>
             </div>
 
-            <!-- SENSATA/BEI SENSORS #1 -->
+            <!-- SENSATA/AIRPAX #3 -->
             <div class="product-card">
                 <div class="card-header">
-                    <div class="manufacturer">Sensata/BEI Sensors</div>
-                    <h3>PHO5 - Enkoder Absolutny</h3>
+                    <div class="manufacturer">Sensata/Airpax</div>
+                    <h3>CEL - Wyłączniki Hydrauliczno-Magnetyczne DC</h3>
                 </div>
                 <div class="card-content">
                     <p>
-                        Enkoder do monitorowania dokładnego położenia napędów zwrotnicowych, zapewniający informację 
-                        zwrotną o statusie rozjazdu.
+                        Zabezpieczenie dystrybucji zasilania DC w serwerowniach i szafach sterowniczych. 
+                        Wersje 1-4 polowe.
                     </p>
                     <div class="specs">
                         <strong>Parametry:</strong>
-                        Średnica: 58mm<br>
-                        Wał: drążony<br>
-                        Komunikacja: Profibus, CANopen<br>
-                        <strong>Normy:</strong> IP65
-                    </div>
-                </div>
-            </div>
-
-            <!-- SENSATA/BEI SENSORS #2 -->
-            <div class="product-card">
-                <div class="card-header">
-                    <div class="manufacturer">Sensata/BEI Sensors</div>
-                    <h3>CD150 - Enkoder Linkowy (Draw Wire)</h3>
-                </div>
-                <div class="card-content">
-                    <p>
-                        Czujnik linkowy do monitorowania liniowego przesuwu iglic w napędach zwrotnicowych.
-                    </p>
-                    <div class="specs">
-                        <strong>Parametry:</strong>
-                        Zakres: do 6m<br>
-                        Wyjście: Analog/Cyfrowy<br>
-                        Szczelność: IP65<br>
-                        <strong>Zastosowanie:</strong> Pomiar przesuwu iglic
-                    </div>
-                </div>
-            </div>
-
-            <!-- SENSATA/BEI SENSORS #3 -->
-            <div class="product-card">
-                <div class="card-header">
-                    <div class="manufacturer">Sensata/BEI Sensors</div>
-                    <h3>ACW4 - Enkoder Absolutny Kompaktowy</h3>
-                </div>
-                <div class="card-content">
-                    <p>
-                        Kompaktowy enkoder absolutny do kontroli położenia mechanizmów w napędach rozjazdowych.
-                    </p>
-                    <div class="specs">
-                        <strong>Parametry:</strong>
-                        Wyjście: Analog/SSI<br>
-                        Wał: 10mm<br>
-                        Szczelność: IP65<br>
-                        <strong>Zastosowanie:</strong> Pozycjonowanie precyzyjne
+                        Prąd: do 125A DC (1-pol), do 400A (4-pol)<br>
+                        Napięcie: do 80VDC<br>
+                        Montaż: panel/DIN<br>
+                        <strong>Normy:</strong> UL 489, TUV
                     </div>
                 </div>
             </div>
@@ -381,19 +464,19 @@
             <div class="product-card">
                 <div class="card-header">
                     <div class="manufacturer">Sensata/Crydom</div>
-                    <h3>DR22 / DR48 - Przekaźniki Półprzewodnikowe DIN</h3>
+                    <h3>PMP Series - Przekaźniki Proporcjonalne</h3>
                 </div>
                 <div class="card-content">
                     <p>
-                        SSR w obudowie na szynę DIN do sterowania elektrycznym ogrzewaniem rozjazdów (EOR), 
-                        odporne na trudne warunki atmosferyczne w szafach torowych.
+                        Przekaźnik ze sterowaniem fazowym do precyzyjnej regulacji temperatury lub oświetlenia 
+                        w budynkach technicznych.
                     </p>
                     <div class="specs">
                         <strong>Parametry:</strong>
-                        Prąd: do 35A<br>
-                        Napięcie: 600V AC<br>
-                        Wejście: uniwersalne<br>
-                        <strong>Normy:</strong> C-UL-US, VDE
+                        Napięcie: 600VAC<br>
+                        Prąd: 90A<br>
+                        Wejście: 4-20mA/0-10V<br>
+                        <strong>Normy:</strong> IEC 61000-4, UL 508
                     </div>
                 </div>
             </div>
@@ -402,100 +485,61 @@
             <div class="product-card">
                 <div class="card-header">
                     <div class="manufacturer">Sensata/Crydom</div>
-                    <h3>NOVA22 PM22 - Przekaźniki Panelowe</h3>
+                    <h3>53TP Series - Przekaźniki Panelowe 3-fazowe</h3>
                 </div>
                 <div class="card-content">
                     <p>
-                        Wysokowydajny przekaźnik AC odporny na warunki środowiskowe (kolejowe), idealny do sterowania 
-                        grzałkami rozjazdów (EOR).
+                        Trójfazowy przekaźnik solid state do sterowania zasilaniem szaf serwerowych lub systemów 
+                        wentylacji budynkowej.
                     </p>
                     <div class="specs">
                         <strong>Parametry:</strong>
-                        Napięcie: 600VAC<br>
-                        Prąd: 95A<br>
+                        Napięcie: 530VAC<br>
+                        Prąd: 50A<br>
+                        Fazy: 3<br>
                         Szczelność: IP20<br>
-                        <strong>Normy:</strong> IEC 61373, IEC 60068-2
-                    </div>
-                </div>
-            </div>
-
-            <!-- SENSATA/CRYDOM #3 -->
-            <div class="product-card">
-                <div class="card-header">
-                    <div class="manufacturer">Sensata/Crydom</div>
-                    <h3>GN0 Series - Przekaźniki Kompaktowe</h3>
-                </div>
-                <div class="card-content">
-                    <p>
-                        Kompaktowe przekaźniki półprzewodnikowe AC do zastosowań ogólnego przeznaczenia w systemach EOR.
-                    </p>
-                    <div class="specs">
-                        <strong>Parametry:</strong>
-                        Napięcie: 480VAC<br>
-                        Prąd: do 25A<br>
-                        Obudowa: kompaktowa<br>
                         <strong>Normy:</strong> UL 508, IEC 60947
                     </div>
                 </div>
             </div>
 
-            <!-- SENSATA/KAVLICO #1 -->
+            <!-- SENSATA/CYNERGY3 -->
             <div class="product-card">
                 <div class="card-header">
-                    <div class="manufacturer">Sensata/Kavlico</div>
-                    <h3>PTE5000 / P4000 - Czujniki Ciśnienia Przemysłowe</h3>
+                    <div class="manufacturer">Sensata/Cynergy3</div>
+                    <h3>FSU - Przekaźniki Fotowoltaiczne</h3>
                 </div>
                 <div class="card-content">
                     <p>
-                        Wytrzymałe czujniki ciśnienia do monitorowania systemów hydraulicznych napędów zwrotnicowych.
+                        Kompaktowe przekaźniki do systemów fotowoltaicznych i magazynowania energii w obiektach 
+                        kolejowych.
                     </p>
                     <div class="specs">
                         <strong>Parametry:</strong>
-                        Zakres: 0-6000 psi<br>
-                        Wyjście: 4-20mA, 0-10V<br>
-                        Szczelność: IP67<br>
-                        <strong>Normy:</strong> UL, CE
+                        Napięcie: 1000V DC<br>
+                        Prąd: do 30A<br>
+                        Przełączanie bez łuku<br>
+                        <strong>Normy:</strong> UL 508, IEC 62053
                     </div>
                 </div>
             </div>
 
-            <!-- SENSATA/KAVLICO #2 -->
+            <!-- SENSATA/KAVLICO -->
             <div class="product-card">
                 <div class="card-header">
                     <div class="manufacturer">Sensata/Kavlico</div>
-                    <h3>LVDT - Czujniki Pozycji Liniowej</h3>
+                    <h3>P1K - Czujnik Ciśnienia Miniaturowy</h3>
                 </div>
                 <div class="card-content">
                     <p>
-                        Bezkontaktowe czujniki LVDT (Linear Variable Differential Transformer) do precyzyjnego pomiaru 
-                        pozycji iglic rozjazdowych.
+                        Kompaktowy czujnik ciśnienia do systemów HVAC i klimatyzacji pomieszczeń technicznych.
                     </p>
                     <div class="specs">
                         <strong>Parametry:</strong>
-                        Zakres: ±10mm do ±250mm<br>
-                        Technologia: LVDT (bezkontaktowa)<br>
-                        Dokładność: ±0.25% FS<br>
-                        <strong>Normy:</strong> EN 50155
-                    </div>
-                </div>
-            </div>
-
-            <!-- SENSATA/KLIXON -->
-            <div class="product-card">
-                <div class="card-header">
-                    <div class="manufacturer">Sensata/Klixon</div>
-                    <h3>1NT / 3NT - Termostaty Bimetaliczne</h3>
-                </div>
-                <div class="card-content">
-                    <p>
-                        Kompaktowe termostaty bimetaliczne do ochrony przed przegrzaniem grzałek rozjazdowych.
-                    </p>
-                    <div class="specs">
-                        <strong>Parametry:</strong>
-                        Temperatura: 40-130°C<br>
-                        Prąd: 15A @ 250VAC<br>
-                        Resetowanie: automatyczne/ręczne<br>
-                        <strong>Normy:</strong> UL, VDE, cRUus
+                        Zakres: 0-100 psi<br>
+                        Wyjście: 0.5-4.5V<br>
+                        Rozmiar: miniaturowy<br>
+                        <strong>Normy:</strong> CE, RoHS
                     </div>
                 </div>
             </div>
@@ -506,7 +550,7 @@
     <div class="footer">
         <p>&copy; 2026 Infrastruktura Kolejowa. Wszystkie prawa zastrzeżone.</p>
         <p style="margin-top: 1rem; font-size: 0.9rem;">
-            Rozwiązania dla: Carlo Gavazzi, Mersen, Sensata (Airpax, BEI Sensors, Crydom, Kavlico, Klixon)
+            Carlo Gavazzi, Mersen, nVent Schroff, Phoenix Contact, Sensata (Airpax, Crydom, Cynergy3, Kavlico)
         </p>
     </div>
 </body>

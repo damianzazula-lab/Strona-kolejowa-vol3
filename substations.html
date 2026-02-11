@@ -95,7 +95,7 @@
             background: white;
             padding: 2rem;
             border-radius: 8px;
-            margin-bottom: 2rem;
+            margin-bottom: 3rem;
             box-shadow: 0 2px 4px rgba(0,0,0,0.1);
         }
 
@@ -106,109 +106,68 @@
             padding-bottom: 0.5rem;
         }
 
-        .products-section {
-            margin-bottom: 3rem;
-        }
-
-        .products-section h3 {
-            font-size: 1.8rem;
-            color: #003366;
-            margin-bottom: 2rem;
-            padding-bottom: 0.5rem;
-            border-bottom: 2px solid #FF8C00;
-        }
-
         .products-grid {
             display: grid;
             grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
             gap: 2rem;
-            margin-bottom: 2rem;
+            margin-bottom: 3rem;
         }
 
         .product-card {
             background: white;
-            border: 1px solid #ddd;
             border-radius: 8px;
-            padding: 1.5rem;
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
             transition: all 0.3s ease;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            border-left: 4px solid #FF8C00;
         }
 
         .product-card:hover {
             transform: translateY(-5px);
-            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-            border-color: #FF8C00;
+            box-shadow: 0 6px 16px rgba(0,0,0,0.15);
         }
 
-        .product-manufacturer {
-            color: #FF8C00;
-            font-weight: bold;
-            font-size: 0.85rem;
-            text-transform: uppercase;
-            margin-bottom: 0.5rem;
-            letter-spacing: 1px;
+        .card-header {
+            background: linear-gradient(135deg, #003366 0%, #004d99 100%);
+            color: white;
+            padding: 1.5rem;
         }
 
-        .product-card h3 {
-            color: #003366;
+        .card-header h3 {
             font-size: 1.3rem;
             margin-bottom: 0.5rem;
         }
 
-        .product-description {
+        .card-header .manufacturer {
+            font-size: 0.9rem;
+            opacity: 0.9;
+            color: #FF8C00;
+            font-weight: bold;
+        }
+
+        .card-content {
+            padding: 1.5rem;
+        }
+
+        .card-content p {
             color: #666;
             font-size: 0.95rem;
+            line-height: 1.6;
             margin-bottom: 1rem;
-            line-height: 1.5;
         }
 
-        .product-family {
+        .specs {
             background: #f5f5f5;
             padding: 1rem;
-            border-left: 4px solid #FF8C00;
-            margin-bottom: 1rem;
             border-radius: 4px;
+            font-size: 0.85rem;
+            margin-top: 1rem;
         }
 
-        .product-family h4 {
+        .specs strong {
             color: #003366;
-            margin-bottom: 0.5rem;
-            font-size: 0.95rem;
-        }
-
-        .product-family p {
-            font-size: 0.85rem;
-            color: #555;
-            line-height: 1.6;
-        }
-
-        .document-buttons {
-            display: flex;
-            gap: 0.5rem;
-            flex-wrap: wrap;
-        }
-
-        .doc-btn {
-            display: inline-block;
-            padding: 0.5rem 1rem;
-            background: #003366;
-            color: white;
-            text-decoration: none;
-            border-radius: 4px;
-            font-size: 0.85rem;
-            transition: background 0.3s;
-        }
-
-        .doc-btn:hover {
-            background: #FF8C00;
-        }
-
-        .footer {
-            background: #003366;
-            color: white;
-            text-align: center;
-            padding: 2rem;
-            margin-top: 3rem;
+            display: block;
+            margin-top: 0.5rem;
         }
 
         .back-button {
@@ -225,6 +184,14 @@
         .back-button:hover {
             background: #003366;
         }
+
+        .footer {
+            background: #003366;
+            color: white;
+            text-align: center;
+            padding: 2rem;
+            margin-top: 3rem;
+        }
     </style>
 </head>
 <body>
@@ -232,7 +199,7 @@
         <h1>🚂 Infrastruktura Kolejowa</h1>
         <ul class="nav-links">
             <li><a href="index.html">Strona główna</a></li>
-            <li><a href="knowledge-base.html">Baza Wiedzy</a></li>
+            <li><a href="infrastructure.html">Infrastruktura</a></li>
             <li><a href="contact.html">Kontakt</a></li>
         </ul>
     </div>
@@ -240,13 +207,13 @@
     <div class="breadcrumb">
         <a href="index.html">Strona główna</a> >
         <a href="infrastructure.html">Infrastruktura</a> >
-        <strong>Podstacje Trakcyjne i Zasilanie</strong>
+        <strong>Podstacje Trakcyjne</strong>
     </div>
 
     <div class="container">
         <div class="page-header">
-            <h1>Podstacje Trakcyjne i Zasilanie</h1>
-            <p>Serca Infrastruktury Kolejowej - Konwersja i Dystrybucja Energii</p>
+            <h1>⚡ Podstacje Trakcyjne i Zasilanie</h1>
+            <p>Konwersja i Dystrybucja Energii dla Trakcji Elektrycznej</p>
         </div>
 
         <a href="infrastructure.html" class="back-button">← Wróć do Infrastruktury</a>
@@ -254,181 +221,493 @@
         <div class="intro-section">
             <h2>O Podstacjach Trakcyjnych</h2>
             <p>
-                Podstacje trakcyjne są kluczowymi elementami infrastruktury kolejowej, odpowiadającymi za konwersję i dystrybucję 
-                energii elektrycznej do sieci trakcyjnej. Pracują z wysokimi napięciami (750V, 1500V, 3000V DC lub 15-25kV AC) 
-                i wymuszają zastosowanie specjalistycznych urządzeń ochrony, pomiaru i monitorowania.
+                Podstacje trakcyjne stanowią serce infrastruktury kolejowej, konwertując energię z sieci publicznej 
+                na napięcia trakcyjne: 750V, 1500V, 3000V DC lub 15-25kV AC. Wymagają precyzyjnych systemów pomiarowych, 
+                zaawansowanej ochrony przed przepięciami oraz niezawodnych urządzeń łączeniowych o wysokiej zdolności zwarciowej.
             </p>
         </div>
 
-        <div class="products-section">
-            <h3>Rozwiązania dla Podstacji Trakcyjnych</h3>
-            <div class="products-grid">
-                <div class="product-card">
-                    <div class="product-manufacturer">KNICK</div>
-                    <h3>Przetworniki Wysokiego Napięcia</h3>
-                    <p class="product-description">
-                        Uniwersalne przetworniki do pomiaru prądu przez bocznik w podstacjach DC. 
-                        Izolacja 3600V ACDC, test 15kV AC. Seria P41000.
-                    </p>
-                    <div class="product-family">
-                        <h4>Seria P41000 - P42000</h4>
-                        <p>
-                            Wejście: 60mV do 3600V<br>
-                            Izolacja: 3600V ACDC<br>
-                            Test: 15kV AC<br>
-                            Norma: EN 61140, UL 347
-                        </p>
-                    </div>
-                    <div class="document-buttons">
-                        <a href="#" class="doc-btn">📄 Karta</a>
-                        <a href="#" class="doc-btn">📋 Normy</a>
-                        <a href="#" class="doc-btn">📊 Wymiary</a>
-                    </div>
+        <div class="products-grid">
+            <!-- CARLO GAVAZZI #1 -->
+            <div class="product-card">
+                <div class="card-header">
+                    <div class="manufacturer">Carlo Gavazzi</div>
+                    <h3>WM20 / WM30 / WM40 - Analizatory Sieci</h3>
                 </div>
-
-                <div class="product-card">
-                    <div class="product-manufacturer">MERSEN</div>
-                    <h3>Odłączniki Mocy DC</h3>
-                    <p class="product-description">
-                        Izolacja sekcji sieci trakcyjnej lub prostowników w podstacjach. Wysoka pojemność zwarciowa 
-                        200kA peak. Napęd silnikowy lub ręczny.
+                <div class="card-content">
+                    <p>
+                        Modułowe analizatory do monitorowania jakości energii w podstacjach trakcyjnych 3kV DC. 
+                        Komunikacja Modbus, Ethernet, BACnet, Profibus.
                     </p>
-                    <div class="product-family">
-                        <h4>High Power Switches Disconnect</h4>
-                        <p>
-                            Napięcie: DC do 3000V<br>
-                            Moc: 200kA peak<br>
-                            Norma: IEC 60077-2, EN 50123<br>
-                            Przerwa izolacyjna: widoczna
-                        </p>
-                    </div>
-                    <div class="document-buttons">
-                        <a href="#" class="doc-btn">📄 Karta</a>
-                        <a href="#" class="doc-btn">📋 Normy</a>
-                        <a href="#" class="doc-btn">📊 Wymiary</a>
-                    </div>
-                </div>
-
-                <div class="product-card">
-                    <div class="product-manufacturer">MERSEN</div>
-                    <h3>Ograniczniki Przepięcia Trakcyjne</h3>
-                    <p class="product-description">
-                        Ochrona podstacji i linii zasilających przed wyładowaniami atmosferycznymi i przepięciami sieciowymi. 
-                        Klasa wyadowania IEC 60099-4.
-                    </p>
-                    <div class="product-family">
-                        <h4>Surge Arresters Enclosed Station</h4>
-                        <p>
-                            Prąd: 10kA - 20kA<br>
-                            Klasa wyadowania: IEC 60099-4<br>
-                            Zastosowanie: Linie zasilające, podstacje<br>
-                            Certyfikat: Railway Grade
-                        </p>
-                    </div>
-                    <div class="document-buttons">
-                        <a href="#" class="doc-btn">📄 Karta</a>
-                        <a href="#" class="doc-btn">📋 Normy</a>
-                        <a href="#" class="doc-btn">📊 Wymiary</a>
-                    </div>
-                </div>
-
-                <div class="product-card">
-                    <div class="product-manufacturer">SENSATA / AIRPAX</div>
-                    <h3>Wyłączniki Przemysłowe E-Frame</h3>
-                    <p class="product-description">
-                        Wytrzymały wyłącznik do obwodów pomocniczych w podstacjach. Obsługuje wyższe napięcia przemysłowe 
-                        i duże prądy zwarciowe.
-                    </p>
-                    <div class="product-family">
-                        <h4>Serie 209, 219, 229</h4>
-                        <p>
-                            Prąd: 0.1A - 100A<br>
-                            Napięcie: 600VAC / 125VDC<br>
-                            Norma: UL 489, UL 1077, CSA<br>
-                            Monta: szyna DIN
-                        </p>
-                    </div>
-                    <div class="document-buttons">
-                        <a href="#" class="doc-btn">📄 Karta</a>
-                        <a href="#" class="doc-btn">📋 Normy</a>
-                        <a href="#" class="doc-btn">📊 Wymiary</a>
-                    </div>
-                </div>
-
-                <div class="product-card">
-                    <div class="product-manufacturer">CARLO GAVAZZI</div>
-                    <h3>Analizatory Sieci</h3>
-                    <p class="product-description">
-                        Moduowe analizatory do monitorowania jakości energii i parametrów sieci w podstacjach trakcyjnych 3kV DC. 
-                        Możliwość rozbudowy o moduły komunikacyjne.
-                    </p>
-                    <div class="product-family">
-                        <h4>Serie WM20, WM30, WM40</h4>
-                        <p>
-                            Dokładność: Klasa 0.5S / 0.2<br>
-                            Komunikacja: Modbus, Ethernet, BACnet, Profibus<br>
-                            Przeznaczenie: Monitorowanie energii w podstacjach<br>
-                            Norma: EN 62053-22
-                        </p>
-                    </div>
-                    <div class="document-buttons">
-                        <a href="#" class="doc-btn">📄 Karta</a>
-                        <a href="#" class="doc-btn">📋 Normy</a>
-                        <a href="#" class="doc-btn">📊 Wymiary</a>
-                    </div>
-                </div>
-
-                <div class="product-card">
-                    <div class="product-manufacturer">CARLO GAVAZZI</div>
-                    <h3>Przekadniki Prądowe</h3>
-                    <p class="product-description">
-                        Przekadniki prądowe do współpracy z licznikami energii w rozdzielniach podstacji. Dostępne wersje 
-                        z dzielonym rdzeniem dla instalacji bez odłączania torów.
-                    </p>
-                    <div class="product-family">
-                        <h4>Serie CTD, CTA</h4>
-                        <p>
-                            Zakresy: 40A - 4000A<br>
-                            Wtórnie: 1A / 5A<br>
-                            Rdzenie: stały / dzielony (CTA)<br>
-                            Norma: IEC 61869-2
-                        </p>
-                    </div>
-                    <div class="document-buttons">
-                        <a href="#" class="doc-btn">📄 Karta</a>
-                        <a href="#" class="doc-btn">📋 Normy</a>
-                        <a href="#" class="doc-btn">📊 Wymiary</a>
-                    </div>
-                </div>
-
-                <div class="product-card">
-                    <div class="product-manufacturer">PHOENIX CONTACT</div>
-                    <h3>Złączki Szynowe CLIPLINE</h3>
-                    <p class="product-description">
-                        System złączek szynowych odpornych na ekstremalne wibracje do dystrybucji potencjałów w szafach 
-                        sterowniczych. Push-in, Side-entry.
-                    </p>
-                    <div class="product-family">
-                        <h4>CLIPLINE complete PTP/TV/ST</h4>
-                        <p>
-                            Zakresy: 0.14 - 300 mm²<br>
-                            Norma: EN 45545-2 R22/R23, EN 50155, IEC 61373<br>
-                            Technologia: Push-in / Side-entry<br>
-                            Temperatura: -40°C do +70°C
-                        </p>
-                    </div>
-                    <div class="document-buttons">
-                        <a href="#" class="doc-btn">📄 Karta</a>
-                        <a href="#" class="doc-btn">📋 Normy</a>
-                        <a href="#" class="doc-btn">📊 Wymiary</a>
+                    <div class="specs">
+                        <strong>Parametry:</strong>
+                        Dokładność: Klasa 0.5S / 0.2<br>
+                        Komunikacja: Modbus, Ethernet, BACnet, Profibus<br>
+                        Zastosowanie: Podstacje trakcyjne 3kV DC<br>
+                        <strong>Normy:</strong> EN 62053-22
                     </div>
                 </div>
             </div>
+
+            <!-- CARLO GAVAZZI #2 -->
+            <div class="product-card">
+                <div class="card-header">
+                    <div class="manufacturer">Carlo Gavazzi</div>
+                    <h3>CTD / CTA - Przekadniki Prądowe</h3>
+                </div>
+                <div class="card-content">
+                    <p>
+                        Przekadniki prądowe do współpracy z licznikami energii w rozdzielniach podstacji. 
+                        Wersje z dzielonym rdzeniem (CTA) do łatwego montażu.
+                    </p>
+                    <div class="specs">
+                        <strong>Parametry:</strong>
+                        Zakresy: 40A - 4000A<br>
+                        Wtórnie: 1A / 5A<br>
+                        Rdzenie: stały (CTD) / dzielony (CTA)<br>
+                        <strong>Normy:</strong> IEC 61869-2
+                    </div>
+                </div>
+            </div>
+
+            <!-- KNICK #1 -->
+            <div class="product-card">
+                <div class="card-header">
+                    <div class="manufacturer">Knick</div>
+                    <h3>P41000 - Przetwornik Prądu DC</h3>
+                </div>
+                <div class="card-content">
+                    <p>
+                        Uniwersalny przetwornik do pomiaru prądu (przez bocznik) w podstacjach DC. 
+                        Izolacja galwaniczna 3600V AC/DC.
+                    </p>
+                    <div class="specs">
+                        <strong>Parametry:</strong>
+                        Wejście: ±60mV do ±100V<br>
+                        Izolacja: 3600V AC/DC<br>
+                        Test: 15kV AC<br>
+                        <strong>Normy:</strong> EN 61140, UL 347
+                    </div>
+                </div>
+            </div>
+
+            <!-- KNICK #2 -->
+            <div class="product-card">
+                <div class="card-header">
+                    <div class="manufacturer">Knick</div>
+                    <h3>P42000 - Przetwornik Napięcia DC</h3>
+                </div>
+                <div class="card-content">
+                    <p>
+                        Przetwornik do pomiaru wysokich napięć stałych w podstacjach trakcyjnych 750V, 1500V i 3000V DC.
+                    </p>
+                    <div class="specs">
+                        <strong>Parametry:</strong>
+                        Wejście: ±100V do ±3600V<br>
+                        Izolacja: 3600V AC/DC<br>
+                        Test: 15kV AC<br>
+                        <strong>Normy:</strong> EN 61140
+                    </div>
+                </div>
+            </div>
+
+            <!-- KNICK #3 -->
+            <div class="product-card">
+                <div class="card-header">
+                    <div class="manufacturer">Knick</div>
+                    <h3>P29000 - Przetwornik Uniwersalny</h3>
+                </div>
+                <div class="card-content">
+                    <p>
+                        Przetwornik napięcia i prądu do zastosowań o umiarkowanych wymaganiach izolacyjnych.
+                    </p>
+                    <div class="specs">
+                        <strong>Parametry:</strong>
+                        Wejście: do ±1000V<br>
+                        Izolacja: 1000V AC/DC (podstawowa)<br>
+                        Kompaktowa konstrukcja<br>
+                        <strong>Normy:</strong> EN 50124
+                    </div>
+                </div>
+            </div>
+
+            <!-- KNICK #4 -->
+            <div class="product-card">
+                <div class="card-header">
+                    <div class="manufacturer">Knick</div>
+                    <h3>P52000VPD - Detektor Napięcia</h3>
+                </div>
+                <div class="card-content">
+                    <p>
+                        Detektor obecności napięcia (VPD) do monitorowania szyn prądowych i sterowania odłącznikami w podstacjach.
+                    </p>
+                    <div class="specs">
+                        <strong>Parametry:</strong>
+                        Progi: 50-4200V<br>
+                        Izolacja: 4800V<br>
+                        Wyjście: Przekaźnik/TTL<br>
+                        <strong>Normy:</strong> EN 50123-1, EN 50155
+                    </div>
+                </div>
+            </div>
+
+            <!-- KNICK #5 -->
+            <div class="product-card">
+                <div class="card-header">
+                    <div class="manufacturer">Knick</div>
+                    <h3>P44000 - Przetwornik Temperatury</h3>
+                </div>
+                <div class="card-content">
+                    <p>
+                        Przetwornik temperatury do monitorowania szyn zbiorczych i prostowników przy wysokim potencjale (High Pot).
+                    </p>
+                    <div class="specs">
+                        <strong>Parametry:</strong>
+                        Wejście: Pt100<br>
+                        Izolacja: 6600V AC/DC<br>
+                        Test: 15kV AC<br>
+                        <strong>Normy:</strong> EN 50124-1
+                    </div>
+                </div>
+            </div>
+
+            <!-- MERSEN #1 -->
+            <div class="product-card">
+                <div class="card-header">
+                    <div class="manufacturer">Mersen</div>
+                    <h3>High Power Switches (Disconnect)</h3>
+                </div>
+                <div class="card-content">
+                    <p>
+                        Odłączniki mocy DC do izolacji sekcji sieci trakcyjnej lub prostowników w podstacjach. 
+                        Widoczna przerwa izolacyjna.
+                    </p>
+                    <div class="specs">
+                        <strong>Parametry:</strong>
+                        Napięcie: do 3000V DC<br>
+                        Prąd szczytowy: 200kA<br>
+                        Napęd: silnikowy/ręczny<br>
+                        <strong>Normy:</strong> IEC 60077-2, EN 50123
+                    </div>
+                </div>
+            </div>
+
+            <!-- MERSEN #2 -->
+            <div class="product-card">
+                <div class="card-header">
+                    <div class="manufacturer">Mersen</div>
+                    <h3>Surge Arresters (Ograniczniki Przepięć)</h3>
+                </div>
+                <div class="card-content">
+                    <p>
+                        Ochrona podstacji i linii zasilających przed wyładowaniami atmosferycznymi i przepięciami sieciowymi.
+                    </p>
+                    <div class="specs">
+                        <strong>Parametry:</strong>
+                        Klasa wyładowania: 10kA / 20kA<br>
+                        Typ: Enclosed / Station<br>
+                        Montaż: wewnętrzny/zewnętrzny<br>
+                        <strong>Normy:</strong> IEC 60099-4
+                    </div>
+                </div>
+            </div>
+
+            <!-- PHOENIX CONTACT -->
+            <div class="product-card">
+                <div class="card-header">
+                    <div class="manufacturer">Phoenix Contact</div>
+                    <h3>CLIPLINE complete (PT/PTV/ST)</h3>
+                </div>
+                <div class="card-content">
+                    <p>
+                        System złączek szynowych odpornych na ekstremalne wibracje do dystrybucji potencjałów 
+                        w szafach sterowniczych podstacji.
+                    </p>
+                    <div class="specs">
+                        <strong>Parametry:</strong>
+                        Przekrój: 0.14-300 mm²<br>
+                        Technologia: Push-in/Side-entry<br>
+                        Odporność: wibracje kolejowe<br>
+                        <strong>Normy:</strong> EN 45545-2 R22/R23, EN 50155, IEC 61373
+                    </div>
+                </div>
+            </div>
+
+            <!-- SENSATA/AIRPAX -->
+            <div class="product-card">
+                <div class="card-header">
+                    <div class="manufacturer">Sensata/Airpax</div>
+                    <h3>209 / 219 / 229 - Wyłączniki Przemysłowe</h3>
+                </div>
+                <div class="card-content">
+                    <p>
+                        Wytrzymały wyłącznik typu E-Frame do obwodów pomocniczych w podstacjach, obsługujący wyższe 
+                        napięcia przemysłowe i duże prądy zwarciowe.
+                    </p>
+                    <div class="specs">
+                        <strong>Parametry:</strong>
+                        Prąd: 0.1-100A<br>
+                        Napięcie: 600VAC / 125VDC<br>
+                        Montaż: DIN<br>
+                        <strong>Normy:</strong> UL 489, UL 1077, CSA
+                    </div>
+                </div>
+            </div>
+
+            <!-- SENSATA/BEI SENSORS #1 -->
+            <div class="product-card">
+                <div class="card-header">
+                    <div class="manufacturer">Sensata/BEI Sensors</div>
+                    <h3>THM5 / THK5 - Enkoder IO-Link</h3>
+                </div>
+                <div class="card-content">
+                    <p>
+                        Inteligentny enkoder do monitorowania położenia odłączników i uziemników z zdalną diagnostyką.
+                    </p>
+                    <div class="specs">
+                        <strong>Parametry:</strong>
+                        Komunikacja: IO-Link 1.1<br>
+                        Diagnostyka: zdalna<br>
+                        Szczelność: IP65<br>
+                        <strong>Normy:</strong> IEC 61000-4
+                    </div>
+                </div>
+            </div>
+
+            <!-- SENSATA/BEI SENSORS #2 -->
+            <div class="product-card">
+                <div class="card-header">
+                    <div class="manufacturer">Sensata/BEI Sensors</div>
+                    <h3>60004 - Bariera Iskrobezpieczna</h3>
+                </div>
+                <div class="card-content">
+                    <p>
+                        Separator galwaniczny do bezpiecznego przesyłu sygnałów enkodera ze stref zagrożonych wybuchem 
+                        (np. akumulatorownie w podstacjach).
+                    </p>
+                    <div class="specs">
+                        <strong>Parametry:</strong>
+                        Zasilanie: 12-28V DC<br>
+                        Wyjście: TTL/OC<br>
+                        Certyfikat: ATEX Ex ia<br>
+                        <strong>Normy:</strong> ATEX Ex ia, UL
+                    </div>
+                </div>
+            </div>
+
+            <!-- SENSATA/CRYDOM #1 -->
+            <div class="product-card">
+                <div class="card-header">
+                    <div class="manufacturer">Sensata/Crydom</div>
+                    <h3>HAC Series - Styczniki Wysokoprądowe</h3>
+                </div>
+                <div class="card-content">
+                    <p>
+                        Przekaźnik panelowy o bardzo wysokiej obciążalności prądowej do sterowania głównymi liniami 
+                        zasilania w podstacjach.
+                    </p>
+                    <div class="specs">
+                        <strong>Parametry:</strong>
+                        Napięcie: 660VAC<br>
+                        Prąd: 150A<br>
+                        Napięcie szczytowe: 1200Vpk<br>
+                        <strong>Normy:</strong> IEC 61000-4, UL 508
+                    </div>
+                </div>
+            </div>
+
+            <!-- SENSATA/CRYDOM #2 -->
+            <div class="product-card">
+                <div class="card-header">
+                    <div class="manufacturer">Sensata/Crydom</div>
+                    <h3>H1 Series (H12D) - Przekaźniki HV</h3>
+                </div>
+                <div class="card-content">
+                    <p>
+                        Przekaźnik panelowy o podwyższonej odporności na przepięcia (1200V) do pracy w trudnych 
+                        warunkach zasilania sieciowego.
+                    </p>
+                    <div class="specs">
+                        <strong>Parametry:</strong>
+                        Napięcie: 530VAC<br>
+                        Prąd: 125A<br>
+                        Odporność: 1200Vpk<br>
+                        <strong>Normy:</strong> IEC 61000-4, IEC 60068-2
+                    </div>
+                </div>
+            </div>
+
+            <!-- SENSATA/CRYDOM #3 -->
+            <div class="product-card">
+                <div class="card-header">
+                    <div class="manufacturer">Sensata/Crydom</div>
+                    <h3>CW Series - Przekaźniki Panelowe AC</h3>
+                </div>
+                <div class="card-content">
+                    <p>
+                        Wytrzymały przekaźnik z wyjściem tyrystorowym, bez epoksydów, do ciężkich obciążeń 
+                        indukcyjnych w infrastrukturze.
+                    </p>
+                    <div class="specs">
+                        <strong>Parametry:</strong>
+                        Napięcie: 660VAC<br>
+                        Prąd: 125A<br>
+                        Wyjście: SCR (tyrystor)<br>
+                        <strong>Normy:</strong> IEC 61000-4, EN 60950-1
+                    </div>
+                </div>
+            </div>
+
+            <!-- SENSATA/CYNERGY3 -->
+            <div class="product-card">
+                <div class="card-header">
+                    <div class="manufacturer">Sensata/Cynergy3</div>
+                    <h3>Seria D - Przekaźniki Reed</h3>
+                </div>
+                <div class="card-content">
+                    <p>
+                        Przekaźniki kontaktronowe (reed) o wysokiej niezawodności do systemów kontroli i monitoringu 
+                        w podstacjach.
+                    </p>
+                    <div class="specs">
+                        <strong>Parametry:</strong>
+                        Napięcie: do 10kV przebicia<br>
+                        Prąd: 0.5-5A<br>
+                        Żywotność: >10⁹ operacji<br>
+                        <strong>Normy:</strong> UL, VDE
+                    </div>
+                </div>
+            </div>
+
+            <!-- SENSATA/GIGAVAC #1 -->
+            <div class="product-card">
+                <div class="card-header">
+                    <div class="manufacturer">Sensata/Gigavac</div>
+                    <h3>G71 - Stycznik Próżniowy</h3>
+                </div>
+                <div class="card-content">
+                    <p>
+                        Wysokonapięciowy stycznik próżniowy do łączenia obwodów DC w podstacjach trakcyjnych.
+                    </p>
+                    <div class="specs">
+                        <strong>Parametry:</strong>
+                        Napięcie: do 1500V DC<br>
+                        Prąd ciągły: 400A<br>
+                        Zdolność zwarciowa: 10kA<br>
+                        <strong>Normy:</strong> UL, CE
+                    </div>
+                </div>
+            </div>
+
+            <!-- SENSATA/GIGAVAC #2 -->
+            <div class="product-card">
+                <div class="card-header">
+                    <div class="manufacturer">Sensata/Gigavac</div>
+                    <h3>GX14 - Stycznik Monostabilny</h3>
+                </div>
+                <div class="card-content">
+                    <p>
+                        Kompaktowy stycznik monostabilny do przełączania obwodów zasilania w rozdzielniach podstacji.
+                    </p>
+                    <div class="specs">
+                        <strong>Parametry:</strong>
+                        Napięcie: do 900V DC<br>
+                        Prąd: 250A<br>
+                        Cewka: 12/24/48V DC<br>
+                        <strong>Normy:</strong> UL 508, IEC 60947
+                    </div>
+                </div>
+            </div>
+
+            <!-- SENSATA/GIGAVAC #3 -->
+            <div class="product-card">
+                <div class="card-header">
+                    <div class="manufacturer">Sensata/Gigavac</div>
+                    <h3>SGX - Stycznik Bistabilny</h3>
+                </div>
+                <div class="card-content">
+                    <p>
+                        Stycznik bistabilny (zatrzaskowy) z zatrzymaniem pozycji po zaniku zasilania cewki.
+                    </p>
+                    <div class="specs">
+                        <strong>Parametry:</strong>
+                        Napięcie: do 1200V DC<br>
+                        Prąd: 300A<br>
+                        Typ: bistabilny (2 cewki)<br>
+                        <strong>Normy:</strong> UL, CE
+                    </div>
+                </div>
+            </div>
+
+            <!-- SENSATA/KAVLICO #1 -->
+            <div class="product-card">
+                <div class="card-header">
+                    <div class="manufacturer">Sensata/Kavlico</div>
+                    <h3>HEC - Czujnik Ciśnienia Heavy Duty</h3>
+                </div>
+                <div class="card-content">
+                    <p>
+                        Wytrzymały czujnik ciśnienia do systemów chłodzenia transformatorów i prostowników w podstacjach.
+                    </p>
+                    <div class="specs">
+                        <strong>Parametry:</strong>
+                        Zakres: 0-500 bar<br>
+                        Wyjście: 4-20mA<br>
+                        Szczelność: IP67<br>
+                        <strong>Normy:</strong> CE, RoHS
+                    </div>
+                </div>
+            </div>
+
+            <!-- SENSATA/KAVLICO #2 -->
+            <div class="product-card">
+                <div class="card-header">
+                    <div class="manufacturer">Sensata/Kavlico</div>
+                    <h3>P500 - Przetwornik Ciśnienia</h3>
+                </div>
+                <div class="card-content">
+                    <p>
+                        Uniwersalny przetwornik ciśnienia do monitorowania instalacji pomocniczych w podstacjach.
+                    </p>
+                    <div class="specs">
+                        <strong>Parametry:</strong>
+                        Zakres: 0-1000 psi<br>
+                        Wyjście: 0-5V, 4-20mA<br>
+                        Dokładność: ±0.5% FS<br>
+                        <strong>Normy:</strong> UL, CE
+                    </div>
+                </div>
+            </div>
+
+            <!-- SENSATA (SENDYNE) -->
+            <div class="product-card">
+                <div class="card-header">
+                    <div class="manufacturer">Sensata/Sendyne</div>
+                    <h3>Sendyne - Moduły Monitorowania Izolacji</h3>
+                </div>
+                <div class="card-content">
+                    <p>
+                        Zaawansowane moduły do monitorowania stanu izolacji i przepływu energii w systemach 
+                        magazynowania energii (ESS) przy podstacjach.
+                    </p>
+                    <div class="specs">
+                        <strong>Parametry:</strong>
+                        Pomiar: prąd, napięcie, izolacja<br>
+                        Precyzja: klasa 0.2<br>
+                        Komunikacja: CAN, RS485<br>
+                        <strong>Zastosowanie:</strong> ESS, akumulatorownie
+                    </div>
+                </div>
+            </div>
+
         </div>
     </div>
 
     <div class="footer">
         <p>&copy; 2026 Infrastruktura Kolejowa. Wszystkie prawa zastrzeżone.</p>
+        <p style="margin-top: 1rem; font-size: 0.9rem;">
+            Carlo Gavazzi, Knick, Mersen, Phoenix Contact, Sensata (Airpax, BEI, Crydom, Cynergy3, Gigavac, Kavlico, Sendyne)
+        </p>
     </div>
 </body>
 </html>
